@@ -7,3 +7,7 @@ Explore a Meshtastic-like vehicle network with dashboard buttons for stalled car
 ## Consider geographically relevant road alerts
 
 Consider geographic relevance rather than sending every report to every driver, including the A14/Stowmarket example.
+
+## Begin LoRa and ESP32 implementation exploration
+
+Explore building a LoRa/ESP32 system in the context of UK 868 MHz operation. Frequency suitability and regulatory constraints require investigation.
