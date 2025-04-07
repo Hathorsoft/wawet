@@ -15,3 +15,7 @@ Explore building a LoRa/ESP32 system in the context of UK 868 MHz operation. Fre
 ## Outline open-source retrofit devices and event confirmation
 
 Explore cheap, easy-to-install LoRa, Meshtastic and GPS devices retrofitted to cars, with road reports and confirmation by other vehicles that an event remains present.
+
+## Investigate TTGO T-Beam hardware suitability
+
+Investigate whether a TTGO T-Beam offered through AliExpress is suitable. No board selection or hardware test result is established.
