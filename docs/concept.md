@@ -19,3 +19,7 @@ Explore cheap, easy-to-install LoRa, Meshtastic and GPS devices retrofitted to c
 ## Investigate TTGO T-Beam hardware suitability
 
 Investigate whether a TTGO T-Beam offered through AliExpress is suitable. No board selection or hardware test result is established.
+
+## Revisit the LoRa and Meshtastic car-device concept
+
+Return to the earlier LoRa/Meshtastic car-device idea and reconsider the network architecture.
