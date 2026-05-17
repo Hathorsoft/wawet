@@ -23,3 +23,7 @@ Investigate whether a TTGO T-Beam offered through AliExpress is suitable. No boa
 ## Revisit the LoRa and Meshtastic car-device concept
 
 Return to the earlier LoRa/Meshtastic car-device idea and reconsider the network architecture.
+
+## Explore Haven and Wi-Fi HaLow relevance
+
+Investigate how Haven and Wi-Fi HaLow relate to the existing vehicle-reporting concept.
