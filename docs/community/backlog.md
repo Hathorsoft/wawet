@@ -39,3 +39,9 @@ agreed performance thresholds remain outstanding.
 A01 review/check/local commits are complete; the [project plan](../project-plan.md)
 now schedules **A02: agree feasibility thresholds and host role** next. Gates
 01–05 still require their full acceptance evidence; no gate is closed by A01.
+
+## A02 agreed criteria
+
+Tasks 01, 03, 04, 07 and 09 must use the [A02 criteria record](../research/feasibility-thresholds.md)
+agreed on 4 October 2026. Task 05 still requires 04; tasks 02/08 retain their
+registered prerequisites. Agreed limits are not gate closure or measured results.

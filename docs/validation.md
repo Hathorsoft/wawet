@@ -261,3 +261,26 @@ Local commit outcome: `ae4ba6e` records the signed spike/initial evidence;
 `e42ae0e` records campaign/feasibility work and A01 revalidation. The following
 project-plan documentation commit records A01 complete and A02 next. Earlier
 "uncommitted" statements describe their historical snapshots. No push occurred.
+
+## A02 documentation draft — 4 October 2026
+
+Added the proposed feasibility thresholds/host boundary and linked downstream
+briefs. Reviewed T01–T09 against Drive D02/D03/D08/D11, campaign denominators,
+clock evidence and task-register dependencies. The hypothetical worked cases
+cover acceptable delivery, short-contact failure, missing clocks, startup without
+a fix and excess host memory/power/cost; they are review examples, not test runs.
+
+`python3 tools/check_links.py` passed. `git diff --check` passed. Final diff review
+preserved historical records and left A02 open pending maintainer agreement;
+gates 01–05 and investment HOLD remain unchanged. No runtime checks or experiments
+were rerun for documentation-only edits. External URLs/anchors remain unchecked.
+Changes are local and uncommitted; nothing was pushed or published.
+
+## A02 agreement reconciliation — 4 October 2026
+
+Maintainer agreement to T01–T09 and the host boundary was recorded without changes.
+Updated the authoritative criteria, chart/register, campaign/backlog references
+and appended agreement updates to the handoff/review pack, preserving draft
+history. `python3 tools/check_links.py` and `git diff --check` passed again.
+A02 is complete locally; gates 01–05/HOLD persist. No executable changes or new
+experiments occurred. Documentation remains uncommitted; nothing was published.

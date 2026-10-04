@@ -163,3 +163,21 @@ see the [task register](project-plan.md). The earlier recommendation to extend
 software task 03 has now been prepared, not accepted: physical hosts and clock
 uncertainty evidence remain outstanding. Task 18 is independently eligible after
 A01. Gates 01–05 remain open and prototype investment remains HOLD.
+
+## A02 drafted — 4 October 2026
+
+The [threshold/host-role proposal](research/feasibility-thresholds.md) now provides
+T01–T09 targets, measurement methods and worked HOLD/REVISE cases. Maintainer
+agreement is pending, so A02 remains open; no feasibility gate is closed. Hardware,
+instruments, physical hosts, quotes and qualified reviews remain outstanding.
+Task 18 remains independently eligible. This follow-up is local documentation
+only; no runtime changes, new experiments, purchases, outreach or publication.
+
+## A02 completed — 4 October 2026
+
+The maintainer agreed to [T01–T09 and the host boundary](research/feasibility-thresholds.md)
+without changes. A02 is complete locally; the preceding draft entry is historical.
+Tasks 01/04/03/07/09 are eligible, with physical resources and qualified reviews
+still outstanding. Task 07 is the first software-only package in the registered
+sequence if those resources are unavailable; task 18 remains independently eligible.
+Gates 01–05 and investment HOLD remain open. Documentation remains uncommitted.

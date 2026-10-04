@@ -224,3 +224,17 @@ experimental source and evidence. The [new validation record](../validation.md)
 separates A01 rechecks from the historical observations above. A02 is next in the
 [project plan](../project-plan.md); numeric feasibility limits and host roles remain
 unagreed. All five gates remain unresolved and prototype HOLD remains in force.
+
+## A02 draft — 4 October 2026
+
+The [proposed threshold and host-role record](feasibility-thresholds.md) defines
+numeric screening limits and measurement/decision rules for review. Agreement
+is pending; A02 remains open. Use agreed limits for tasks 01/03/04 and later
+radio evaluation; this draft closes no gate and does not authorise investment.
+
+## A02 agreed — 4 October 2026
+
+The maintainer accepted [T01–T09 and the host boundary](feasibility-thresholds.md)
+without changes. A02 is complete locally. Use this agreed record for downstream
+evaluation; the preceding draft entry records the earlier review state. No gate
+is closed; physical equipment/evidence, quotes and qualified reviews remain open.

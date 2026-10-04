@@ -106,7 +106,7 @@ gantt
     todayMarker off
     section Feasibility
     A01 Review, check and commit local research :done, A01, 1970-01-01, 1d
-    A02 Agree feasibility thresholds and host role :A02, 1970-01-02, 1d
+    A02 Agree feasibility thresholds and host role :done, A02, 1970-01-02, 1d
     01 Exact-version distribution review :01, 1970-01-03, 11d
     04 Measure standalone host options :04, 1970-01-04, 1d
     03 Physical-host authenticated contact campaign :03, 1970-01-05, 1d
@@ -197,7 +197,7 @@ gantt
 | --- | --- | --- | --- | --- |
 | **L01** Feasibility review pack | Committed; 2026-10-04 / `e42ae0e` | None | Review briefs, dependency inventory and HOLD decision recorded. | [Evidence / specification](../docs/research/feasibility-gates.md). Qualified reviews, quotes and physical measurements remain pending. |
 | **L02** Signed SINGLE experiment | Committed; 2026-10-04 / `ae4ba6e` | None | Local authenticated delivery, churn and bounded absent-discovery experiment recorded. | [Evidence / specification](../tools/rns_authenticated_spike.py). Two physical hosts and deployment key lifecycle remain unproven. |
-| **L03** Contact campaign harness | Committed; 2026-10-04 / `e42ae0e` | None | Repeatable controlled contact windows, socket reconnect, bounded overload and offline analysis implemented. | [Evidence / specification](../tools/rns_contact_campaign.py). Physical-host execution and agreed product thresholds remain pending. |
+| **L03** Contact campaign harness | Committed; 2026-10-04 / `e42ae0e` | None | Repeatable controlled contact windows, socket reconnect, bounded overload and offline analysis implemented. | [Evidence / specification](../tools/rns_contact_campaign.py). Physical-host execution remains pending; product thresholds agreed in A02. |
 | **L04** Queue and campaign regression tests | Committed; 2026-10-04 / `ae4ba6e`, `e42ae0e` | None | Regression coverage and historical 45-test contributor check recorded; queue regression is in tests/test_spike_queue.py. | [Evidence / specification](../tests/test_contact_campaign.py). A01 review/check passed; hosted Python 3.12/3.13 results not established. |
 | **L05** Archived local campaign evidence | Committed; 2026-10-04 / `e42ae0e` | None | 490 full trials and 26 final-source smoke trials recorded with exact-source/raw archives. | [Evidence / specification](../docs/research/contact-campaign-results.md). Single-host controlled IP observations; no radio or clock-certified cross-host latency. |
 
@@ -206,7 +206,7 @@ gantt
 | ID / task | Status / position | Prerequisites | Completion criterion | Evidence / remaining blockers |
 | --- | --- | --- | --- | --- |
 | **A01** Review, check and commit local research | Complete; S001 / this documentation commit | L01, L02, L03, L04, L05 | Review all modified/untracked research and source, rerun relevant checks, separate historical/new evidence and commit reviewed work; no push implied. | [Evidence / specification](../docs/validation.md). Reviewed source/evidence committed at `ae4ba6e` and `e42ae0e`; new validation is recorded separately. No push. |
-| **A02** Agree feasibility thresholds and host role | Open; next / S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). Maintainer choices and physical-host access are pending. |
+| **A02** Agree feasibility thresholds and host role | Complete locally; 2026-10-04 / S002; uncommitted | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
 | **01** Exact-version distribution review | Open; S003–S013 | A02 | Qualified written review of exact Reticulum/LXMF releases where selected, permitted distribution forms, restrictions, notices and approved release approach. | [Evidence / specification](../LICENSING.md). Qualified review absent; LXMF release not selected. External review may run while stages 4–13 proceed. |
 | **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). Candidate hardware and calibrated instruments absent. |
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
@@ -304,9 +304,11 @@ commits campaign tooling/tests, feasibility briefs, historical archives and new
 A01 revalidation. This documentation commit adds the plan and README/roadmap links,
 records completion and updates the handoff. All commits are local; nothing was pushed.
 
-**Next: A02.** Agree numeric feasibility limits and application-host versus modem
-responsibilities before tasks 01, 04, 03, 07 and 09. Task 18 is also eligible after
-A01. Gates 01–05 and G01 HOLD remain unchanged; preparation is not acceptance.
+**Current position after A02 agreement:** tasks 01, 04, 03, 07 and 09 are
+eligible. Task 01 is next in the registered sequence but requires qualified review;
+04 needs candidate hardware/instruments and 03 needs two physical hosts. Task 07
+is the first eligible software-only package in that sequence when those resources
+are unavailable. Task 18 remains independently eligible after A01. Gates 01–05 and G01 HOLD remain unchanged; preparation is not acceptance.
 
 Historical checks and counts remain in [validation](validation.md): the recorded
 31-test foundation and 45-test follow-up must not be read as new runs here.
@@ -329,3 +331,7 @@ hashes, A01 is complete and A02 is next. All 79 task IDs are unique, backlog
 Task IDs, dependencies, stage numbering and historical dates are preserved.
 Markdown file links and `git diff --check` passed. New checks and loopback results are recorded
 in [validation](validation.md); historical rendering results above were not rerun.
+
+A02 agreement on 4 October 2026: maintainer accepted T01–T09 and the host boundary
+without changes. A02 is complete locally; criteria are not physical acceptance.
+Dependencies, stages and historical validation records remain unchanged.

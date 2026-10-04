@@ -4,6 +4,10 @@ Status: isolated experiment tooling. Gate 03 and prototype investment HOLD remai
 open. This extends the [signed SINGLE spike](reticulum-spike.md); it does not
 implement `EventTransport`, change protocol v1, or establish public trust.
 
+The [agreed A02 criteria](feasibility-thresholds.md) define contact,
+latency and clock-evidence acceptance rules. Maintainer agreement was recorded on 4 October 2026; existing
+analysis outputs are preserved and do not establish product acceptance.
+
 ## Experiment and records
 
 [Harness and analyser](../../tools/rns_contact_campaign.py) pin RNS 1.5.5 and use
