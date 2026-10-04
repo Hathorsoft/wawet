@@ -1,0 +1,35 @@
+{
+  "run_id": "f1154526-16a1-421d-bcbf-1cabae11b081",
+  "recorded_at": 1791133287.9158158,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.11.4",
+  "sender": {
+    "sent_at": 1791133287.361085,
+    "discovery_seconds": 0.25508304103277624,
+    "rns_packet_bytes": 211,
+    "reconnect_seconds": null,
+    "expired_before_send": 0,
+    "interface_tx_bytes": 1114,
+    "interface_rx_bytes": 167
+  },
+  "receiver": {
+    "hex": "a7e1010102030405060708090a0b0c0d0e0f1001004fa6a000015f9000006ac2866603841388",
+    "event_id": "0102030405060708090a0b0c0d0e0f10",
+    "received_at": 1791133287.364202,
+    "rejected": {
+      "signature": 2,
+      "expired": 1
+    },
+    "category": 1
+  },
+  "rns_version": "1.5.5",
+  "medium": "TCP loopback",
+  "processes": 2,
+  "payload_bytes": 38,
+  "payload_match": true,
+  "authenticated": true,
+  "authentication": "domain-separated Ed25519 signature; pinned sender",
+  "signed_application_bytes": 102,
+  "routed": false,
+  "event_id": "0102030405060708090a0b0c0d0e0f10"
+}

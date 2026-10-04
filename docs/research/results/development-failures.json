@@ -1,0 +1,21 @@
+{
+  "recorded_date": "2026-10-04",
+  "scope": "development observations; summaries, not complete process logs",
+  "failures": [
+    {
+      "error": "PermissionError: [Errno 1] Operation not permitted",
+      "stage": "initial loopback bind",
+      "resolution": "approved loopback-only execution"
+    },
+    {
+      "error": "name 'results' is not defined",
+      "stage": "receiver callback",
+      "resolution": "removed parent-only assertion from callback; reran successfully"
+    },
+    {
+      "error": "Absent discovery did not fail with the expected timeout",
+      "stage": "parent validation",
+      "resolution": "RNS exit handler detaches stdout; emit structured worker exception before cleanup"
+    }
+  ]
+}

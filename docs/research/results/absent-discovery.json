@@ -1,0 +1,9 @@
+{
+  "run_id": "ecfee085-93cb-484a-be36-9cb7327bc59a",
+  "rns_version": "1.5.5",
+  "recorded_at": 1791133222.2792451,
+  "scenario": "absent discovery",
+  "expected_timeout": true,
+  "sender_stdout": "{\"error\": \"Discovery deadline exceeded\", \"type\": \"TimeoutError\"}\n",
+  "sender_stderr": ""
+}
