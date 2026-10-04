@@ -1,7 +1,9 @@
 # Task 01 — Distribution self-review
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Reviewed **4 October 2026**, baseline `ff3df9fffb98a7b7f08512f440b1a72deb908a47`,
-with prior local arrangement/direction edits preserved. **Status: bounded
+with prior local arrangement/direction edits preserved. **Historical status at assessment: bounded
 agent-assisted self-review completed; maintainer adoption pending; task 01 open.**
 The maintainer requested doing this ourselves rather than hiring. This record is
 a technical evidence assessment and proposed conservative release approach,

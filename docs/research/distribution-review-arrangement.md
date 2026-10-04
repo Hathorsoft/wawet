@@ -1,5 +1,7 @@
 # Task 01 — Maintainer self-review and deferred reviewer routes
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Prepared **4 October 2026** against clean HEAD `ff3df9f`, which commits the
 [existing dossier](distribution-review.md). **Status: arrangement package prepared;
 no reviewer selected, contacted or engaged.** Task 01 remains open; gates 01–05

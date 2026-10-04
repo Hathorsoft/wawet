@@ -1,11 +1,13 @@
 # Wawet project plan and Gantt chart
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](research/distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Initial snapshot: **4 October 2026**, inspected at HEAD `29bccc6`. A01 review
 completed on the same date; research is now committed at `ae4ba6e` and `e42ae0e`.
 One maintainer, working in free time. This is a dependency-led sequence, **not a dated delivery
 schedule or an effort estimate**. There are no deadlines or purchasing commitments.
 
-The current prototype investment decision remains **HOLD**. Gates 01–05 are open.
+The current prototype investment decision remains **HOLD**. Task 01 is complete for its bounded reviewed scope; gates 02–05 remain open.
 Completed local experiments are preparation, not physical-host, radio or product
 acceptance. Evidence below includes archived repository records and the A01 local
 rechecks; no physical-host or radio measurements are implied. Original project
@@ -31,7 +33,7 @@ unselected expansion rows can be skipped and stages renumbered.
 
 Read the future chart top to bottom. It proposes one maintainer's execution order;
 prerequisites in the register govern eligibility, not merely the preceding row.
-01 and 05 span other stages to show external review waiting while eligible work
+Historically, 01 and 05 spanned other stages to show external review waiting while eligible work
 continues; that overlap is not extra maintainer capacity or an estimated wait.
 Unused stages 12–14 reserve room for the review outcomes without introducing new
 work. Reviews can finish earlier or later; renumber the sequence when evidence changes.
@@ -107,7 +109,7 @@ gantt
     section Feasibility
     A01 Review, check and commit local research :done, A01, 1970-01-01, 1d
     A02 Agree feasibility thresholds and host role :done, A02, 1970-01-02, 1d
-    01 Exact-version distribution review :01, 1970-01-03, 11d
+    01 Exact-version distribution review :done, 01, 1970-01-03, 11d
     04 Measure standalone host options :04, 1970-01-04, 1d
     03 Physical-host authenticated contact campaign :03, 1970-01-05, 1d
     05 UK profile and conformity review :05, 1970-01-06, 9d
@@ -207,7 +209,7 @@ gantt
 | --- | --- | --- | --- | --- |
 | **A01** Review, check and commit local research | Complete; S001 / this documentation commit | L01, L02, L03, L04, L05 | Review all modified/untracked research and source, rerun relevant checks, separate historical/new evidence and commit reviewed work; no push implied. | [Evidence / specification](../docs/validation.md). Reviewed source/evidence committed at `ae4ba6e` and `e42ae0e`; new validation is recorded separately. No push. |
 | **A02** Agree feasibility thresholds and host role | Committed; 2026-10-04 / `b46261b`; S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
-| **01** Exact-version distribution review | Open; S003–S013 | A02 | Document maintainer self-review of exact releases where selected, rights/restrictions/notices, unresolved risks and a dated form-specific release decision; no external legal review required for task 01. | [Evidence / specification](../LICENSING.md). [Dossier prepared](research/distribution-review.md); [bounded self-review completed](research/distribution-self-review.md); maintainer release decision and residual-risk record pending. External review optional. LXMF unselected. External review may run while eligible work proceeds. |
+| **01** Exact-version distribution review | Complete locally; 2026-10-04; S003–S013 | A02 | Document maintainer self-review of exact releases where selected, rights/restrictions/notices, unresolved risks and a dated form-specific release decision; no external legal review required for task 01. | [Evidence / specification](../LICENSING.md). [Adopted decision and residual risks](research/distribution-decision.md); bounded scope complete, upstream redistribution/bundles unapproved. External review optional. LXMF unselected. |
 | **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). Candidate hardware and calibrated instruments absent. |
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
@@ -218,7 +220,7 @@ gantt
 | **15** Privacy and retention review | Open; S011 | 14 | Review wire/link correlation, define actual erasure schedule, consent and participant-data handling; record threat-review findings. | [Evidence / specification](../docs/security/privacy.md). Not started; requires listed predecessors. |
 | **02** Select two regional RNode units | Open; S015 | 04, 05 | Confirm exact board/firmware targets, regional RF variant, antenna/profile and current delivered two-unit quotations; selection after host role is understood. | [Evidence / specification](../docs/research/feasibility-gates.md). Supported families are screened; exact revisions, antennas and delivered quotes remain unresolved. |
 | **08** Radio airtime and burst experiment | Open; S016 | 02, 03, 05, 07, 14 | On approved setup, measure complete frames/control/retry traffic, legal airtime budget, simultaneous senders and freshness within contact deadlines. | [Evidence / specification](../docs/community/backlog.md). Requires physical radios and reviewed RF setup; no transmission authorised by this chart. |
-| **G01** GO / HOLD / REVISE — feasibility | Gate; S017 | 01, 02, 03, 04, 05, 08 | Record evidence-backed closure of gates 01–05 and acceptable host/contact/airtime/cost results; otherwise hold or revise architecture/product and replan. | [Evidence / specification](../docs/research/feasibility-gates.md). Current decision is HOLD; all five gates remain open. |
+| **G01** GO / HOLD / REVISE — feasibility | Gate; S017 | 01, 02, 03, 04, 05, 08 | Record evidence-backed closure of gates 01–05 and acceptable host/contact/airtime/cost results; otherwise hold or revise architecture/product and replan. | [Evidence / specification](../docs/research/feasibility-gates.md). Current decision is HOLD; task 01 complete for bounded scope, gates 02–05 open; bundled-image approval withheld. |
 
 ### Drive prototype
 
@@ -304,7 +306,7 @@ commits campaign tooling/tests, feasibility briefs, historical archives and new
 A01 revalidation. This documentation commit adds the plan and README/roadmap links,
 records completion and updates the handoff. All commits are local; nothing was pushed.
 
-**Current position after A02 agreement:** tasks 01, 04, 03, 07 and 09 are
+**Historical position after A02 agreement:** tasks 01, 04, 03, 07 and 09 are
 eligible. Task 01 is next in the registered sequence but requires qualified review;
 04 needs candidate hardware/instruments and 03 needs two physical hosts. Task 07
 is the first eligible software-only package in that sequence when those resources

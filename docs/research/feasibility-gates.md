@@ -1,5 +1,7 @@
 # Feasibility gates 01–05: desk-first review pack
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Prepared 4 October 2026. This supplements the foundation snapshot, not its history.
 **DESIGN DECISION: HOLD** standalone Drive prototype investment. No gate below is
 closed by a local TCP experiment. No purchasing, outreach, radio transmission or
@@ -9,7 +11,7 @@ publication was performed. Qualified reviewers and physical equipment are absent
 
 | Gate | Status | Evidence now | Required next action |
 | --- | --- | --- | --- |
-| 01 distribution | Unresolved | [Exact installed inventory](results/dependency-inventory.json), review brief below | Qualified exact-version distribution review |
+| 01 distribution | Complete for bounded reviewed scope; bundle approval withheld | [Adopted decision](distribution-decision.md), exact-version registers and Q01–Q07 | Re-review actual redistributed components, builds and changed uses before approval |
 | 02 radio units | Unresolved | Revision/SKU screen below | Match firmware target and antenna; obtain delivered two-unit quote |
 | 03 authenticated/contact delivery | Unresolved | [Signed SINGLE experiment](../../tools/rns_authenticated_spike.py), [raw local run](results/authenticated-loopback.json) | Two physical-host reproduction and measured contact windows |
 | 04 standalone host | Unresolved | Workload and measurement brief below | Candidate runtime, memory, power and recovery measurements |

@@ -1,5 +1,7 @@
 # Task 01 — Exact-version distribution review dossier
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Prepared **4 October 2026** against clean Wawet HEAD `2f21ac5`.
 **Status: dossier prepared; qualified review pending.** Task 01 remains open;
 gates 01–05 and G01 HOLD are unchanged. This is evidence for review, not legal

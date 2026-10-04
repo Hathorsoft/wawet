@@ -519,3 +519,43 @@ the accumulated package: original assessment, licence evidence and documentation
 only, with prior local work preserved. No executable changes require test/campaign
 reruns. Publication is authorised for this package; previous no-publication entries
 remain true for their earlier steps. Commit/push outcome is reported after execution.
+
+## Task 01 adopted decision — 4 October 2026
+
+Starting tree was clean at `52085f7`. The maintainer adopted the conservative
+form-specific approach, confirmed no deliberate AI training, and requested
+implementation. The [dated decision](research/distribution-decision.md) completes
+task 01 for its bounded reviewed scope. Updated current licensing/ADR, backlog,
+project chart/register, handoff and research status while preserving historical
+entries. Upstream redistribution/commercial bundles remain unapproved; provider
+data use, modification provenance and native build/notice gaps remain unresolved.
+G01 stays HOLD; other task prerequisites and runtime/protocol/dependencies are unchanged.
+
+New validation (not a repeat claim of historical experiments):
+
+- A Python 3 standard-library SHA-256 check read `artefact-register.json` and
+  `evidence.json`, hashed each original `notices[].evidence_path` and additional
+  `notices[].path`, and compared with its recorded `sha256`: **17/17 matched**.
+- The same check hashed available `/tmp/wawet-review-artefacts` files named in
+  `verified_original_artefacts` and `upstream_artefacts`: **9/9 matched**, none
+  unavailable. This does not re-run acquisition, vendored comparisons, static
+  native inspection or the separate pinned GitHub tag-archive verification.
+- `python3 tools/check_links.py`: passed, including decision/evidence references.
+  External URLs and anchors are not checked.
+- `git diff --check`: passed. Final diff reviewed for scope, adopted conditions,
+  preserved historical entries and unchanged prerequisites. Mermaid's task 01
+  status changes to done; stage IDs/positions are unchanged. No new visual render
+  or hosted CI result is claimed.
+
+Documentation only; runtime tests/RNS campaigns were not rerun. Changes remain
+local/uncommitted. No new upstream source upload, package installation/execution,
+purchase, outreach, RF/road test, release, commit, push or PR occurred.
+
+## Task 01 decision publication authorisation — 4 October 2026
+
+The maintainer subsequently requested a Conventional Commit and push for the
+adopted decision package. Earlier no-commit/no-push and local/uncommitted entries
+record the implementation state before this authorisation. Current status notices
+now reflect the authorisation. `git fetch origin` succeeded after sandbox escalation;
+main and origin/main matched. Local Markdown links and `git diff --check` passed
+again. Commit/push outcome is reported after execution; no runtime checks needed.

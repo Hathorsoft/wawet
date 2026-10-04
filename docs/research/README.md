@@ -1,5 +1,7 @@
 # Research index and evidence standards
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Research checked on **4 October 2026**. Mutable upstream URLs are discovery
 sources, not frozen manufacturing specifications. Record exact dependency
 versions and part revisions before releasing a product.

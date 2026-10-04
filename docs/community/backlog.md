@@ -1,5 +1,7 @@
 # First backlog
 
+**Current status — 4 October 2026:** task 01 is complete for the bounded reviewed scope; see the [adopted maintainer decision](../research/distribution-decision.md). Original Wawet work and optional user-installed RNS research continue with conditions; upstream redistribution and commercial bundles remain unapproved. G01 remains HOLD; tasks 02–05 remain open. Earlier pending-adoption, mandatory-review and uncommitted-status entries below are historical. The maintainer subsequently authorised committing and pushing this decision package.
+
 Suggested issues only; none created on GitHub. Gate tasks precede product commitments.
 
 | ID | Task / labels | Acceptance criteria | First contributor? |
@@ -30,7 +32,7 @@ Recommended next five: **01–05**. Legal/host/radio feasibility gates should pr
 ## Gates 01–05 progress
 
 See the [desk-first review pack](../research/feasibility-gates.md) for evidence,
-review briefs and unresolved acceptance criteria. No gate is complete.
+review briefs and unresolved acceptance criteria. Task 01 is complete for its bounded reviewed scope; gates 02–05 remain open and G01 remains HOLD.
 
 Task **03** now has a [repeatable contact campaign/runbook](../research/contact-campaign.md).
 Local controlled IP measurements are preparation; two physical hosts and later
