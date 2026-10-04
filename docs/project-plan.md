@@ -210,7 +210,7 @@ gantt
 | **A01** Review, check and commit local research | Complete; S001 / this documentation commit | L01, L02, L03, L04, L05 | Review all modified/untracked research and source, rerun relevant checks, separate historical/new evidence and commit reviewed work; no push implied. | [Evidence / specification](../docs/validation.md). Reviewed source/evidence committed at `ae4ba6e` and `e42ae0e`; new validation is recorded separately. No push. |
 | **A02** Agree feasibility thresholds and host role | Committed; 2026-10-04 / `b46261b`; S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
 | **01** Exact-version distribution review | Complete locally; 2026-10-04; S003–S013 | A02 | Document maintainer self-review of exact releases where selected, rights/restrictions/notices, unresolved risks and a dated form-specific release decision; no external legal review required for task 01. | [Evidence / specification](../LICENSING.md). [Adopted decision and residual risks](research/distribution-decision.md); bounded scope complete, upstream redistribution/bundles unapproved. External review optional. LXMF unselected. |
-| **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). Candidate hardware and calibrated instruments absent. |
+| **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). [Bench preparation](research/standalone-host-bench.md) complete: Zero 2 W first-screen recommendation and measurement/equipment checklist. Hardware, calibrated instruments, measurements and quotes absent; task stays open. |
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
 | **07** Deterministic contact scenarios | Committed; 2026-10-04 / `c0dd25b`; S007 | A02 | Passing, convoy, rural and dense fixtures with delivery/expiry metrics and no claims of field performance. | [Runbook and results](research/contact-scenarios.md). Four fixtures, 53-test contributor check and repeatable JSON; simulation only. |
@@ -443,3 +443,22 @@ instruction changes the assurance method; it does not itself approve a bundle or
 adopt every recommendation. G01 stays HOLD and other task prerequisites and
 technical/regulatory gates remain unchanged. Restricted upstream terms and notice
 obligations are not waived. Re-review changed uses, releases and shipped builds.
+
+## Task 04 bench preparation — 4 October 2026
+
+Starting tree was clean at `44815e3`; task 01's adopted bounded decision is committed.
+The maintainer confirmed no equipment is available. The [candidate comparison and
+bench runbook](research/standalone-host-bench.md) recommends Zero 2 W for the first host-only screen, compares
+MCU/separate-host and constrained-endpoint arrangements, and defines equipment,
+workloads, evidence and A02 evaluation. Preparation complete; task 04 remains open
+for actual hardware/runtime/memory/current/startup/recovery/cost evidence. No
+physical measurement, temporary workload driver or integrated readiness/validity
+gate has been implemented. Next seek access to the board and measurement chain;
+no purchase or external contact is authorised.
+
+Tasks 05/02 retain 04 and 04/05 prerequisites respectively; task 03 still needs two
+physical hosts and clock evidence, 14 requires 03/09, and 15 requires 14. G01 stays
+HOLD. New validation is recorded separately; earlier status entries are historical.
+Documentation only, local/uncommitted; no dependency/runtime/protocol changes,
+package installation, upstream restricted-source review, RF/road test, commit,
+push, PR or release occurred.

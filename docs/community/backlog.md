@@ -140,3 +140,22 @@ instruction changes the assurance method; it does not itself approve a bundle or
 adopt every recommendation. G01 stays HOLD and other task prerequisites and
 technical/regulatory gates remain unchanged. Restricted upstream terms and notice
 obligations are not waived. Re-review changed uses, releases and shipped builds.
+
+## Task 04 bench preparation — 4 October 2026
+
+Starting tree was clean at `44815e3`; task 01's adopted bounded decision is committed.
+The maintainer confirmed no equipment is available. The [candidate comparison and
+bench runbook](../research/standalone-host-bench.md) recommends Zero 2 W for the first host-only screen, compares
+MCU/separate-host and constrained-endpoint arrangements, and defines equipment,
+workloads, evidence and A02 evaluation. Preparation complete; task 04 remains open
+for actual hardware/runtime/memory/current/startup/recovery/cost evidence. No
+physical measurement, temporary workload driver or integrated readiness/validity
+gate has been implemented. Next seek access to the board and measurement chain;
+no purchase or external contact is authorised.
+
+Tasks 05/02 retain 04 and 04/05 prerequisites respectively; task 03 still needs two
+physical hosts and clock evidence, 14 requires 03/09, and 15 requires 14. G01 stays
+HOLD. New validation is recorded separately; earlier status entries are historical.
+Documentation only, local/uncommitted; no dependency/runtime/protocol changes,
+package installation, upstream restricted-source review, RF/road test, commit,
+push, PR or release occurred.

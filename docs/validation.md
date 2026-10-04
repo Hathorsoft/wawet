@@ -559,3 +559,48 @@ record the implementation state before this authorisation. Current status notice
 now reflect the authorisation. `git fetch origin` succeeded after sandbox escalation;
 main and origin/main matched. Local Markdown links and `git diff --check` passed
 again. Commit/push outcome is reported after execution; no runtime checks needed.
+
+## Task 04 candidate and bench preparation — 4 October 2026
+
+Starting tree clean at `44815e3`. Added the [candidate comparison and bench
+runbook](research/standalone-host-bench.md), linked it from the gate brief/research
+index, and updated plan/backlog/handoff preparation status. Task 04 remains open;
+no hardware, calibrated instruments, actual measurements or delivered quotes exist.
+
+New validation, distinct from historical test/campaign runs:
+
+- `python3 tools/check_links.py`: passed after document creation and status updates.
+  Local file links only; external URLs and anchors are excluded by this checker.
+- `git diff --check`: passed. Tracked changes are documentation only; the new
+  Markdown runbook was also checked separately for trailing whitespace.
+- Manually opened primary manufacturer pages for Zero 2 W, Raspberry Pi OS/setup,
+  ESP32-S3-DevKitC-1 v1.1 and nRF52840 DK on 4 October 2026. Final cited URLs
+  resolved, including the Nordic redirect; no fragment anchors were added. An
+  initial Espressif `user_guide.html` URL returned 404 and was replaced with the
+  verified `user_guide_v1.1.html`. No restricted upstream source was retrieved.
+- Read current Vehicle/protocol/transport APIs and scenario/encoding CLI options
+  to check the commands and workload recipe. Reviewed counters statically: default
+  receive limit requires nine separated windows to fill 1,024 entries; oldest
+  entry remains within its 3,600-second TTL at the end of filling. No measurement
+  driver, recipe execution or hardware success is claimed.
+- Reviewed A02 mapping: T01 includes availability-to-accept timing and clock
+  bound; T06 includes whole-system demand; T07 includes the complete assembly;
+  T05/task 06 and missing startup/validity wiring remain explicit blockers.
+  Task 05 still requires 04, 02 requires 04/05, 14 requires 03/09, 15 requires 14;
+  stage IDs, acceptance limits, v1 vectors and G01 HOLD unchanged.
+
+Documentation-only package: unit tests, RNS campaigns and hosted CI were not rerun.
+No executable/dependency changes or installations, hardware measurements,
+purchases, outreach, RF/road testing, commit, push, PR or release occurred. Work
+remains local/uncommitted. Next action is access to candidate and suitable
+measurement equipment; this preparation does not satisfy physical acceptance.
+
+## Task 04 preparation publication authorisation — 4 October 2026
+
+The maintainer subsequently requested a Conventional Commit and push for this
+preparation package. Earlier local/uncommitted and no-publication entries describe
+the preceding implementation state. `git fetch origin` succeeded after sandbox
+escalation; HEAD and origin/main matched before this commit. Local Markdown links
+and `git diff --check` passed again. No runtime tests were needed for documentation
+changes. Commit/push outcome is reported after execution; task 04 stays open and
+G01 stays HOLD.

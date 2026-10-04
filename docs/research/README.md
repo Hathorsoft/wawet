@@ -54,3 +54,7 @@ is deferred and G01 remains HOLD.
 Task 01 assurance update: maintainer self-review and a dated release/risk decision
 now replace mandatory external review. Earlier pending-qualified-review notes are
 historical. Task 01 remains open pending the maintainer decision; G01 stays HOLD.
+
+[Task 04 host comparison and bench readiness](standalone-host-bench.md): Zero 2 W
+first-screen recommendation, equipment checklist and measurement/evidence runbook.
+Preparation complete; no equipment or measurements, task 04 open and G01 HOLD.

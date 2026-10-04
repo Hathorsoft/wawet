@@ -14,7 +14,7 @@ publication was performed. Qualified reviewers and physical equipment are absent
 | 01 distribution | Complete for bounded reviewed scope; bundle approval withheld | [Adopted decision](distribution-decision.md), exact-version registers and Q01–Q07 | Re-review actual redistributed components, builds and changed uses before approval |
 | 02 radio units | Unresolved | Revision/SKU screen below | Match firmware target and antenna; obtain delivered two-unit quote |
 | 03 authenticated/contact delivery | Unresolved | [Signed SINGLE experiment](../../tools/rns_authenticated_spike.py), [raw local run](results/authenticated-loopback.json) | Two physical-host reproduction and measured contact windows |
-| 04 standalone host | Unresolved | Workload and measurement brief below | Candidate runtime, memory, power and recovery measurements |
+| 04 standalone host | Unresolved; bench preparation complete | [Candidate comparison and runbook](standalone-host-bench.md) | Borrow/access candidate and calibrated instruments; actual runtime, memory, power, recovery and cost evidence |
 | 05 UK profile/conformity | Unresolved | Primary-source and lab brief below | Current complete row/standard assessment and qualified review |
 
 No gate is marked failed merely because evidence is unavailable. HOLD means the
@@ -45,6 +45,8 @@ the review. Record reviewer, date, scope, written outcome, conditions and approv
 release forms. **Review outcome: not obtained; no release approach approved.**
 
 ## 04: standalone workload and candidate screen
+
+**Current preparation — 4 October 2026:** the [candidate comparison and bench runbook](standalone-host-bench.md) recommends Zero 2 W for the first host-only screen, lists equipment and maps A02 acceptance to measurements. No equipment or measured results exist; task 04 remains open. Historical unagreed-threshold statements below are superseded by the agreed A02 record.
 
 **DESIGN DECISION:** measure the existing parser and bounded Vehicle retention
 (up to 1,024 active events), report/receive paths, expiry pruning and overload
