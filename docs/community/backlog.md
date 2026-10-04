@@ -53,3 +53,11 @@ passing, convoy, rural and dense contacts with delivery/expiry counters and
 reproducible results. Task 07 is complete locally; 53 tests and contributor checks
 passed. This is simulation only. Task 09 follows in the software sequence; task 08
 still requires 02/03/05/14 and approved RF testing. Gates/HOLD remain unchanged.
+
+## Task 09 completed locally — 4 October 2026
+
+The [bounded encoding comparison](../research/encoding-comparison.md) records
+exact bytes, desktop parser timing/allocation and optional/signature-placeholder
+bounds for binary and restricted CBOR profiles. Frozen v1 vectors are unchanged.
+MCU/whole-host memory acceptance remains task 04. Task 18 is next eligible; task 14
+still needs physical-host task 03. Gates and HOLD remain unchanged.

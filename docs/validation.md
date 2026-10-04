@@ -309,3 +309,31 @@ remain unverified; no physical/RF, T01/T02 or gate acceptance is claimed.
 Git writes required sandbox escalation for the requested local commits. No push,
 PR or external publication occurred. Task 07 is recorded in a separate local
 implementation commit; gates 01–05 and investment HOLD remain unchanged.
+
+## Task 09 bounded encoding comparison — 4 October 2026
+
+New local validation; historical results above were not rewritten. Starting tree
+was clean at `c0dd25b900b21cadc96c1f8043fbb8247811583e`; A02 and task 07 were committed.
+
+- Before implementation, `PYTHON=.venv/bin/python ./scripts/check` passed all
+  53 tests, local Markdown links, Ruff lint/format and strict mypy.
+- After implementation, the same command passed **62 tests**, local Markdown
+  links, Ruff lint/format (19 files) and strict mypy (8 application source files).
+  Research codecs are linted/tested; strict typing scope remains the application.
+- `PYTHON=.venv/bin/python ./scripts/demo` passed with the unchanged 38-byte
+  example, direction filtering, duplicate suppression, outage and expiry.
+- Two fresh `.venv/bin/python tools/encoding_comparison.py --sizes-only` outputs
+  compared byte-identically with `cmp` (exit 0).
+- `.venv/bin/python tools/encoding_comparison.py` completed sequential isolated
+  v1/binary/CBOR benchmarks at 1,000 operations and five repeats. The
+  [raw JSON](research/results/encoding-comparison.json) records environment,
+  source/input hashes, base revision and the uncommitted working state at capture.
+  The [report](research/encoding-comparison.md) defines the profiles, methods,
+  complete size table, observations and limitations. Hashes identify the exact
+  benchmark source; the capture predates final documentation edits.
+
+Python 3.11.4 on macOS 26.2 arm64; standard-library implementation, no dependency
+addition. Allocation results are transient traced Python memory, not RSS, MCU
+footprint or T06 acceptance. Signature bytes are placeholders. Frozen v1 vectors
+and production APIs are unchanged. No gate closes; G01 HOLD persists. Hosted
+Python 3.12/3.13 remains unverified. No commit, push or remote publication occurred.

@@ -1,0 +1,544 @@
+{
+  "benchmarks": {
+    "binary": {
+      "baseline": {
+        "median_ns": 23.958,
+        "ns_per_operation_samples": [
+          25.083,
+          23.958,
+          23.75,
+          24.75,
+          23.833
+        ],
+        "peak_python_bytes_samples": [
+          128,
+          128,
+          128,
+          128,
+          128
+        ]
+      },
+      "decode": {
+        "median_ns": 4818.25,
+        "ns_per_operation_samples": [
+          11968.25,
+          4632.875,
+          4773.375,
+          4818.25,
+          4977.292
+        ],
+        "peak_python_bytes_samples": [
+          1534,
+          1534,
+          1534,
+          1534,
+          1534
+        ]
+      },
+      "encode": {
+        "median_ns": 1745.917,
+        "ns_per_operation_samples": [
+          1745.917,
+          1418.584,
+          2532.709,
+          2091.209,
+          1423.916
+        ],
+        "peak_python_bytes_samples": [
+          997,
+          997,
+          997,
+          997,
+          997
+        ]
+      }
+    },
+    "cbor": {
+      "baseline": {
+        "median_ns": 23.375,
+        "ns_per_operation_samples": [
+          25.167,
+          23.375,
+          22.375,
+          22.958,
+          25.125
+        ],
+        "peak_python_bytes_samples": [
+          128,
+          128,
+          128,
+          128,
+          128
+        ]
+      },
+      "decode": {
+        "median_ns": 12124.625,
+        "ns_per_operation_samples": [
+          16460.417,
+          12124.625,
+          12726.667,
+          11714.666,
+          12099.375
+        ],
+        "peak_python_bytes_samples": [
+          3013,
+          3013,
+          3013,
+          3013,
+          3013
+        ]
+      },
+      "encode": {
+        "median_ns": 8391.292,
+        "ns_per_operation_samples": [
+          8391.292,
+          8319.042,
+          14693.208,
+          8539.167,
+          7749.625
+        ],
+        "peak_python_bytes_samples": [
+          3303,
+          3303,
+          3303,
+          3303,
+          3303
+        ]
+      }
+    },
+    "v1": {
+      "baseline": {
+        "median_ns": 22.875,
+        "ns_per_operation_samples": [
+          25.375,
+          22.875,
+          22.0,
+          22.583,
+          24.667
+        ],
+        "peak_python_bytes_samples": [
+          128,
+          128,
+          128,
+          128,
+          128
+        ]
+      },
+      "decode": {
+        "median_ns": 2057.5,
+        "ns_per_operation_samples": [
+          2142.875,
+          2032.833,
+          1980.792,
+          2057.5,
+          2120.0
+        ],
+        "peak_python_bytes_samples": [
+          629,
+          629,
+          629,
+          629,
+          629
+        ]
+      },
+      "encode": {
+        "median_ns": 186.208,
+        "ns_per_operation_samples": [
+          188.625,
+          173.958,
+          186.208,
+          194.209,
+          176.583
+        ],
+        "peak_python_bytes_samples": [
+          151,
+          151,
+          151,
+          151,
+          151
+        ]
+      }
+    }
+  },
+  "environment": {
+    "git_status": "?? docs/research/results/encoding-comparison.json\n?? tests/test_encoding_comparison.py\n?? tools/encoding_comparison.py\n",
+    "head": "c0dd25b900b21cadc96c1f8043fbb8247811583e",
+    "input_sha256": {
+      "packages/wawet/protocol.py": "e6bc10c63fb13c75308ae47157df361d0ab7811ffa238515314605e94ac47c3f",
+      "protocol/vectors/v1.json": "e2af398968306463c8b4236f187937e2eb90cc34ae49eb48091b8a97a284149b",
+      "tests/test_encoding_comparison.py": "979bf005bd8165b8e6a708ee274c930f6c310b6ca7da7f872083e79add408f88"
+    },
+    "iterations": 1000,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "repeats": 5,
+    "source_sha256": "b4419247235b8cfd51848d2c7f91000d79e885305d05065b8e27dc6956a05ee7"
+  },
+  "maximum_bytes": {
+    "binary": 293,
+    "cbor": 309
+  },
+  "rows": [
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "north-hazard",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 51,
+      "bytes": 51,
+      "codec": "cbor",
+      "fixture": "north-hazard",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "north-hazard",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 51,
+      "bytes": 153,
+      "codec": "cbor",
+      "fixture": "north-hazard",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "unknown-category-southwest",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 49,
+      "bytes": 49,
+      "codec": "cbor",
+      "fixture": "unknown-category-southwest",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "unknown-category-southwest",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 49,
+      "bytes": 151,
+      "codec": "cbor",
+      "fixture": "unknown-category-southwest",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "boundary_min",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 37,
+      "bytes": 37,
+      "codec": "cbor",
+      "fixture": "boundary_min",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "boundary_min",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 37,
+      "bytes": 139,
+      "codec": "cbor",
+      "fixture": "boundary_min",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "boundary_max",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 54,
+      "codec": "cbor",
+      "fixture": "boundary_max",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "boundary_max",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 156,
+      "codec": "cbor",
+      "fixture": "boundary_max",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "boundary_southwest",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 48,
+      "bytes": 48,
+      "codec": "cbor",
+      "fixture": "boundary_southwest",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "boundary_southwest",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 48,
+      "bytes": 150,
+      "codec": "cbor",
+      "fixture": "boundary_southwest",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 41,
+      "codec": "binary",
+      "fixture": "boundary_northeast",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 49,
+      "bytes": 49,
+      "codec": "cbor",
+      "fixture": "boundary_northeast",
+      "key_signature_bytes": 0,
+      "optional_bytes": 0,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 141,
+      "codec": "binary",
+      "fixture": "boundary_northeast",
+      "key_signature_bytes": 100,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 49,
+      "bytes": 151,
+      "codec": "cbor",
+      "fixture": "boundary_northeast",
+      "key_signature_bytes": 102,
+      "optional_bytes": 0,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 45,
+      "codec": "binary",
+      "fixture": "accuracy",
+      "key_signature_bytes": 0,
+      "optional_bytes": 4,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 58,
+      "codec": "cbor",
+      "fixture": "accuracy",
+      "key_signature_bytes": 0,
+      "optional_bytes": 4,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 145,
+      "codec": "binary",
+      "fixture": "accuracy",
+      "key_signature_bytes": 100,
+      "optional_bytes": 4,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 160,
+      "codec": "cbor",
+      "fixture": "accuracy",
+      "key_signature_bytes": 102,
+      "optional_bytes": 4,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 59,
+      "codec": "binary",
+      "fixture": "reference",
+      "key_signature_bytes": 0,
+      "optional_bytes": 18,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 72,
+      "codec": "cbor",
+      "fixture": "reference",
+      "key_signature_bytes": 0,
+      "optional_bytes": 18,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 159,
+      "codec": "binary",
+      "fixture": "reference",
+      "key_signature_bytes": 100,
+      "optional_bytes": 18,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 174,
+      "codec": "cbor",
+      "fixture": "reference",
+      "key_signature_bytes": 102,
+      "optional_bytes": 18,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 171,
+      "codec": "binary",
+      "fixture": "text",
+      "key_signature_bytes": 0,
+      "optional_bytes": 130,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 185,
+      "codec": "cbor",
+      "fixture": "text",
+      "key_signature_bytes": 0,
+      "optional_bytes": 131,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 271,
+      "codec": "binary",
+      "fixture": "text",
+      "key_signature_bytes": 100,
+      "optional_bytes": 130,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 287,
+      "codec": "cbor",
+      "fixture": "text",
+      "key_signature_bytes": 102,
+      "optional_bytes": 131,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 193,
+      "codec": "binary",
+      "fixture": "all_options",
+      "key_signature_bytes": 0,
+      "optional_bytes": 152,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 207,
+      "codec": "cbor",
+      "fixture": "all_options",
+      "key_signature_bytes": 0,
+      "optional_bytes": 153,
+      "signed_placeholder": false
+    },
+    {
+      "base_bytes": 41,
+      "bytes": 293,
+      "codec": "binary",
+      "fixture": "all_options",
+      "key_signature_bytes": 100,
+      "optional_bytes": 152,
+      "signed_placeholder": true
+    },
+    {
+      "base_bytes": 54,
+      "bytes": 309,
+      "codec": "cbor",
+      "fixture": "all_options",
+      "key_signature_bytes": 102,
+      "optional_bytes": 153,
+      "signed_placeholder": true
+    }
+  ],
+  "v1_bytes": 38
+}

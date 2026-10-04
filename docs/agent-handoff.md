@@ -198,3 +198,15 @@ blockers; task 18 remains independently eligible. Task 08 now has task 07 comple
 but still needs 02/03/05/14 and reviewed RF setup. Gates 01–05 and investment HOLD
 persist. Hosted Python 3.12/3.13 is unverified; no purchase, outreach, transmission,
 road trial, push or publication occurred. Earlier uncommitted entries are historical.
+
+## Task 09 completed locally — 4 October 2026
+
+The [encoding comparison](research/encoding-comparison.md) adds an isolated
+standard-library research CLI, bounded binary and restricted CBOR codecs,
+regression tests and raw size/timing/allocation evidence. Maximum placeholder
+messages are 293/309 bytes. Production APIs and frozen 38-byte v1 remain unchanged.
+Task 09's desktop comparison is complete; actual MCU/whole-host T06 measurement
+remains task 04 and ADR 0004 stays Experimental. Task 18 is next eligible; task 14
+still requires physical-host task 03. Gates 01–05 and G01 HOLD persist. This work
+is uncommitted locally; no purchase, outreach, RF test or remote publication.
+See the new validation entry for commands/results; earlier records are historical.

@@ -22,3 +22,13 @@ Fixed frame simplifies parser/bounds but reserves no authenticated or variable f
 ## Revisit gate
 
 Benchmark equivalent optional/authenticated messages and MCU parser memory before selecting production encoding.
+
+## Task 09 desktop evidence — 4 October 2026
+
+The [bounded comparison](../../research/encoding-comparison.md) measures original
+binary-extension and restricted CBOR profiles, including optional fields and
+key/signature placeholders. Maximum application sizes are 293 and 309 bytes;
+frozen v1 remains 38 bytes. Keep v1 and use binary as the maximum-size research
+reference for task 14, retaining CBOR for comparison. No production encoding is
+selected. Status remains Experimental; real MCU footprint, whole-host T06 and
+authenticated-envelope design remain required before revisiting production use.

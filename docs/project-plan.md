@@ -112,7 +112,7 @@ gantt
     03 Physical-host authenticated contact campaign :03, 1970-01-05, 1d
     05 UK profile and conformity review :05, 1970-01-06, 9d
     07 Deterministic contact scenarios :done, 07, 1970-01-07, 1d
-    09 Compare event encodings :09, 1970-01-08, 1d
+    09 Compare event encodings :done, 09, 1970-01-08, 1d
     18 Verify prior-art claims :18, 1970-01-09, 1d
     14 Authenticated event and abuse design :14, 1970-01-10, 1d
     15 Privacy and retention review :15, 1970-01-11, 1d
@@ -212,7 +212,7 @@ gantt
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
 | **07** Deterministic contact scenarios | Complete locally; 2026-10-04 / S007 | A02 | Passing, convoy, rural and dense fixtures with delivery/expiry metrics and no claims of field performance. | [Runbook and results](research/contact-scenarios.md). Four fixtures, 53-test contributor check and repeatable JSON; simulation only. |
-| **09** Compare event encodings | Open; S008 | A02 | Measure bytes and parser footprint with bounded optional fields/signatures; preserve frozen v1 vectors and document comparisons. | [Evidence / specification](../protocol/road-event-v1.md). Not started; requires listed predecessors. |
+| **09** Compare event encodings | Complete locally; 2026-10-04 / S008 | A02 | Measure bytes and parser footprint with bounded optional fields/signatures; preserve frozen v1 vectors and document comparisons. | [Comparison and results](research/encoding-comparison.md). Bounded desktop comparison complete; MCU/whole-host memory acceptance remains task 04; v1 unchanged. |
 | **18** Verify prior-art claims | Open; S009 | A01 | Locate repositories/licences and independent reproducible evidence; label unverified claims; import no unreviewed code. | [Evidence / specification](../docs/research/prior-art.md). Not started; requires listed predecessors. |
 | **14** Authenticated event and abuse design | Open; S010 | 03, 09 | Specify signature/domain separation, key lifecycle and payload budget; test replay/flood/Sybil/corroboration limits; update protocol/ADR if behaviour changes. | [Evidence / specification](../docs/security/threat-model.md). Pinned local signatures are not a public trust system. |
 | **15** Privacy and retention review | Open; S011 | 14 | Review wire/link correlation, define actual erasure schedule, consent and participant-data handling; record threat-review findings. | [Evidence / specification](../docs/security/privacy.md). Not started; requires listed predecessors. |
@@ -346,3 +346,14 @@ Task 09 is now next in the software sequence; 01/04/03 still need qualified
 review, hardware/instruments or physical-host evidence. Task 18 remains eligible.
 Task 08 has its 07 prerequisite satisfied but still requires 02/03/05/14.
 Gates 01–05 and G01 HOLD remain unchanged. No push or publication occurred.
+
+## Task 09 completed locally — 4 October 2026
+
+The [bounded encoding comparison](research/encoding-comparison.md) provides exact
+size tables and isolated desktop parser evidence for binary extensions and a
+restricted CBOR profile, with bounded optional fields and key/signature placeholders.
+Task 09 is complete for this desktop scope; task 04 still owns actual MCU/whole-host
+memory acceptance. Task 18 is next eligible in the software sequence. Task 14's
+09 prerequisite is satisfied, but physical-host task 03 remains open. Gates 01–05,
+G01 HOLD and registered dependencies remain unchanged. Work is local/uncommitted;
+no push or publication occurred. Earlier next-package entries remain historical.

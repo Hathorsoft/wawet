@@ -35,3 +35,8 @@ acceptance remains pending.
 [Deterministic contact scenarios](contact-scenarios.md) complete task 07 with
 passing, convoy, rural and dense fixtures, delivery/expiry metrics and reproducible
 synthetic results. They do not establish physical or radio acceptance.
+
+[Event-encoding comparison](encoding-comparison.md) completes task 09's bounded
+desktop research with original binary/CBOR codecs and reproducible size/parser
+measurements. Signature placeholders are not cryptographic verification; MCU
+memory and production protocol selection remain open.
