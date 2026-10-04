@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "pycparser",
+    "version": "3.0",
+    "license": null,
+    "license_expression": "BSD-3-Clause",
+    "requires_dist": null,
+    "project_urls": {
+      "Homepage": "https://github.com/eliben/pycparser"
+    }
+  },
+  "urls": [
+    {
+      "filename": "pycparser-3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+      "digests": {
+        "blake2b_256": "0cc344f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3",
+        "md5": "dfc689e63af0e21be54c80938cc8ac46",
+        "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+      },
+      "packagetype": "bdist_wheel",
+      "size": 48172,
+      "upload_time_iso_8601": "2026-01-21T14:26:50.693739Z"
+    },
+    {
+      "filename": "pycparser-3.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz",
+      "digests": {
+        "blake2b_256": "1b7d92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6",
+        "md5": "56f3a0a82595b0cb04976cc0d3271a27",
+        "sha256": "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+      },
+      "packagetype": "sdist",
+      "size": 103492,
+      "upload_time_iso_8601": "2026-01-21T14:26:51.890565Z"
+    }
+  ]
+}

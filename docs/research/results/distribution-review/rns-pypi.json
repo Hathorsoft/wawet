@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "rns",
+    "version": "1.5.5",
+    "license": "Reticulum License",
+    "license_expression": null,
+    "requires_dist": [
+      "cryptography>=3.4.7",
+      "pyserial>=3.5"
+    ],
+    "project_urls": {
+      "Homepage": "https://reticulum.network/"
+    }
+  },
+  "urls": [
+    {
+      "filename": "rns-1.5.5-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ff/9a/446534401b609dda8236539794cdad7c81701f8e71d707057d34a2ac0bf0/rns-1.5.5-py3-none-any.whl",
+      "digests": {
+        "blake2b_256": "ff9a446534401b609dda8236539794cdad7c81701f8e71d707057d34a2ac0bf0",
+        "md5": "49377f191b8c181cc80b57dc2aacde68",
+        "sha256": "665508974d6d874167edadef59fefadf56faaedf76315847aef4a2af8c75bfab"
+      },
+      "packagetype": "bdist_wheel",
+      "size": 644185,
+      "upload_time_iso_8601": "2026-09-29T19:58:14.804282Z"
+    },
+    {
+      "filename": "rns-1.5.5.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/02/12/9e28be4983a2dc826c2dabc35786cc3ae4bd340973b622ce3c17a0df7451/rns-1.5.5.tar.gz",
+      "digests": {
+        "blake2b_256": "02129e28be4983a2dc826c2dabc35786cc3ae4bd340973b622ce3c17a0df7451",
+        "md5": "bb5f0530ace026624c739b774e5524d7",
+        "sha256": "94f2352c7462e2fcf485d5c770eb2b41e666b753906ac3ce0a94e8a0c489a460"
+      },
+      "packagetype": "sdist",
+      "size": 559189,
+      "upload_time_iso_8601": "2026-09-29T19:58:18.196932Z"
+    }
+  ]
+}

@@ -238,3 +238,14 @@ The maintainer accepted [T01–T09 and the host boundary](feasibility-thresholds
 without changes. A02 is complete locally. Use this agreed record for downstream
 evaluation; the preceding draft entry records the earlier review state. No gate
 is closed; physical equipment/evidence, quotes and qualified reviews remain open.
+
+## Task 01 dossier prepared — 4 October 2026
+
+The [exact-version distribution dossier](distribution-review.md) supplements the
+existing brief and installed inventory with hashed source/wheel evidence,
+licence texts, native/vendored gaps and a written-outcome template. Dossier
+prepared; qualified review pending. No distribution form is approved and no gate
+is closed. LXMF and RNode firmware remain unselected/outside the Python set.
+
+Documentation/evidence only; no runtime changes, outreach, purchasing, RF tests,
+commit, push or publication occurred in this follow-up.

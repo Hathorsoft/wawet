@@ -378,3 +378,42 @@ reproduction, independent field/security validation and archived first-publicati
 chronology remain unresolved. No third-party source was imported into Wawet;
 no participant dataset was copied, purchase/outreach/RF/road trial undertaken,
 or commit/push/PR/publication performed. Gates 01–05 and G01 HOLD persist.
+
+## Task 01 distribution dossier — 4 October 2026
+
+New documentation/evidence validation against clean HEAD `2f21ac5`. This commit
+already contains task 18; earlier uncommitted records remain historical.
+
+- Acquisition: `python3 /tmp/wawet-dossier-fetch.py` retrieved five exact pinned
+  source archives and two macOS arm64 wheels from publisher PyPI URLs. Initial
+  sandboxed urllib access failed DNS; approved network acquisition succeeded.
+  No package was installed or executed. The one-off temporary acquisition script
+  was not added as application tooling; URLs, filenames and hashes are in the
+  [register](research/results/distribution-review/artefact-register.json).
+- `python3 /tmp/wawet-dossier-complete.py` captured complete RNS leading-header
+  licence and vendored header notices, recorded native source lock metadata and
+  explicit missing-text/build-provenance gaps. Source/header member paths and
+  extraction method are recorded. Full archive bytes remain temporary; captured
+  licence evidence and selected publisher metadata are preserved in the repository.
+- A one-off standard-library verification parsed every evidence JSON; matched all
+  **7 archive sizes/SHA-256 values** to both downloaded bytes and captured publisher
+  records; checked all **15 notice SHA-256 values** against saved evidence and
+  exact archive members/header extraction; checked the cryptography Cargo.lock
+  member hash. All assertions passed. This establishes evidence correspondence,
+  not legal validity, final binary provenance or distribution approval.
+- The same verification compared project-register task IDs and prerequisite
+  columns with `git show HEAD:docs/project-plan.md`: unchanged. Task 18 status
+  now records its actual commit; task 01 remains open, qualified review pending.
+- `python3 tools/check_links.py` passed local Markdown file links;
+  `git diff --check` passed. Exact publisher metadata/archive URLs were accessed
+  during retrieval; external anchors and other repository URLs were not checked.
+- Final diff/status inspection found only documentation and evidence changes.
+  No public API, runtime dependency, v1 vectors or transport behaviour changed.
+  Unit tests and RNS campaigns were not rerun for this package; hosted Python
+  3.12/3.13 results are not newly established.
+
+Remaining gaps: qualified interpretation/outcome, complete attributable vendored
+ConfigObj/validate/i2plib notices, final-wheel native provenance/notices, and exact
+future image/interpreter/OS/firmware/LXMF scope where selected. Dossier preparation
+is complete; task 01 and gates 01–05 remain open, G01 HOLD persists. No outreach,
+purchase, RF/road trial, commit, push or publication occurred.

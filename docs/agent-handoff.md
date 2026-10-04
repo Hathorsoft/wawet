@@ -232,3 +232,15 @@ and clock evidence for 03. All five feasibility gates and G01 HOLD remain open.
 New documentation checks are in [validation](validation.md); no unit/RNS campaign
 rerun was needed. This follow-up is local/uncommitted; no purchase, outreach, RF
 transmission, road trial, commit, push or publication occurred.
+
+## Task 01 dossier prepared — 4 October 2026
+
+The exact-version [distribution review dossier](research/distribution-review.md) and
+seven-artefact register are prepared. Qualified review remains pending; task 01
+is open. Starting tree was clean at `2f21ac5`, which commits task 18 and supersedes
+its earlier uncommitted capture notes. No physical resources or reviewer are
+available. Gates 01–05 and G01 HOLD persist. The next action is arranging review,
+not treating the dossier as acceptance.
+
+Documentation/evidence only; no runtime changes, outreach, purchasing, RF tests,
+commit, push or publication occurred in this follow-up.

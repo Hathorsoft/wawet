@@ -74,3 +74,14 @@ remain unverified. Task 18's bounded investigation is complete; no code imported
 Git confirms task 09 is committed at `3e247c8`; earlier uncommitted notes are
 historical. Task 14 still needs physical-host task 03; tasks 01/04/03 require
 external review or physical resources. Gates 01–05 and G01 HOLD remain unchanged.
+
+## Task 01 dossier prepared — 4 October 2026
+
+The [distribution dossier](../research/distribution-review.md) captures exact
+experimental artefacts, licence evidence, native/vendored gaps and reviewer
+questions. Qualified written review and a reviewed release approach remain
+pending; task 01 is not complete. Task 18 is committed at `2f21ac5`. Gates/HOLD
+and all registered prerequisites remain unchanged.
+
+Documentation/evidence only; no runtime changes, outreach, purchasing, RF tests,
+commit, push or publication occurred in this follow-up.

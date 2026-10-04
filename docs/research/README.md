@@ -40,3 +40,6 @@ synthetic results. They do not establish physical or radio acceptance.
 desktop research with original binary/CBOR codecs and reproducible size/parser
 measurements. Signature placeholders are not cryptographic verification; MCU
 memory and production protocol selection remain open.
+
+[Task 01 distribution review dossier](distribution-review.md): exact experimental
+artefacts and licence evidence prepared; qualified written review pending.
