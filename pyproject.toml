@@ -12,7 +12,7 @@ authors = [{name = "Hathorsoft Ltd"}]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["ruff==0.13.3", "mypy==2.3.1"]
+dev = ["ruff==0.16.9", "mypy==2.3.1"]
 
 [project.scripts]
 wawet-demo = "wawet.demo:main"
