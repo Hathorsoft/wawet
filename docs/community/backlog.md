@@ -35,3 +35,7 @@ review briefs and unresolved acceptance criteria. No gate is complete.
 Task **03** now has a [repeatable contact campaign/runbook](../research/contact-campaign.md).
 Local controlled IP measurements are preparation; two physical hosts and later
 agreed performance thresholds remain outstanding.
+
+A01 review/check/local commits are complete; the [project plan](../project-plan.md)
+now schedules **A02: agree feasibility thresholds and host role** next. Gates
+01–05 still require their full acceptance evidence; no gate is closed by A01.

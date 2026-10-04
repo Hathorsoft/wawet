@@ -216,3 +216,11 @@ The [local report](contact-campaign-results.md) records 490 full campaign trials
 and 26 final-source smoke trials with no worker failures. Short-window delivery
 and overload/expiry evidence are local controlled-interface observations. No gate
 is closed, and no physical-host, radio or product performance approval is claimed.
+
+## A01 status update — 4 October 2026
+
+Review/check/local commits are complete: `ae4ba6e` and `e42ae0e` preserve the
+experimental source and evidence. The [new validation record](../validation.md)
+separates A01 rechecks from the historical observations above. A02 is next in the
+[project plan](../project-plan.md); numeric feasibility limits and host roles remain
+unagreed. All five gates remain unresolved and prototype HOLD remains in force.

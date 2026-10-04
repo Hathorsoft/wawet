@@ -53,6 +53,7 @@ actual two-process RNS delivery on loopback. It is not a production adapter.
 - [Experimental road-event specification](protocol/road-event-v1.md) and [vectors](protocol/vectors/v1.json)
 - [Drive requirements](devices/drive/docs/product-requirements.md), [hardware concepts](devices/drive/docs/hardware-concepts.md) and [feature matrix](devices/drive/docs/feature-matrix.csv)
 - [Research index and evidence rules](docs/research/README.md)
+- [Project Gantt chart and task register](docs/project-plan.md)
 - [Roadmap](docs/roadmap.md) and [first backlog](docs/community/backlog.md)
 - [Contributing](CONTRIBUTING.md), [security](SECURITY.md), [privacy](docs/security/privacy.md) and [driver safety](devices/drive/docs/human-factors.md)
 - [Foundation review](docs/architecture/adversarial-review.md) and [validation record](docs/validation.md)

@@ -144,3 +144,22 @@ and 26/26 final-source smoke trials completed without worker failures; the final
 contributor check passes 45 tests plus links/lint/format/types. Exact source and
 raw records are archived. All measurements remain single-host controlled IP
 observations; no clock-certified cross-host latency or radio result is claimed.
+
+## A01 completed — 4 October 2026
+
+All existing local research/source/evidence was reviewed and committed locally:
+`ae4ba6e` (signed spike, queue test and initial evidence) and `e42ae0e` (contact
+campaign, feasibility briefs, tests and verified historical/new evidence). The
+project-plan documentation commit records A01 completion. Nothing was pushed.
+
+New [validation](validation.md) passed 45 tests and contributor checks using
+Ruff 0.16.9/mypy 2.3.1, dependency checks, all three signed-spike scenarios and
+26/26 sequential smoke trials. Historical archive/source hashes and offline
+summaries reproduced exactly. No executable corrections, protocol changes or
+production adapter were needed. Hosted Python 3.12/3.13 remains unverified.
+
+The current next package is **A02: agree feasibility thresholds and host role**;
+see the [task register](project-plan.md). The earlier recommendation to extend
+software task 03 has now been prepared, not accepted: physical hosts and clock
+uncertainty evidence remain outstanding. Task 18 is independently eligible after
+A01. Gates 01–05 remain open and prototype investment remains HOLD.

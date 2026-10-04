@@ -2,6 +2,10 @@
 
 No promised dates. Move on only when exit evidence supports the next investment.
 
+See the [project Gantt chart and task register](project-plan.md) for completed
+history, reviewed local research and a dependency-led sequence through these phases.
+Stage numbers represent order, not dates or duration.
+
 | Phase | Work | Exit gate |
 | --- | --- | --- |
 | 0 — Foundation | Monorepo, simulator, experimental protocol, research, licences and review | Runnable demo/checks, documented limits and prioritised feasibility experiments; this iteration |

@@ -256,3 +256,8 @@ also required sandbox escalation. These are environment permissions, not experim
 failures. Results remain single-host controlled IP, not physical-host or radio
 measurements. External URLs/anchors, hosted Python 3.12/3.13, current qualified
 licensing/regulatory review and gates 01–05 remain unverified/open; HOLD persists.
+
+Local commit outcome: `ae4ba6e` records the signed spike/initial evidence;
+`e42ae0e` records campaign/feasibility work and A01 revalidation. The following
+project-plan documentation commit records A01 complete and A02 next. Earlier
+"uncommitted" statements describe their historical snapshots. No push occurred.
