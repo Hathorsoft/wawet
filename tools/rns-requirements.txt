@@ -1,0 +1,6 @@
+# Optional experiment only; review the upstream Reticulum License before distribution.
+rns==1.5.5
+cryptography==50.0.2
+pyserial==3.5
+cffi==2.1.1
+pycparser==3.0
