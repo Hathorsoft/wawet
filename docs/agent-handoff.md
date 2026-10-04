@@ -210,3 +210,25 @@ remains task 04 and ADR 0004 stays Experimental. Task 18 is next eligible; task 
 still requires physical-host task 03. Gates 01–05 and G01 HOLD persist. This work
 is uncommitted locally; no purchase, outreach, RF test or remote publication.
 See the new validation entry for commands/results; earlier records are historical.
+
+## Task 18 completed locally — 4 October 2026
+
+Starting tree was clean at `3e247c8`: task 09 is committed, superseding its earlier
+uncommitted handoff status without rewriting the historical entry. Task 07 and
+A02 are committed at `c0dd25b` and `b46261b`.
+
+The [prior-art review](research/prior-art.md) and linked evidence cover eight
+systems. Waycast now has verified attributable source, GPLv3 text, pinned Git
+history/tags and three independently reproduced upstream unit-test executables.
+Independent radio/moving-contact/security claims and first-publication chronology
+remain unresolved; full GUI reproduction was not attempted. No third-party source
+was imported into Wawet, and no dependency/runtime/protocol change occurred.
+
+Task 18 is complete for the agreed desk scope. Its completion unlocks no registered
+dependent task. There is no remaining unblocked software package in the feasibility
+sequence: task 14 still requires physical-host 03, and 15 requires 14. Next arrange
+qualified review for 01, candidate hardware/instruments for 04 or two physical hosts
+and clock evidence for 03. All five feasibility gates and G01 HOLD remain open.
+New documentation checks are in [validation](validation.md); no unit/RNS campaign
+rerun was needed. This follow-up is local/uncommitted; no purchase, outreach, RF
+transmission, road trial, commit, push or publication occurred.

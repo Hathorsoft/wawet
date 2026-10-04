@@ -1,0 +1,109 @@
+{
+  "access_date": "2026-10-04",
+  "upstream": "https://github.com/alviso/waycast",
+  "revision": "958f4a6ea6436d145402830c3edd372e2e40f74e",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.2.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "source_sha256": {
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "Makefile": "07081146e4f81eab963ef1a0385da05c8d3b510f8d0ebb08647489c169398dbf",
+    "README.md": "437a5a1ddbe19ed4c449b9f8deb66a5ed07d4b3f77451ac305251317b798f1e2",
+    "wiki/workstation.md": "e4cccdc99a5830528b3be16c23d119cf779a257c70d2ea470a9cfd79b9c4ab4d",
+    "docs/BUILDING.md": "813cd5674e253427a8fdd80de3c8f84d407a72cad889cb3e804a6343436f9a22",
+    "tests/test_wire.c": "859577ec443dfb1586a2f1dd393e186a631db277bb686fb939d60cda6d445a47",
+    "tests/test_net.c": "e5157b6f9a799c0af5533c106d190c459ee5a68ec336f3da0b50f885dd1d067b",
+    "tests/test_mesh.c": "2087ceac16366697a2436d537b7c97b717774de5e6574dc05b76b955fa1e0786",
+    "msg/vmesh_wire.c": "f95a94288c537349c63d47d40fb12c0fd05cdfc8132846197b3372ec7f870d65",
+    "msg/vmesh_wire.h": "0ca43f380de5785411610d92bce45eccfac25efac698e378214a3e4653a84e1a",
+    "mesh/vmesh_mesh.c": "4515ffaf3d792c89c175d3fbd738e6a267eeeb5fe9881554982b90c7740d8260",
+    "mesh/vmesh_mesh.h": "5056af0191ea115736a92ffa7f3e2dad530e8e52fabc9e1b2ab0cd022ad4c767",
+    "net/nmea.c": "3a3c76e5f6f1ee6e67daf1824afaf7e47198a11f0178102112c0bb0ece7c7318",
+    "net/nmea.h": "a25feb77d1c222e0a35dd5077e846801f7f218dcb9b7f8804b910385bbd29248",
+    "net/lora_dtu.c": "35b3d491de579058d3d93da649c4d9cd33839c0786a2ef6a086ffc228eb92a84",
+    "net/lora_dtu.h": "5a9fc7d37bf7c3a2a9d984feef3bf1e403f8c754a2284aa6e4702ea4ab2ee810"
+  },
+  "working_directory": "/private/tmp/wawet-task18-waycast",
+  "commands": [
+    {
+      "argv": [
+        "clang",
+        "-std=c11",
+        "-O1",
+        "-Wall",
+        "-Imsg",
+        "-o",
+        "/private/tmp/wawet-task18-test-wire",
+        "tests/test_wire.c",
+        "msg/vmesh_wire.c"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/private/tmp/wawet-task18-test-wire"
+      ],
+      "exit_code": 0,
+      "stdout": "  query/reply roundtrip ok\ntest_wire: all 9 cases passed\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "clang",
+        "-std=c11",
+        "-O1",
+        "-Wall",
+        "-Imsg",
+        "-Inet",
+        "-o",
+        "/private/tmp/wawet-task18-test-net",
+        "tests/test_net.c",
+        "net/nmea.c",
+        "net/lora_dtu.c",
+        "msg/vmesh_wire.c"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/private/tmp/wawet-task18-test-net"
+      ],
+      "exit_code": 0,
+      "stdout": "test_net: nmea ok\ntest_net: lora_dtu ok\ntest_net: all passed\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "clang",
+        "-std=c11",
+        "-O1",
+        "-Wall",
+        "-Imsg",
+        "-Imesh",
+        "-o",
+        "/private/tmp/wawet-task18-test-mesh",
+        "tests/test_mesh.c",
+        "mesh/vmesh_mesh.c"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/private/tmp/wawet-task18-test-mesh"
+      ],
+      "exit_code": 0,
+      "stdout": "test_mesh: all 9 cases passed\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "Isolated upstream unit tests only; no GUI, hardware, radio, moving contact, security or field validation.",
+    "No upstream source copied into Wawet; no dependencies installed.",
+    "Direct compiler commands reproduce Makefile test recipes without SDL pkg-config evaluation."
+  ]
+}

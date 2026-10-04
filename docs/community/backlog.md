@@ -61,3 +61,16 @@ exact bytes, desktop parser timing/allocation and optional/signature-placeholder
 bounds for binary and restricted CBOR profiles. Frozen v1 vectors are unchanged.
 MCU/whole-host memory acceptance remains task 04. Task 18 is next eligible; task 14
 still needs physical-host task 03. Gates and HOLD remain unchanged.
+
+## Task 18 completed locally — 4 October 2026
+
+The [desk review](../research/prior-art.md) covers all eight existing systems with
+sources, licence evidence, reproducibility limits and independent-evidence leads.
+Waycast's attributable public repository and GPLv3 text were located; three
+upstream test executables passed at a pinned revision without added dependencies.
+Independent physical claims, first-publication chronology and full GUI reproduction
+remain unverified. Task 18's bounded investigation is complete; no code imported.
+
+Git confirms task 09 is committed at `3e247c8`; earlier uncommitted notes are
+historical. Task 14 still needs physical-host task 03; tasks 01/04/03 require
+external review or physical resources. Gates 01–05 and G01 HOLD remain unchanged.

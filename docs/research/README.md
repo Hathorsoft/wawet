@@ -18,7 +18,7 @@ a module listing, a video or a simulation.
 | [UK regulation](uk-regulatory.md) | Primary-source matrix, not permission to transmit |
 | [Amateur radio](amateur-radio.md) | Optional track; encrypted consumer carriage not approved |
 | [Phone speech](phone-speech.md) | Platform APIs exist; offline language/device tests needed |
-| [Prior art](prior-art.md) | Comparison and verification tasks; no imported code |
+| [Prior art](prior-art.md) | Task 18 desk review complete; eight-system evidence register and pinned Waycast unit-test reproduction; physical claims unverified, no imported code |
 
 Each experiment should record hypothesis, source revisions, physical setup,
 configuration, measurement method, raw observations, limitations and next gate.

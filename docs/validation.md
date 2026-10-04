@@ -337,3 +337,44 @@ addition. Allocation results are transient traced Python memory, not RSS, MCU
 footprint or T06 acceptance. Signature bytes are placeholders. Frozen v1 vectors
 and production APIs are unchanged. No gate closes; G01 HOLD persists. Hosted
 Python 3.12/3.13 remains unverified. No commit, push or remote publication occurred.
+
+## Task 18 bounded prior-art review — 4 October 2026
+
+New local validation; historical counts/results above are preserved. Starting Git
+status was clean at `3e247c8f16045b8891df2d38ae74fac80d960710`, confirming task 09
+was committed after its earlier uncommitted capture. Task 07 and A02 commits were
+also inspected. No Wawet executable behaviour or dependency changed.
+
+- Public-source review covered the existing eight-system comparison. Sources were
+  manually opened and checked against the stated claims; failures, browser
+  challenges, mutable-version limits and exact searches are explicitly recorded in
+  the [evidence register](research/results/prior-art-evidence.md). This does not
+  assert that every external link/anchor is reachable or checked automatically.
+- Waycast was fetched into a separate temporary checkout at upstream revision
+  `958f4a6ea6436d145402830c3edd372e2e40f74e`. Root licence, build recipes, tests,
+  exercised sources and Git history/tags were inspected before execution. The
+  initial sandboxed fetch failed DNS; the approved network fetch succeeded.
+- Six direct compile/run commands, equivalent to the three upstream Makefile test
+  recipes, all exited 0 with no compiler diagnostics. Wire/mesh output each reports
+  nine cases passed; net reports NMEA/DTU success. The wire executable additionally
+  runs a query/reply check, so no aggregate test count is asserted. Compiler was
+  Apple clang 17.0.0, arm64 macOS; [JSON](research/results/prior-art-reproduction.json)
+  records exact commands, output, environment and 16 source-file hashes.
+- No dependency installation, full GUI, provisioning, tile fetching or radio
+  transmitter was run. `pkg-config --modversion sdl2` exited 127; GUI prerequisites
+  remain outstanding. Unit reproduction does not validate field/security claims.
+- `python3 tools/check_links.py` passed repository Markdown file links.
+  `git diff --check` passed. A one-off comparison with `git show HEAD:docs/project-plan.md`
+  confirmed all **79 task IDs and prerequisites unchanged** and the future chart
+  differs only by task 18's `done` marker. Task 14 still requires 03/09, and G01's
+  prerequisites and HOLD decision remain unchanged.
+- Reproduction JSON inspection confirmed six successful commands and 16 hashes;
+  source hashes were checked against the temporary checkout. Only documentation
+  and evidence files changed. No Wawet unit suite or RNS campaign rerun was needed;
+  historical/hosted Python results are not newly established here.
+
+Task 18's bounded desk investigation is complete locally. Full GUI/physical
+reproduction, independent field/security validation and archived first-publication
+chronology remain unresolved. No third-party source was imported into Wawet;
+no participant dataset was copied, purchase/outreach/RF/road trial undertaken,
+or commit/push/PR/publication performed. Gates 01–05 and G01 HOLD persist.
