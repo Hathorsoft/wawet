@@ -27,3 +27,7 @@ Return to the earlier LoRa/Meshtastic car-device idea and reconsider the network
 ## Explore Haven and Wi-Fi HaLow relevance
 
 Investigate how Haven and Wi-Fi HaLow relate to the existing vehicle-reporting concept.
+
+## Explore Reticulum as the common networking layer
+
+Consider Reticulum as preferable to Meshtastic for the broader network, alongside ideas from Data Slayer amateur-radio experiments. Amateur-radio suitability is an optional research question, not a consumer requirement.
