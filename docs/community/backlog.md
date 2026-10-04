@@ -45,3 +45,11 @@ now schedules **A02: agree feasibility thresholds and host role** next. Gates
 Tasks 01, 03, 04, 07 and 09 must use the [A02 criteria record](../research/feasibility-thresholds.md)
 agreed on 4 October 2026. Task 05 still requires 04; tasks 02/08 retain their
 registered prerequisites. Agreed limits are not gate closure or measured results.
+
+## Task 07 completed — 4 October 2026
+
+[Four deterministic contact scenarios](../research/contact-scenarios.md) now cover
+passing, convoy, rural and dense contacts with delivery/expiry counters and
+reproducible results. Task 07 is complete locally; 53 tests and contributor checks
+passed. This is simulation only. Task 09 follows in the software sequence; task 08
+still requires 02/03/05/14 and approved RF testing. Gates/HOLD remain unchanged.

@@ -1,0 +1,28 @@
+{
+  "base_revision": "b46261bc212808a7422e312404f242f10a3b5c14",
+  "commands": [
+    "PYTHON=.venv/bin/python ./scripts/check",
+    "./scripts/test",
+    "./scripts/demo",
+    "PYTHONPATH=packages .venv/bin/python -m wawet.scenarios --json",
+    "cmp docs/research/results/contact-scenarios.json /private/tmp/wawet-scenarios-repeat.json"
+  ],
+  "date": "2026-10-04",
+  "limits": "Synthetic deterministic unauthenticated simulation only; no physical/RF or T01/T02 acceptance; hosted CI not established",
+  "outcome": "53 tests, local links, Ruff lint/format and strict mypy pass; demo passes; two fresh CLI outputs byte-identical",
+  "python": "Python 3.11.4",
+  "result_sha256": "164698d1ded8624fcc873d5a23e976cd3e294a9da2a9177d3d519bd964be9fb7",
+  "sha256": {
+    "packages/wawet/__init__.py": "6d705f69ee923857d3b06037f740ad5190f6f1b943e036dc400b3dd07d1fee22",
+    "packages/wawet/demo.py": "f10543c68322d7d3c18ac3524e5ed4644ef9881c9ed7659fe6c3d1bfe54a91cc",
+    "packages/wawet/geo.py": "27cf09ae10adbf32d3f6a6e5c3f66e88cbcbcb39b3b7e883faa016159a96ba06",
+    "packages/wawet/protocol.py": "e6bc10c63fb13c75308ae47157df361d0ab7811ffa238515314605e94ac47c3f",
+    "packages/wawet/scenarios.py": "8db315b942969777608f8d6a602c29792dbf06cea59f8f194b373110c2e9554c",
+    "packages/wawet/simulation.py": "45ef511dde432297c3bb19436afc9d264eeec5eb70edd0aa4fcd11d5932654da",
+    "packages/wawet/transport.py": "ba19a44f299b323e3d66759cbe8ab088ab044ada10d771a899a5a9a3dfc29044",
+    "packages/wawet/vehicle.py": "2d4a23bb552ec911d410424bc15a5c7e4cbe0d55839e0d24e9d5996aa3ae8cfe",
+    "tests/test_scenarios.py": "bfd8f5964854d71afd302bac1cd27324aa8ab33218878aa41bc0cd4f2acd2238"
+  },
+  "source_state": "A02 baseline plus new packages/wawet/scenarios.py and tests/test_scenarios.py; existing application sources unchanged",
+  "system_test_python": "Python 3.11.4"
+}

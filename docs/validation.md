@@ -284,3 +284,28 @@ and appended agreement updates to the handoff/review pack, preserving draft
 history. `python3 tools/check_links.py` and `git diff --check` passed again.
 A02 is complete locally; gates 01–05/HOLD persist. No executable changes or new
 experiments occurred. Documentation remains uncommitted; nothing was published.
+
+## Task 07 implementation validation — 4 October 2026
+
+Reviewed the seven existing A02 documentation changes and ran the baseline
+`PYTHON=.venv/bin/python ./scripts/check`, `./scripts/demo` and `git diff --check`:
+45 tests, local links, lint/format/types and demo passed. A02 was committed
+separately as `b46261b`; its historical agreement was preserved.
+
+New implementation validation: `./scripts/test` passed 53 tests and local links;
+`./scripts/demo` passed unchanged; `PYTHON=.venv/bin/python ./scripts/check` passed
+53 tests, links, Ruff 0.16.9 lint/format and strict mypy 2.3.1. Both interpreters were
+Python 3.11.4. Two executions of
+`PYTHONPATH=packages .venv/bin/python -m wawet.scenarios --json` compared identical
+with `cmp`. Final `git diff --check` and Markdown links passed.
+
+[Runbook](research/contact-scenarios.md), [results](research/results/contact-scenarios.json)
+and [source/environment hashes](research/results/contact-scenarios-evidence.json)
+record fixture outcomes and limitations. Existing application/transport/protocol
+files and frozen vectors are unchanged. No RNS campaign rerun was needed for this
+independent simulation package. Hosted Python 3.12/3.13 and external links/anchors
+remain unverified; no physical/RF, T01/T02 or gate acceptance is claimed.
+
+Git writes required sandbox escalation for the requested local commits. No push,
+PR or external publication occurred. Task 07 is recorded in a separate local
+implementation commit; gates 01–05 and investment HOLD remain unchanged.

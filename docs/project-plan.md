@@ -111,7 +111,7 @@ gantt
     04 Measure standalone host options :04, 1970-01-04, 1d
     03 Physical-host authenticated contact campaign :03, 1970-01-05, 1d
     05 UK profile and conformity review :05, 1970-01-06, 9d
-    07 Deterministic contact scenarios :07, 1970-01-07, 1d
+    07 Deterministic contact scenarios :done, 07, 1970-01-07, 1d
     09 Compare event encodings :09, 1970-01-08, 1d
     18 Verify prior-art claims :18, 1970-01-09, 1d
     14 Authenticated event and abuse design :14, 1970-01-10, 1d
@@ -206,12 +206,12 @@ gantt
 | ID / task | Status / position | Prerequisites | Completion criterion | Evidence / remaining blockers |
 | --- | --- | --- | --- | --- |
 | **A01** Review, check and commit local research | Complete; S001 / this documentation commit | L01, L02, L03, L04, L05 | Review all modified/untracked research and source, rerun relevant checks, separate historical/new evidence and commit reviewed work; no push implied. | [Evidence / specification](../docs/validation.md). Reviewed source/evidence committed at `ae4ba6e` and `e42ae0e`; new validation is recorded separately. No push. |
-| **A02** Agree feasibility thresholds and host role | Complete locally; 2026-10-04 / S002; uncommitted | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
+| **A02** Agree feasibility thresholds and host role | Committed; 2026-10-04 / `b46261b`; S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
 | **01** Exact-version distribution review | Open; S003–S013 | A02 | Qualified written review of exact Reticulum/LXMF releases where selected, permitted distribution forms, restrictions, notices and approved release approach. | [Evidence / specification](../LICENSING.md). Qualified review absent; LXMF release not selected. External review may run while stages 4–13 proceed. |
 | **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). Candidate hardware and calibrated instruments absent. |
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
-| **07** Deterministic contact scenarios | Open; S007 | A02 | Passing, convoy, rural and dense fixtures with delivery/expiry metrics and no claims of field performance. | [Evidence / specification](../docs/community/backlog.md). Not started; requires listed predecessors. |
+| **07** Deterministic contact scenarios | Complete locally; 2026-10-04 / S007 | A02 | Passing, convoy, rural and dense fixtures with delivery/expiry metrics and no claims of field performance. | [Runbook and results](research/contact-scenarios.md). Four fixtures, 53-test contributor check and repeatable JSON; simulation only. |
 | **09** Compare event encodings | Open; S008 | A02 | Measure bytes and parser footprint with bounded optional fields/signatures; preserve frozen v1 vectors and document comparisons. | [Evidence / specification](../protocol/road-event-v1.md). Not started; requires listed predecessors. |
 | **18** Verify prior-art claims | Open; S009 | A01 | Locate repositories/licences and independent reproducible evidence; label unverified claims; import no unreviewed code. | [Evidence / specification](../docs/research/prior-art.md). Not started; requires listed predecessors. |
 | **14** Authenticated event and abuse design | Open; S010 | 03, 09 | Specify signature/domain separation, key lifecycle and payload budget; test replay/flood/Sybil/corroboration limits; update protocol/ADR if behaviour changes. | [Evidence / specification](../docs/security/threat-model.md). Pinned local signatures are not a public trust system. |
@@ -335,3 +335,14 @@ in [validation](validation.md); historical rendering results above were not reru
 A02 agreement on 4 October 2026: maintainer accepted T01–T09 and the host boundary
 without changes. A02 is complete locally; criteria are not physical acceptance.
 Dependencies, stages and historical validation records remain unchanged.
+
+## Task 07 completed — 4 October 2026
+
+A02 documentation was reviewed, checked and committed separately at `b46261b`.
+Task 07 adds four deterministic contact fixtures, acceptance/expiry/drop results
+and eight regression tests; [runbook/evidence](research/contact-scenarios.md)
+records the new validation. The earlier next-package statements are historical.
+Task 09 is now next in the software sequence; 01/04/03 still need qualified
+review, hardware/instruments or physical-host evidence. Task 18 remains eligible.
+Task 08 has its 07 prerequisite satisfied but still requires 02/03/05/14.
+Gates 01–05 and G01 HOLD remain unchanged. No push or publication occurred.

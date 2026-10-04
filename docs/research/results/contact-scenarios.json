@@ -1,0 +1,1064 @@
+[
+  {
+    "accepted_pairs": [
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "latency_seconds": 1,
+        "recipient": "b"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "latency_seconds": 1,
+        "recipient": "c"
+      }
+    ],
+    "contact_dropped": 2,
+    "evidence": "deterministic unauthenticated simulation; no physical/RF acceptance",
+    "final_retained": {
+      "a": 0,
+      "b": 1,
+      "c": 1
+    },
+    "fresh_delivery": {
+      "denominator": 4,
+      "numerator": 2
+    },
+    "intended_pairs": [
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "b"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "b"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "c"
+      }
+    ],
+    "latency": {
+      "origin": "original event creation/availability, including explicit resend wait",
+      "sample_count": 2,
+      "seconds": [
+        1,
+        1
+      ]
+    },
+    "limits": {
+      "queue": 4096,
+      "retention_per_vehicle": 1024
+    },
+    "metrics": {
+      "a": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 0,
+        "sent": 2,
+        "unauthenticated": 0
+      },
+      "b": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      },
+      "c": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      }
+    },
+    "network_dropped": 2,
+    "observations": [
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ],
+          "c": []
+        },
+        "at": 1001,
+        "label": "during contact",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [],
+          "c": []
+        },
+        "at": 1001,
+        "label": "after passing",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [],
+          "c": []
+        },
+        "at": 1003,
+        "label": "contact lost",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1
+        }
+      }
+    ],
+    "peak_queue": 2,
+    "peak_retained_per_vehicle": 1,
+    "queue_dropped": 0,
+    "scenario": "passing",
+    "stale_probes": [],
+    "transmissions": [
+      {
+        "at": 1000,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "kind": "report",
+        "sender": "a",
+        "stale_probe": false
+      },
+      {
+        "at": 1002,
+        "frame": "a7e1010000000000000000000000000000000201004fa6a000015f900000000003ea000a1388",
+        "kind": "report",
+        "sender": "a",
+        "stale_probe": false
+      }
+    ]
+  },
+  {
+    "accepted_pairs": [
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "latency_seconds": 1,
+        "recipient": "b"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "latency_seconds": 1,
+        "recipient": "c"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "latency_seconds": 1,
+        "recipient": "d"
+      }
+    ],
+    "contact_dropped": 0,
+    "evidence": "deterministic unauthenticated simulation; no physical/RF acceptance",
+    "final_retained": {
+      "a": 0,
+      "b": 1,
+      "c": 1,
+      "d": 1
+    },
+    "fresh_delivery": {
+      "denominator": 3,
+      "numerator": 3
+    },
+    "intended_pairs": [
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "b"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "d"
+      }
+    ],
+    "latency": {
+      "origin": "original event creation/availability, including explicit resend wait",
+      "sample_count": 3,
+      "seconds": [
+        1,
+        1,
+        1
+      ]
+    },
+    "limits": {
+      "queue": 4096,
+      "retention_per_vehicle": 1024
+    },
+    "metrics": {
+      "a": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 0,
+        "sent": 1,
+        "unauthenticated": 0
+      },
+      "b": {
+        "capacity_dropped": 0,
+        "duplicate": 1,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      },
+      "c": {
+        "capacity_dropped": 0,
+        "duplicate": 1,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      },
+      "d": {
+        "capacity_dropped": 0,
+        "duplicate": 1,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      }
+    },
+    "network_dropped": 0,
+    "observations": [
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ],
+          "c": [
+            "00000000000000000000000000000001"
+          ],
+          "d": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1001,
+        "label": "fresh",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "d": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ],
+          "c": [
+            "00000000000000000000000000000001"
+          ],
+          "d": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1002,
+        "label": "duplicates",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "d": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [],
+          "c": [
+            "00000000000000000000000000000001"
+          ],
+          "d": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1002,
+        "label": "leader passed",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "d": 1
+        }
+      }
+    ],
+    "peak_queue": 3,
+    "peak_retained_per_vehicle": 1,
+    "queue_dropped": 0,
+    "scenario": "convoy",
+    "stale_probes": [],
+    "transmissions": [
+      {
+        "at": 1000,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "kind": "report",
+        "sender": "a",
+        "stale_probe": false
+      },
+      {
+        "at": 1001,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e8000a1388",
+        "kind": "resend",
+        "sender": "a",
+        "stale_probe": false
+      }
+    ]
+  },
+  {
+    "accepted_pairs": [
+      {
+        "accepted_at": 1003,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800051388",
+        "latency_seconds": 3,
+        "recipient": "b"
+      }
+    ],
+    "contact_dropped": 0,
+    "evidence": "deterministic unauthenticated simulation; no physical/RF acceptance",
+    "final_retained": {
+      "a": 0,
+      "b": 0
+    },
+    "fresh_delivery": {
+      "denominator": 1,
+      "numerator": 1
+    },
+    "intended_pairs": [
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "b"
+      }
+    ],
+    "latency": {
+      "origin": "original event creation/availability, including explicit resend wait",
+      "sample_count": 1,
+      "seconds": [
+        3
+      ]
+    },
+    "limits": {
+      "queue": 4096,
+      "retention_per_vehicle": 1024
+    },
+    "metrics": {
+      "a": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 0,
+        "sent": 1,
+        "unauthenticated": 0
+      },
+      "b": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 1,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 0,
+        "unauthenticated": 1
+      }
+    },
+    "network_dropped": 0,
+    "observations": [
+      {
+        "alerts": {
+          "a": [],
+          "b": []
+        },
+        "at": 1002,
+        "label": "no replay",
+        "retained": {
+          "a": 0,
+          "b": 0
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1003,
+        "label": "explicit resend",
+        "retained": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": []
+        },
+        "at": 1005,
+        "label": "exact expiry",
+        "retained": {
+          "a": 0,
+          "b": 0
+        }
+      }
+    ],
+    "peak_queue": 1,
+    "peak_retained_per_vehicle": 1,
+    "queue_dropped": 0,
+    "scenario": "rural",
+    "stale_probes": [
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "b"
+      }
+    ],
+    "transmissions": [
+      {
+        "at": 1000,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800051388",
+        "kind": "report",
+        "sender": "a",
+        "stale_probe": false
+      },
+      {
+        "at": 1002,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800051388",
+        "kind": "resend",
+        "sender": "a",
+        "stale_probe": false
+      },
+      {
+        "at": 1004,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800051388",
+        "kind": "resend",
+        "sender": "a",
+        "stale_probe": true
+      }
+    ]
+  },
+  {
+    "accepted_pairs": [
+      {
+        "accepted_at": 1002,
+        "created_at": 1001,
+        "event": "00000000000000000000000000000003",
+        "frame": "a7e1010000000000000000000000000000000301004fa20e00015f900000000003e900021388",
+        "latency_seconds": 1,
+        "recipient": "a"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "a"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "b"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "c"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "c"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "d"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "d"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "e"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "e"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "f"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "f"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "g"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "g"
+      },
+      {
+        "accepted_at": 1001,
+        "created_at": 1000,
+        "event": "00000000000000000000000000000001",
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "latency_seconds": 1,
+        "recipient": "h"
+      },
+      {
+        "accepted_at": 1004,
+        "created_at": 1003,
+        "event": "00000000000000000000000000000004",
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "latency_seconds": 1,
+        "recipient": "h"
+      }
+    ],
+    "contact_dropped": 0,
+    "evidence": "deterministic unauthenticated simulation; no physical/RF acceptance",
+    "final_retained": {
+      "a": 1,
+      "b": 0,
+      "c": 1,
+      "d": 1,
+      "e": 1,
+      "f": 1,
+      "g": 1,
+      "h": 1
+    },
+    "fresh_delivery": {
+      "denominator": 28,
+      "numerator": 15
+    },
+    "intended_pairs": [
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "b"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "d"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "e"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "f"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "g"
+      },
+      {
+        "event": "00000000000000000000000000000001",
+        "recipient": "h"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "a"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "d"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "e"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "f"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "g"
+      },
+      {
+        "event": "00000000000000000000000000000002",
+        "recipient": "h"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "a"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "d"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "e"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "f"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "g"
+      },
+      {
+        "event": "00000000000000000000000000000003",
+        "recipient": "h"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "a"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "c"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "d"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "e"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "f"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "g"
+      },
+      {
+        "event": "00000000000000000000000000000004",
+        "recipient": "h"
+      }
+    ],
+    "latency": {
+      "origin": "original event creation/availability, including explicit resend wait",
+      "sample_count": 15,
+      "seconds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "limits": {
+      "queue": 7,
+      "retention_per_vehicle": 1
+    },
+    "metrics": {
+      "a": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 1,
+        "unauthenticated": 2
+      },
+      "b": {
+        "capacity_dropped": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 1,
+        "sent": 3,
+        "unauthenticated": 1
+      },
+      "c": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      },
+      "d": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      },
+      "e": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      },
+      "f": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      },
+      "g": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      },
+      "h": {
+        "capacity_dropped": 1,
+        "duplicate": 0,
+        "expired": 0,
+        "future": 0,
+        "id_conflict": 0,
+        "invalid": 0,
+        "rate_limited": 0,
+        "received": 2,
+        "sent": 0,
+        "unauthenticated": 2
+      }
+    },
+    "network_dropped": 7,
+    "observations": [
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ],
+          "c": [
+            "00000000000000000000000000000001"
+          ],
+          "d": [
+            "00000000000000000000000000000001"
+          ],
+          "e": [
+            "00000000000000000000000000000001"
+          ],
+          "f": [
+            "00000000000000000000000000000001"
+          ],
+          "g": [
+            "00000000000000000000000000000001"
+          ],
+          "h": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1001,
+        "label": "queue overload",
+        "retained": {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "d": 1,
+          "e": 1,
+          "f": 1,
+          "g": 1,
+          "h": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [
+            "00000000000000000000000000000001"
+          ],
+          "c": [
+            "00000000000000000000000000000001"
+          ],
+          "d": [
+            "00000000000000000000000000000001"
+          ],
+          "e": [
+            "00000000000000000000000000000001"
+          ],
+          "f": [
+            "00000000000000000000000000000001"
+          ],
+          "g": [
+            "00000000000000000000000000000001"
+          ],
+          "h": [
+            "00000000000000000000000000000001"
+          ]
+        },
+        "at": 1002,
+        "label": "retention pressure",
+        "retained": {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "d": 1,
+          "e": 1,
+          "f": 1,
+          "g": 1,
+          "h": 1
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [],
+          "c": [],
+          "d": [],
+          "e": [],
+          "f": [],
+          "g": [],
+          "h": []
+        },
+        "at": 1003,
+        "label": "expired retention",
+        "retained": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "d": 0,
+          "e": 0,
+          "f": 0,
+          "g": 0,
+          "h": 0
+        }
+      },
+      {
+        "alerts": {
+          "a": [],
+          "b": [],
+          "c": [
+            "00000000000000000000000000000004"
+          ],
+          "d": [
+            "00000000000000000000000000000004"
+          ],
+          "e": [
+            "00000000000000000000000000000004"
+          ],
+          "f": [
+            "00000000000000000000000000000004"
+          ],
+          "g": [
+            "00000000000000000000000000000004"
+          ],
+          "h": [
+            "00000000000000000000000000000004"
+          ]
+        },
+        "at": 1004,
+        "label": "recovery",
+        "retained": {
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "d": 1,
+          "e": 1,
+          "f": 1,
+          "g": 1,
+          "h": 1
+        }
+      }
+    ],
+    "peak_queue": 7,
+    "peak_retained_per_vehicle": 1,
+    "queue_dropped": 7,
+    "scenario": "dense",
+    "stale_probes": [],
+    "transmissions": [
+      {
+        "at": 1000,
+        "frame": "a7e1010000000000000000000000000000000101004fa6a000015f900000000003e800031388",
+        "kind": "report",
+        "sender": "a",
+        "stale_probe": false
+      },
+      {
+        "at": 1000,
+        "frame": "a7e1010000000000000000000000000000000201004fa20e00015f900000000003e800031388",
+        "kind": "report",
+        "sender": "b",
+        "stale_probe": false
+      },
+      {
+        "at": 1001,
+        "frame": "a7e1010000000000000000000000000000000301004fa20e00015f900000000003e900021388",
+        "kind": "report",
+        "sender": "b",
+        "stale_probe": false
+      },
+      {
+        "at": 1003,
+        "frame": "a7e1010000000000000000000000000000000401004fa20e00015f900000000003eb00031388",
+        "kind": "report",
+        "sender": "b",
+        "stale_probe": false
+      }
+    ]
+  }
+]

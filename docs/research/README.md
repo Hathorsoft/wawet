@@ -31,3 +31,7 @@ and the current HOLD decision for gates 01–05.
 The [authenticated contact campaign](contact-campaign.md) adds repeated controlled
 IP contact measurements and a two-host private-LAN runbook. Physical-host
 acceptance remains pending.
+
+[Deterministic contact scenarios](contact-scenarios.md) complete task 07 with
+passing, convoy, rural and dense fixtures, delivery/expiry metrics and reproducible
+synthetic results. They do not establish physical or radio acceptance.

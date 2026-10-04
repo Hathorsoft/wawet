@@ -181,3 +181,20 @@ Tasks 01/04/03/07/09 are eligible, with physical resources and qualified reviews
 still outstanding. Task 07 is the first software-only package in the registered
 sequence if those resources are unavailable; task 18 remains independently eligible.
 Gates 01–05 and investment HOLD remain open. Documentation remains uncommitted.
+
+## Task 07 completed — 4 October 2026
+
+A02's existing agreement/documentation was validated and committed separately at
+`b46261b`. [Task 07](research/contact-scenarios.md) adds a typed four-fixture runner
+(`python -m wawet.scenarios`, with `--scenario`/`--json`), acceptance observation,
+delivery/expiry/drop metrics and eight regression tests. All 53 tests, local links,
+Ruff lint/format and strict mypy passed; the existing demo passed and two fresh
+CLI JSON runs were byte-identical. Source/environment hashes and results are linked
+from the runbook. Application/transport contracts and frozen v1 vectors remain
+unchanged. Results are deterministic unauthenticated simulation only.
+
+Task 09 is the next software package. Tasks 01/04/03 retain their external/resource
+blockers; task 18 remains independently eligible. Task 08 now has task 07 completed
+but still needs 02/03/05/14 and reviewed RF setup. Gates 01–05 and investment HOLD
+persist. Hosted Python 3.12/3.13 is unverified; no purchase, outreach, transmission,
+road trial, push or publication occurred. Earlier uncommitted entries are historical.
