@@ -22,3 +22,31 @@ No exclusive Hathorsoft sales right. Upstream restricted dependencies are option
 ## Revisit gate
 
 Before hardware/RNS distribution verify notices, reciprocal source and use restrictions. See ../../../LICENSING.md.
+
+## Evidence follow-up — 4 October 2026
+
+The [task 01 self-review](../../research/distribution-self-review.md) records
+recovered notices, source comparisons and research-wheel observations, with
+form-specific recommendations and explicit AI/tooling/provenance gaps. The
+maintainer chose self-review rather than hiring; paid review is deferred.
+Original-work licence decisions and the existing qualified-review gate are
+unchanged. Self-review is not qualified approval; task 01 remains open. Any later
+replacement of the gate with maintainer risk acceptance requires an explicit
+recorded decision, rather than treating the original gate as satisfied.
+
+## Task 01 assurance decision — 4 October 2026
+
+**DESIGN DECISION:** the maintainer explicitly chose to perform task 01 ourselves
+and instructed updating the task accordingly. A documented maintainer self-review
+and dated form-specific release/risk decision replace the previous mandatory
+qualified external review for task 01. External advice is optional, not a required
+paid prerequisite. Earlier qualified-review entries are historical and superseded
+by this decision; no professional legal approval is asserted.
+
+The [self-review](../../research/distribution-self-review.md) supplies the evidence assessment. Task 01 remains
+open until the maintainer records adopted distribution decisions, conditions and
+residual risks, including unresolved AI data-use and provenance questions. This
+instruction changes the assurance method; it does not itself approve a bundle or
+adopt every recommendation. G01 stays HOLD and other task prerequisites and
+technical/regulatory gates remain unchanged. Restricted upstream terms and notice
+obligations are not waived. Re-review changed uses, releases and shipped builds.

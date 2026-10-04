@@ -43,3 +43,12 @@ memory and production protocol selection remain open.
 
 [Task 01 distribution review dossier](distribution-review.md): exact experimental
 artefacts and licence evidence prepared; qualified written review pending.
+
+[Task 01 self-review](distribution-self-review.md): bounded agent-assisted evidence
+assessment complete; recovered vendored notices and static native observations.
+Maintainer adoption and qualified-review acceptance remain pending; paid review
+is deferred and G01 remains HOLD.
+
+Task 01 assurance update: maintainer self-review and a dated release/risk decision
+now replace mandatory external review. Earlier pending-qualified-review notes are
+historical. Task 01 remains open pending the maintainer decision; G01 stays HOLD.

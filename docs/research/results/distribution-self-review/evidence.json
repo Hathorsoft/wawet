@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-04",
+  "baseline_revision": "ff3df9fffb98a7b7f08512f440b1a72deb908a47",
+  "starting_tree": "prior arrangement/self-review-direction documentation changes present; preserved",
+  "method": "Archive hashing, licence extraction, byte comparison and static Mach-O load-command inspection; no third-party code executed or installed. No semantic equivalence claimed.",
+  "verified_original_artefacts": [
+    {
+      "filename": "rns-1.5.5.tar.gz",
+      "sha256": "94f2352c7462e2fcf485d5c770eb2b41e666b753906ac3ce0a94e8a0c489a460"
+    },
+    {
+      "filename": "cryptography-50.0.2.tar.gz",
+      "sha256": "7b46165bb56eb4704e2eaaf86f3c940d19154535d9b0ca7d6d590b04060e00d5"
+    },
+    {
+      "filename": "cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl",
+      "sha256": "fa8f5efb344d6908a1ce62f4a24e2e5780f825d6f53f5f50ec5ffacac72936cb"
+    },
+    {
+      "filename": "pyserial-3.5.tar.gz",
+      "sha256": "3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"
+    },
+    {
+      "filename": "cffi-2.1.1.tar.gz",
+      "sha256": "dd31f52ea1086513bb9df30f8fcee9b8918323ae067a3d5b78bc826a000712be"
+    },
+    {
+      "filename": "cffi-2.1.1-cp311-cp311-macosx_11_0_arm64.whl",
+      "sha256": "398aff33cee2767e3e781d2554c54bd0dff386bb437581e0d8011fde1a942ec1"
+    },
+    {
+      "filename": "pycparser-3.0.tar.gz",
+      "sha256": "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+    }
+  ],
+  "upstream_artefacts": [
+    {
+      "package": "configobj",
+      "version": "5.0.9",
+      "metadata_url": "https://pypi.org/pypi/configobj/5.0.9/json",
+      "url": "https://files.pythonhosted.org/packages/f5/c4/c7f9e41bc2e5f8eeae4a08a01c91b2aea3dfab40a3e14b25e87e7db8d501/configobj-5.0.9.tar.gz",
+      "filename": "configobj-5.0.9.tar.gz",
+      "size": 101518,
+      "sha256": "03c881bbf23aa07bccf1b837005975993c4ab4427ba57f959afdd9d1a2386848",
+      "license_members": [
+        "configobj-5.0.9/LICENSE"
+      ]
+    },
+    {
+      "package": "i2plib",
+      "version": "0.0.14",
+      "metadata_url": "https://pypi.org/pypi/i2plib/0.0.14/json",
+      "url": "https://files.pythonhosted.org/packages/93/19/6d70d9c0352ea1e88fd988ca3d11325d235503eec9b90a2a9cf85c2e137b/i2plib-0.0.14.tar.gz",
+      "filename": "i2plib-0.0.14.tar.gz",
+      "size": 14631,
+      "sha256": "68ea06cec53759e462ad4ee8c74f1fed5f39c1c3a3fbbbd83bf1ed2ef85d657a",
+      "license_members": []
+    }
+  ],
+  "i2plib_tag": {
+    "revision": "6edf51cd5d21cc745aa7e23cb98c582144884fa8",
+    "url": "https://codeload.github.com/l-n-s/i2plib/tar.gz/6edf51cd5d21cc745aa7e23cb98c582144884fa8",
+    "archive_sha256": "dd0964ff794291490370e376dd617fd0a7f8bfa04d96d96070088985bd21ebaf",
+    "license_url": "https://raw.githubusercontent.com/l-n-s/i2plib/6edf51cd5d21cc745aa7e23cb98c582144884fa8/LICENSE"
+  },
+  "notices": [
+    {
+      "path": "docs/research/results/distribution-self-review/configobj-5.0.9-LICENSE.txt",
+      "source_member": "configobj-5.0.9/LICENSE",
+      "sha256": "fd227649f1956788444397bf0899e977140a5bc662d86826657bc2aad833fe2a"
+    },
+    {
+      "path": "docs/research/results/distribution-self-review/i2plib-v0.0.14-LICENSE.txt",
+      "source_member": "i2plib-6edf51cd5d21cc745aa7e23cb98c582144884fa8/LICENSE",
+      "sha256": "11bd20ead9b17c0c8e903fa2286b404636fbbf4d3723b8d59f6a13617ab7ed1a"
+    }
+  ],
+  "comparisons": [
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/configobj.py",
+      "upstream_member": "configobj-5.0.9/src/configobj/__init__.py",
+      "vendored_sha256": "f111d495ebd31ab80e21b4e0da82a0121dab342b01a23166c33546490765ba4a",
+      "upstream_sha256": "1efbe84c7bf6fca789605406caee196cfa9c478883a8b5fabb7a65907beb018a",
+      "exact_match": false,
+      "unified_diff_lines": 17
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/validate.py",
+      "upstream_member": "configobj-5.0.9/src/configobj/validate.py",
+      "vendored_sha256": "6f62df0925e0c77bbb3cb987978ece57ab246a4d53d645616f5bf4a1253b4a2d",
+      "upstream_sha256": "5b1bb235e5b5a0ec343668a1d7c7370646d3f6212acc6b1a50c99eda212702ce",
+      "exact_match": false,
+      "unified_diff_lines": 1312
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/utils.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/utils.py",
+      "vendored_sha256": "0b6f1b5f884eaf81befb15a4fcb4b22831ca31f26c7716afab20efd220157b15",
+      "upstream_sha256": "1c2d8eaf9caa113ac0565b008ebf233fdbb27814b231b32c3b975f8a33b48f5a",
+      "exact_match": false,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/sam.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/sam.py",
+      "vendored_sha256": "697c6851b4dc8d17134e8c410bb6d78e88dba90456391aebbd53a0843cb02c67",
+      "upstream_sha256": "b219621a4ebf2efd4b27eab85735be09619d2614aa9645d2f3ee9f58be562502",
+      "exact_match": false,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/log.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/log.py",
+      "vendored_sha256": "8c724096d97ee14ac1a4ea1c5603147ff7ff9a80f562eab5ca810461467a8a4a",
+      "upstream_sha256": "8c724096d97ee14ac1a4ea1c5603147ff7ff9a80f562eab5ca810461467a8a4a",
+      "exact_match": true,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/aiosam.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/aiosam.py",
+      "vendored_sha256": "30e2b9b2f5228f30d197ff88e5f88cfad5cab326f2bf87e9c506f6da3651f5e8",
+      "upstream_sha256": "0a5a51174e7119d0012ebdce7a70962d635ba532e1378c3f8cf095d1e2c35ddf",
+      "exact_match": false,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/exceptions.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/exceptions.py",
+      "vendored_sha256": "c093046cb7151bda809fdd442ec4bc5babef0e4d26ed95bd7f8256811fe9526a",
+      "upstream_sha256": "770c17c895297aae64fa28f4f5c82d3b9946262a2a91e28c3683a2370ac91d4b",
+      "exact_match": false,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/tunnel.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/tunnel.py",
+      "vendored_sha256": "81a64c7ca27c279a6f242bcfc60cdbbcd01136367dcc29356b370d6f1cb4f321",
+      "upstream_sha256": "cbb375acde58e27c62c4b8d39f4fe5975057d4532eb3caa55bed0845a8bc5d18",
+      "exact_match": false,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/__init__.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/__init__.py",
+      "vendored_sha256": "37ecf43f5ecf212349b20ac6f6b9df9422a8cccdf506e1026f8dc4555ee4f558",
+      "upstream_sha256": "37ecf43f5ecf212349b20ac6f6b9df9422a8cccdf506e1026f8dc4555ee4f558",
+      "exact_match": true,
+      "release_matches_pinned_tag": true
+    },
+    {
+      "vendored_member": "rns-1.5.5/RNS/vendor/i2plib/__version__.py",
+      "upstream_member": "i2plib-0.0.14/i2plib/__version__.py",
+      "vendored_sha256": "4ed21736777d852c81a0367f715e02f074f0bd2cc9ffe2bd4197749c7c1feb4b",
+      "upstream_sha256": "4ed21736777d852c81a0367f715e02f074f0bd2cc9ffe2bd4197749c7c1feb4b",
+      "exact_match": true,
+      "release_matches_pinned_tag": true
+    }
+  ],
+  "native_inspection": [
+    {
+      "wheel": "cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl",
+      "member": "cryptography/hazmat/bindings/_rust.abi3.so",
+      "sha256": "0aced18998c288668c0eb65cfdc76fd41726370e6d5d9760c0b27143929162d2",
+      "otool_L": "/tmp/wawet-review-native/_rust.abi3.so:\n\t@rpath/cryptography.hazmat.bindings._rust.abi3.so (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1351.0.0)\n",
+      "notice_members": [
+        "cryptography-50.0.2.dist-info/licenses/LICENSE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+      ],
+      "static_string_observation": "OpenSSL 4.0.3 29 Sep 2026",
+      "static_string_method": "/usr/bin/strings on recorded .so, filter ^OpenSSL [0-9]; not executed"
+    },
+    {
+      "wheel": "cffi-2.1.1-cp311-cp311-macosx_11_0_arm64.whl",
+      "member": "_cffi_backend.cpython-311-darwin.so",
+      "sha256": "8c64aeae687c874abb874b1c803e55008309e385e12d8b6e9c1ca5701dbfe06d",
+      "otool_L": "/tmp/wawet-review-native/_cffi_backend.cpython-311-darwin.so:\n\t/usr/lib/libffi.dylib (compatibility version 1.0.0, current version 40.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "notice_members": [
+        "cffi-2.1.1.dist-info/licenses/",
+        "cffi-2.1.1.dist-info/licenses/LICENSE"
+      ]
+    }
+  ]
+}

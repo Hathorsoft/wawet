@@ -136,3 +136,40 @@ requires a qualified written outcome and documented reviewed approach for the
 selected scope; dossier preparation alone leaves it open. G01 additionally requires
 its other registered predecessors. The next action is reviewer selection and
 arranging review; no outreach, spending or release is authorised by this record.
+
+## Reviewer arrangement follow-up — 4 October 2026
+
+The [shortlist, unsent enquiry and selection checklist](distribution-review-arrangement.md)
+are prepared against committed dossier revision `ff3df9f`. No reviewer has been
+selected or contacted; qualified review and the reviewed release approach remain
+pending. Q01–Q07 and the evidence register are unchanged.
+
+## Task 01 self-review direction — 4 October 2026
+
+The maintainer declined hiring a reviewer: this is a solo free-time project.
+The next package is [bounded maintainer self-review](distribution-review-arrangement.md) of Q01–Q07,
+vendor notices and form-specific distribution decisions. Reviewer routes and the
+unsent enquiry remain historical preparation; external engagement is deferred.
+Self-review can advance evidence and decisions but does not satisfy the existing
+qualified-review acceptance criterion. No task dependency or gate criterion is
+silently relaxed; task 01 remains open and G01 HOLD persists. No outreach or
+spending is needed for the bounded self-review. That review is not yet completed.
+
+## Bounded self-review completed — 4 October 2026
+
+The [self-review and updated evidence](distribution-self-review.md) now cover Q01–Q07,
+complete upstream ConfigObj/i2plib notices, vendored comparisons and static native
+observations. Earlier gap findings are historical; this follow-up narrows notice
+retrieval gaps without proving all modification/build provenance. The proposed
+release approach awaits maintainer adoption. Task 01 remains open; no qualified
+written outcome exists. Paid reviewer engagement is deferred and G01 stays HOLD.
+
+## Current acceptance supersedes external-review requirement — 4 October 2026
+
+The maintainer explicitly changed task 01 to self-review. Earlier mandatory
+qualified-review statements and reviewer templates above are retained as historical
+preparation, not current prerequisites. The current acceptance is documented
+self-review plus a dated maintainer form-specific distribution decision, conditions
+and residual-risk record. External advice is optional. See the
+[self-review](distribution-self-review.md) and current project-plan task register.
+Task 01 remains open pending the maintainer decision; G01 stays HOLD.

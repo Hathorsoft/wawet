@@ -417,3 +417,105 @@ ConfigObj/validate/i2plib notices, final-wheel native provenance/notices, and ex
 future image/interpreter/OS/firmware/LXMF scope where selected. Dossier preparation
 is complete; task 01 and gates 01–05 remain open, G01 HOLD persists. No outreach,
 purchase, RF/road trial, commit, push or publication occurred.
+
+## Task 01 reviewer arrangement — 4 October 2026
+
+Starting tree was clean at `ff3df9f`; the dossier is committed. Added the
+[reviewer arrangement package](research/distribution-review-arrangement.md),
+linked it from the dossier and updated the plan/backlog/handoff with a new dated
+entry. Historical preparation notes and Q01–Q07 remain intact.
+
+- Manually opened/read primary Moorcrofts service, contact and homepage pages,
+  Bristows open-source practice and contact pages, and FSFE's canonical licensing
+  FAQ/team page. All URLs used in the shortlist returned readable content through
+  the web tool. The obsolete FSFE licence-questions path redirected to the cited
+  canonical FAQ; an initial Bristows `/contact-us/` attempt failed, so the site's
+  own Contact link was followed to the working `/contact/` page. No forms submitted.
+- Provider descriptions support two legal-review candidates and one community
+  referral route; FSFE's inability to give legal advice is explicit. Published
+  numeric pricing for this scoped review was not found on inspected pages;
+  availability, willingness and engagement costs remain unknown. No independent
+  professional-registration check or reviewer appointment is claimed.
+- `python3 tools/check_links.py` passed local Markdown file links.
+- `git diff --check` passed. A read-only comparison of task-register IDs and
+  prerequisite columns against `git show HEAD:docs/project-plan.md` passed;
+  assertions confirmed task 01 remains Open and G01 remains HOLD.
+- Reviewed tracked diff and the new package for unsupported acceptance claims,
+  sensitive material and executable changes: documentation only, no keys or
+  participant records. External pages were read, not frozen or exhaustively
+  checked for anchors; recheck them before contact.
+
+No unit tests or RNS campaigns rerun for this documentation-only package; hosted
+Python 3.12/3.13 results are not newly established. Preparation is complete locally
+and uncommitted; qualified review and reviewed release approach remain pending.
+No outreach, commissioning, spending, commit, push or publication occurred.
+
+## Task 01 self-review direction — 4 October 2026
+
+After the arrangement package, the maintainer declined hiring a reviewer.
+Updated its current direction and plan/backlog/handoff/dossier with a bounded
+self-review sequence; retained reviewer research as deferred historical work.
+`python3 tools/check_links.py` and `git diff --check` passed. No executable
+behaviour changed; tests/campaigns were not rerun. The self-review has not yet
+been performed. Existing qualified-review acceptance and task dependencies remain
+unchanged; task 01 is open and G01 HOLD persists. Changes remain local/uncommitted;
+no outreach, spending or publication occurred.
+
+## Task 01 bounded self-review — 4 October 2026
+
+Baseline HEAD `ff3df9f`; the previous arrangement/direction documentation changes
+were already uncommitted and preserved. The new
+[self-review](research/distribution-self-review.md) assesses Q01–Q07 and proposes
+form-specific decisions; it does not record maintainer adoption or legal approval.
+
+- Downloaded exact ConfigObj 5.0.9 and i2plib 0.0.14 source archives using publisher
+  PyPI JSON URLs/hashes; downloaded i2plib's pinned v0.0.14 tag and raw licence.
+  Sandbox DNS initially failed; network-enabled retrieval succeeded. Nothing
+  downloaded was installed, imported or executed.
+- Verified the seven historical archives and fifteen saved notice hashes. New
+  source archives matched PyPI hashes; recovered ConfigObj BSD/i2plib MIT texts
+  matched their source members. Original register/evidence remained unchanged.
+- Ten vendored byte comparisons were recorded; all eight i2plib release Python
+  files matched the pinned tag. RNS has three exact i2plib matches and five changed
+  files; both ConfigObj/validate files differ. AST inspection excluding docstrings
+  still found validate differences; no semantic equivalence claimed.
+- Static `/usr/bin/otool -L` inspection on two hashed native wheel members recorded
+  cffi system-libffi linkage and cryptography load commands. `/usr/bin/strings`
+  found the recorded OpenSSL version string; this is not build provenance proof.
+- Opened current primary Reticulum commentary and cryptography installation docs;
+  treated commentary as context, not licence amendment or settled legal findings.
+  The GitHub pinned licence blob web fetch failed; its raw pinned URL succeeded.
+- An independent verification pass confirmed nine PyPI archive hashes, pinned-tag
+  hash, two complete notice extractions, ten vendored comparisons, eight tag/release
+  matches, both native records and the version-string observation; all assertions
+  passed. Replay instructions and source/member hashes are in the evidence README.
+- Compared task IDs, prerequisite columns and completion criteria against
+  `git show HEAD:docs/project-plan.md`: unchanged. Task 01 remains Open; G01 HOLD
+  preserved. Updated licensing ADR adds evidence without changing licence scope.
+- `python3 tools/check_links.py` and `git diff --check` passed. Reviewed the new
+  assessment/evidence and tracked diff: documentation/licence evidence only, no
+  upstream executable source, private keys or participant data added. External
+  sources were accessed individually; no exhaustive external/anchor check claimed.
+
+No unit tests or RNS campaigns rerun for this documentation/evidence-only package;
+hosted Python 3.12/3.13 results are not newly established. Self-review evidence is
+complete, but maintainer adoption, AI service data-use assessment, modification
+provenance, native notices/build evidence and the existing qualified-review gate
+remain open. Paid review is deferred. Changes remain local/uncommitted; no outreach,
+spending, RF/road trials, commit, push or release occurred.
+
+## Task 01 assurance update and publication — 4 October 2026
+
+The maintainer explicitly authorised replacing mandatory external review with
+maintainer self-review, then requested a Conventional Commit and push. Updated
+current plan/backlog acceptance, licensing policy and ADR; dated supersession
+entries preserve the earlier requirement as historical. Task 01 remains Open
+pending the maintainer's form-specific release/risk decision; G01 stays HOLD.
+Other prerequisites and technical/regulatory requirements are unchanged.
+
+`python3 tools/check_links.py` and `git diff --check` passed. `git fetch origin`
+succeeded; main and origin/main matched before this documentation commit. Reviewed
+the accumulated package: original assessment, licence evidence and documentation
+only, with prior local work preserved. No executable changes require test/campaign
+reruns. Publication is authorised for this package; previous no-publication entries
+remain true for their earlier steps. Commit/push outcome is reported after execution.

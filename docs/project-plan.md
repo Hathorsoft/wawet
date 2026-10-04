@@ -207,7 +207,7 @@ gantt
 | --- | --- | --- | --- | --- |
 | **A01** Review, check and commit local research | Complete; S001 / this documentation commit | L01, L02, L03, L04, L05 | Review all modified/untracked research and source, rerun relevant checks, separate historical/new evidence and commit reviewed work; no push implied. | [Evidence / specification](../docs/validation.md). Reviewed source/evidence committed at `ae4ba6e` and `e42ae0e`; new validation is recorded separately. No push. |
 | **A02** Agree feasibility thresholds and host role | Committed; 2026-10-04 / `b46261b`; S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
-| **01** Exact-version distribution review | Open; S003–S013 | A02 | Qualified written review of exact Reticulum/LXMF releases where selected, permitted distribution forms, restrictions, notices and approved release approach. | [Evidence / specification](../LICENSING.md). [Dossier prepared](research/distribution-review.md); qualified review pending. LXMF unselected. External review may run while eligible work proceeds. |
+| **01** Exact-version distribution review | Open; S003–S013 | A02 | Document maintainer self-review of exact releases where selected, rights/restrictions/notices, unresolved risks and a dated form-specific release decision; no external legal review required for task 01. | [Evidence / specification](../LICENSING.md). [Dossier prepared](research/distribution-review.md); [bounded self-review completed](research/distribution-self-review.md); maintainer release decision and residual-risk record pending. External review optional. LXMF unselected. External review may run while eligible work proceeds. |
 | **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). Candidate hardware and calibrated instruments absent. |
 | **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
@@ -388,3 +388,56 @@ persist; there is still no unblocked software implementation package.
 
 Documentation/evidence only; no runtime changes, outreach, purchasing, RF tests,
 commit, push or publication occurred in this follow-up.
+
+## Task 01 reviewer arrangement prepared — 4 October 2026
+
+The [reviewer arrangement package](research/distribution-review-arrangement.md) adds two UK legal-review
+candidates, a community referral route, an unsent enquiry and an engagement
+checklist. Starting tree was clean at `ff3df9f`, which commits the dossier;
+earlier uncommitted entries remain historical. This package is local/uncommitted.
+Reviewer selection, authorised contact, engagement terms and qualified written
+review remain pending. Task 01 is open; gates 01–05 and G01 HOLD persist.
+No stages or dependencies change: 14 still requires physical-host 03 and 09;
+15 requires 14. No outreach, commissioning, spending, runtime changes, commit,
+push or publication occurred. Validation is recorded in the validation document.
+
+## Task 01 self-review direction — 4 October 2026
+
+The maintainer declined hiring a reviewer: this is a solo free-time project.
+The next package is [bounded maintainer self-review](research/distribution-review-arrangement.md) of Q01–Q07,
+vendor notices and form-specific distribution decisions. Reviewer routes and the
+unsent enquiry remain historical preparation; external engagement is deferred.
+Self-review can advance evidence and decisions but does not satisfy the existing
+qualified-review acceptance criterion. No task dependency or gate criterion is
+silently relaxed; task 01 remains open and G01 HOLD persists. No outreach or
+spending is needed for the bounded self-review. That review is not yet completed.
+
+## Task 01 bounded self-review completed — 4 October 2026
+
+The [agent-assisted self-review](research/distribution-self-review.md) assesses Q01–Q07, recovers
+complete attributable ConfigObj/i2plib notices and records exact vendored
+comparisons plus static macOS research-wheel observations. Notice retrieval gaps
+are narrowed; modification authorship, native shipped notices/build provenance,
+AI service data use and future-image scope remain unresolved. Its conservative
+form-specific approach is proposed for maintainer adoption, not a recorded release
+approval. Paid review is deferred; the existing qualified-review criterion remains
+unsatisfied. Task 01 stays open, gates 01–05 and G01 HOLD persist. No prerequisites
+or stages change. Prior local changes were preserved; this follow-up is uncommitted.
+No packages installed/executed, outreach, spending, RF/road test or publication.
+
+## Task 01 assurance decision — 4 October 2026
+
+**DESIGN DECISION:** the maintainer explicitly chose to perform task 01 ourselves
+and instructed updating the task accordingly. A documented maintainer self-review
+and dated form-specific release/risk decision replace the previous mandatory
+qualified external review for task 01. External advice is optional, not a required
+paid prerequisite. Earlier qualified-review entries are historical and superseded
+by this decision; no professional legal approval is asserted.
+
+The [self-review](research/distribution-self-review.md) supplies the evidence assessment. Task 01 remains
+open until the maintainer records adopted distribution decisions, conditions and
+residual risks, including unresolved AI data-use and provenance questions. This
+instruction changes the assurance method; it does not itself approve a bundle or
+adopt every recommendation. G01 stays HOLD and other task prerequisites and
+technical/regulatory gates remain unchanged. Restricted upstream terms and notice
+obligations are not waived. Re-review changed uses, releases and shipped builds.

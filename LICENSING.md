@@ -77,8 +77,9 @@ no copyright assignment or exclusive-sales agreement is required. Contributors
 must have the right to submit work and identify third-party material. Do not
 copy publicly visible code without reviewing its licence. Keep a dependency/
 notice inventory, exact versions and required corresponding source with product
-release artefacts. Seek qualified review of RNS restrictions, RNode distribution
-and hardware reciprocity before a manufacturing release.
+release artefacts. Record maintainer review of RNS restrictions, RNode distribution and hardware
+reciprocity before a manufacturing release; seek external expertise if the
+maintainer decides an unresolved risk requires it. No legal approval is implied.
 
 ## Feasibility review inventory
 
@@ -87,3 +88,33 @@ records exact versions and notice hashes for the follow-up experiment. The
 [distribution review brief](docs/research/feasibility-gates.md) distinguishes source,
 optional installation and bundled images. LXMF is not selected or installed;
 qualified review and product distribution approval remain unresolved.
+
+## Task 01 self-review follow-up — 4 October 2026
+
+The [bounded self-review](docs/research/distribution-self-review.md) distinguishes
+exact licence clauses from interpretation and unresolved questions. Complete
+ConfigObj BSD and pinned i2plib MIT notices were recovered and compared to RNS's
+vendored files. The exact research cffi wheel links to system libffi; cryptography
+static observations do not establish complete OpenSSL/Rust shipped notices or build
+provenance. Historical findings above remain separate from these new observations.
+The proposed conservative distribution approach awaits maintainer adoption;
+original scopes are unchanged. No blanket compatibility, AI data-use exemption,
+qualified review or bundled-image approval is claimed. Paid review is deferred;
+task 01 and G01 HOLD remain unresolved under the existing acceptance criteria.
+
+## Task 01 assurance decision — 4 October 2026
+
+**DESIGN DECISION:** the maintainer explicitly chose to perform task 01 ourselves
+and instructed updating the task accordingly. A documented maintainer self-review
+and dated form-specific release/risk decision replace the previous mandatory
+qualified external review for task 01. External advice is optional, not a required
+paid prerequisite. Earlier qualified-review entries are historical and superseded
+by this decision; no professional legal approval is asserted.
+
+The [self-review](docs/research/distribution-self-review.md) supplies the evidence assessment. Task 01 remains
+open until the maintainer records adopted distribution decisions, conditions and
+residual risks, including unresolved AI data-use and provenance questions. This
+instruction changes the assurance method; it does not itself approve a bundle or
+adopt every recommendation. G01 stays HOLD and other task prerequisites and
+technical/regulatory gates remain unchanged. Restricted upstream terms and notice
+obligations are not waived. Re-review changed uses, releases and shipped builds.
