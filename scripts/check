@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+./scripts/test
+"${PYTHON:-python3}" -m ruff check packages tests tools
+"${PYTHON:-python3}" -m ruff format --check packages tests tools
+"${PYTHON:-python3}" -m mypy
