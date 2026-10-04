@@ -31,3 +31,7 @@ Investigate how Haven and Wi-Fi HaLow relate to the existing vehicle-reporting c
 ## Explore Reticulum as the common networking layer
 
 Consider Reticulum as preferable to Meshtastic for the broader network, alongside ideas from Data Slayer amateur-radio experiments. Amateur-radio suitability is an optional research question, not a consumer requirement.
+
+## Introduce Wawet ecosystem and Drive product direction
+
+Develop the broader ecosystem as Wawet, maintained by Hathorsoft Ltd, with Reticulum as the proposed common networking layer and Wawet Drive as the first product. Validate affordability, standalone operation and moving-peer delivery experimentally.
