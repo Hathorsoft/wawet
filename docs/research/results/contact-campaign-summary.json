@@ -1,0 +1,5364 @@
+{
+  "traffic_comparisons": {
+    "stable/35/events": {
+      "tx_mean_difference": 6434.0,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.0,
+      "receive_rx_mean_difference": 6330.0
+    },
+    "outage/12/events": {
+      "tx_mean_difference": 411.0,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.0,
+      "receive_rx_mean_difference": 406.0
+    },
+    "absent/2/events": {
+      "tx_mean_difference": 55.0,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.0,
+      "receive_rx_mean_difference": 51.0
+    },
+    "adversarial/3/events": {
+      "tx_mean_difference": 1036.0,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 1.0,
+      "receive_rx_mean_difference": 1023.0
+    },
+    "overload/3/events": {
+      "tx_mean_difference": 7256.0,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 1.0,
+      "receive_rx_mean_difference": 7142.0
+    },
+    "cold/1/events": {
+      "tx_mean_difference": 214.5,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.3333333333333428,
+      "receive_rx_mean_difference": 211.0
+    },
+    "cold/2/events": {
+      "tx_mean_difference": 214.5,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": -0.5333333333333314,
+      "receive_rx_mean_difference": 211.0
+    },
+    "cold/5/events": {
+      "tx_mean_difference": 214.16666666666666,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": -0.2666666666666515,
+      "receive_rx_mean_difference": 211.0
+    },
+    "cold/10/events": {
+      "tx_mean_difference": 214.93333333333334,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.7333333333333201,
+      "receive_rx_mean_difference": 211.0
+    },
+    "warm/1/events": {
+      "tx_mean_difference": 215.4666666666667,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.2333333333333485,
+      "receive_rx_mean_difference": 211.0
+    },
+    "warm/2/events": {
+      "tx_mean_difference": 214.3,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": -0.3333333333333428,
+      "receive_rx_mean_difference": 211.0
+    },
+    "warm/5/events": {
+      "tx_mean_difference": 214.73333333333335,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": 0.26666666666667993,
+      "receive_rx_mean_difference": 211.0
+    },
+    "warm/10/events": {
+      "tx_mean_difference": 214.8,
+      "rx_mean_difference": 0.0,
+      "receive_tx_mean_difference": -0.4333333333333087,
+      "receive_rx_mean_difference": 211.0
+    }
+  },
+  "campaign": {
+    "runs": [
+      {
+        "run_id": "74338b60-d523-44c4-a988-97339ee581ab",
+        "scenario": "stable",
+        "window": 35,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "acf9097e-31a4-4805-8e73-c7ee0e4d9c30",
+        "scenario": "stable",
+        "window": 35,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "79c27032-df58-4275-a9cd-40d2633b20b5",
+        "scenario": "outage",
+        "window": 12,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "91a9c6c5-5a38-4446-87f6-1e204d0e93f9",
+        "scenario": "outage",
+        "window": 12,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "b31b5876-1298-4066-a359-893d9e31dc12",
+        "scenario": "absent",
+        "window": 2,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "7cdd8ada-d3e8-44fc-a948-16d9a772dd18",
+        "scenario": "absent",
+        "window": 2,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "7db52b2e-438e-4aab-a5ef-db8327e9c4a0",
+        "scenario": "adversarial",
+        "window": 3,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "410c3498-cc91-4a6c-a2e3-992757b10ef1",
+        "scenario": "adversarial",
+        "window": 3,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "805233c0-68a9-447c-aa68-9d88d203f076",
+        "scenario": "overload",
+        "window": 3,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "094c8e6a-85e4-465f-9540-3cefd82e5c95",
+        "scenario": "overload",
+        "window": 3,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "fd27972e-c088-4f78-ac84-a3c8b439a90d",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "7695df00-8609-4958-bf14-9766c9af16c4",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "fc705f57-0c5b-4534-9f88-ec7f8f538998",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "162f0a81-780d-41e1-84d3-56a439789319",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "2f236330-9056-4a0e-a568-0e295a8b8db1",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "fed586d6-d129-4974-b0d9-6b1a8a14bad8",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "51e4e52c-eefe-4aa0-b766-cc4d93829e13",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "f1dce7e2-48f7-42ec-b3ab-0765b730038f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "412738e5-aa5b-45fb-88db-d3d3de0e0319",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "01458815-9379-402c-963e-bbff9763ac57",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "24449996-e6f4-43b5-a0be-33d65010e715",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "e99ee45a-0226-48a2-a114-c030a3591d6f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "144986af-3dec-4871-b214-5e1b241f9ad0",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "591d66ea-7135-4779-96a4-ae0d50e84b91",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "2d9f81a6-9d1c-4862-b48e-ad2a13d64f3f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "a1257547-5c6b-4127-9dab-4f070a1736fe",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "6912ca21-63b2-496e-93e9-794e61360b0f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "2d3f2526-250a-463a-b345-8eeb45ced25b",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "7f7915c3-1b92-43eb-8a92-9f0fd957786b",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "4d485ccb-71f2-4a01-8c60-13a95897c1c0",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "cac48d74-778c-4e87-8dc7-6cebc577defa",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "d1070dc8-01ef-4ed4-8da5-3c629d7b659e",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "3aaec80e-4a85-4a7b-96ba-231f8adfce65",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "f1522e91-d000-4b20-893c-69c367bead2e",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "0c6d10a3-d4d3-4883-9753-d41649436990",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "01089f2b-24b8-4f77-bad6-0605bcfba391",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "dfcc9226-da57-4f1b-adbe-8b0619a0129f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "0d70e4ce-27c0-466d-a397-fb9b2fbae883",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "b0935c3e-f2f0-437e-9c29-d397463a8f47",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "29efee49-5b29-43f6-b9d5-7a3b4301bb2f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "e2adeafb-8193-4f57-b591-41379845a762",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "58cbf404-d58d-4c8a-9111-c5eb39282b46",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "60cc4958-1fcf-4687-a0ee-d1734d05ea7a",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "58ae09a3-56a3-4c56-aab8-1367ae85e2aa",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "f16c6581-ea79-414b-8bc2-713243ac4b5c",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "2e42f2ba-0d04-4ffd-baa3-aee7b1907a9e",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "f02c1a2f-3508-4ed4-9948-3d7cf5fabeed",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "66ba56f9-ac9f-40cb-99d2-30f3df4c5708",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "98fc9afd-9746-434e-a05c-35fae9631d98",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "2404e3de-a8ae-487a-9ab6-435665f1d8cc",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "8b952a3b-ec92-4ade-a50d-7f1034a63bb0",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "37b77a6a-3f6c-4d60-9422-cb72b580aabd",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "eb197b73-074f-44cb-98f8-b3f15d625065",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "283e4e17-eae2-4bae-856b-4cdc89dd18b7",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "a67425c3-8ca2-43bb-975e-3bc70028a564",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "e1aa3d78-039c-4294-80f8-81f3f440c1f3",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "6efbf67a-7cbe-4003-b424-e51cc832f048",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "64a7afb0-41ba-417a-9f3d-4e330cc06db3",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "92cd97e4-6ba4-428b-a0d3-58d36b1e5f2e",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "d32fc5e7-88d7-416f-9f14-fa6f8edb21f5",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "3c389b79-166c-4c55-8fe9-450d99221e4c",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "b47c3d88-f89c-4fb6-9414-d22ddf9c97da",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "774f86ae-e10d-4a8a-bbc6-71bc35e613e8",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "ab3752c4-9611-476b-8fa6-3280c32fae0c",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "87ee7a6d-12a8-4090-836b-5e13dbb76f5d",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "02b5cc5e-9772-48dd-8150-ecbb17ec2b59",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "ef493220-344b-456e-8281-1ac31b5fbe7f",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "4485fb9e-5d50-4f60-8380-4eb405450a98",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "524ce1b0-406b-4254-9c93-96774c11875b",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "82b0efc3-df8c-421a-b6f6-8fd4dafed8ea",
+        "scenario": "cold",
+        "window": 1,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "46162be9-4c42-4c87-9c45-90d864449179",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "7313b318-34b9-42d7-9d68-708406be525b",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "946ac873-dcbb-426c-af46-14e039e65243",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "75a4eb9d-9616-49f4-bd56-6a29260ba590",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "a7db6dc6-9957-4f6a-b1f1-574946d06235",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "9f5a2133-c82a-401f-b4c1-58676bd48d29",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "d28eb63d-6890-48b2-bd06-efd4688b75b8",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "2566688d-d45b-40fb-b408-58d2b9530590",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "5e11937b-4faf-4ebf-b942-5d75f1f004ea",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "f7595e7c-3284-482f-9dac-ff04a105fdb3",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "1810fa46-a77f-402e-858c-2e7824701df0",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "177d949b-f2bc-44cf-ac09-002bc6c9faf1",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "7ed25973-92bc-4244-8c50-489ec4c37afc",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "36a917db-8151-43a1-8e90-6c8eae823864",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "da884d71-c304-43f2-b1b4-c432dda602c1",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "baf222e0-7830-423d-90e6-23fc838c2626",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "cb63a502-52bd-4a60-af66-35efc7b3bf3a",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "ae538236-a88a-4f2e-ab54-8b7b33190963",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "3db9734a-d647-4369-b2bc-5727fe364bd3",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "b45ca729-32bb-4a60-957f-97bebb5fd5aa",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "68a61445-4b76-49df-b28c-09b554b7ebe9",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "d8979532-8b3c-404a-a88c-5a2f86b8bea4",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "93678c3e-a932-46d8-a661-8ecaaf01a22e",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "0303ac1f-82b5-45db-a18b-c6add2bf3325",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "9a4dc8e2-cdee-4ed2-b6a2-cf7fa1d7cdd9",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "17095937-44f2-4e25-ac1e-91925c91449f",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "e0794997-5e3f-4555-bc64-a3621757d42c",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "4926a216-3f29-4a7a-9551-7a077f73b026",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "0348cb55-4825-4961-a839-543c2992d162",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "3e051703-a15a-4c40-aea5-5c4a0c5c4ded",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "51cd2272-748b-453e-b938-40a5297da0d3",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "f002e970-0735-4ad5-9e00-a65192c162d2",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "82addf04-3b37-488b-a18a-6581338b9628",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "f98d5b83-b1dd-4e19-826c-c59ebed8a56e",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "9a0b319b-daa7-41ac-91c3-87478bb26a3a",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "641c9466-0503-4bdb-9395-acdd4f242c3f",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "b240a6ba-a80a-4d23-8949-de16f74f752c",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "a3d77ae8-e2c5-4785-8506-adbe03bdc261",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "8ac82a8c-3484-4593-98bb-85fc1eaab302",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "aa326918-6826-4c9b-9e37-21a54a22d4ca",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "796b0941-6d12-4cc7-ad9c-9a15bb1d3b07",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "a624fe2c-5d4e-4c5f-83b5-cf3aec5fb9b9",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "aa4b31d5-fd7a-49bf-8a0b-807a69505901",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "1cdacd44-cbb8-48bb-a43d-6b40feab9527",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "e4b35bb7-baf7-4c88-af09-bee64c62029d",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "6261f3df-e563-41d0-81be-a9d81cca56fd",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "db0a45fa-792d-41fc-9f38-db43187956d6",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "ddaab171-4eb9-49a0-bd85-057223f0cc8d",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "0b74eee4-8f81-451c-bcbc-5076099ff505",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "03999653-ac4c-4334-8a84-0a7a05b967fc",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "46e91fb8-4702-4528-805f-20ddb96a9266",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "45931861-6eba-485e-988e-a98f17f1548d",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "62d2248d-4bd0-4dca-8526-29ea3c0d149c",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "61628d4e-5fdf-4967-bbe8-3ed3ba08ed74",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "515aa6b0-5edd-4f38-8e1f-7de878318c13",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "08e805c5-687e-48c1-8e19-2839acb7fb9f",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "41d21ded-d01b-4be6-83a3-6a64b32ac57d",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "cbf0775d-0d83-425d-81a6-35340cf9f635",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "1a420765-31fa-4b64-927e-696bca148f1a",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "00b8d630-7827-4981-abd9-ac42ac27a62c",
+        "scenario": "cold",
+        "window": 2,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "3b02fd30-e2c4-46c1-9089-29e81936390d",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "f2397d92-55f7-4a92-a968-d766b964d0a3",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "db0cb65f-f155-4d47-bff3-d0af52cf6a23",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "c6b257c4-dbe7-4d1f-b813-c30dba0dc07d",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "0ca606af-7d48-47bd-9619-bef6a7f88ab3",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "bc0976d5-9f50-41cd-abdc-21b5772e640f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "961fd1c0-4310-41de-9612-d0557361c2e3",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "bb129d29-e328-4dfa-84ba-641169b4c779",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "dba54cc8-05fe-4dba-811b-b54d52d36f37",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "27e146ec-89e3-4d28-a7e2-96dada296fd0",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "48cc3b72-3288-4c2b-9492-e104cc41b600",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "e6718668-39f9-470a-af36-f313f11916b2",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "9f238407-8601-4bd4-9e60-4e09921152b4",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "c010ddac-8990-4ccc-a40f-02d70e78aabb",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "5a900f51-2676-4dd9-82dc-88874a067c14",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "d75a9a33-f2a7-4bf4-9a47-55621e8f4996",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "bfb190ce-17fb-4170-bbf7-51b324096aca",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "2a89b9c4-8768-4eac-a030-164f7f67d32f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "67cdbe4d-7609-480f-b00f-1c1bb9180c94",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "dd5da52e-da5c-473d-807a-96051f2caf74",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "2567d548-84c1-462e-9fa7-046b0c9d6c1a",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "c136022c-5bc2-4958-933c-29f0857400c2",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "8a5887cb-e348-4576-98be-2a7217701f0a",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "b9a03265-bca7-4001-a48d-4caea2563480",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "a71fce93-8973-40f0-9fc8-37554884d3a0",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "8b12128c-099a-4557-bf79-bf86a4b1a289",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "b911d938-86c9-4b36-a635-226fd72a5f55",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "30a74c6f-629d-4e0a-b65c-efb88582d2a6",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "10043705-7682-414b-b7cc-ab2481ef1201",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "06c12eea-869f-4336-855e-39bc1d72866f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "6cfccd70-8aaa-4559-bdce-2284f7cb5113",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "a26acbe8-e262-4819-a063-9be7404c1998",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "1fa20877-04c6-4831-be6d-483ca2f6a179",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "bda7120a-cad6-4f20-9cc4-1320ecb98e4f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "0d7cf1a8-6b58-482f-a6bf-61c29ab5f716",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "1c8abc6c-5096-4ec2-9ecd-605e01168f15",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "f3c10a8b-9232-4fdf-a12d-fa27790ebdaa",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "fe0921ec-808c-44ae-ba52-10d876dfce8f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "2b682532-2a03-447d-a5a1-aa5ebff3cc23",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "f691385b-6067-45fb-82e0-ea850928b62d",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "52495fad-5a8d-44a5-b849-7fdbcc3b74a8",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "ed921a29-70d3-447c-86aa-c4e1e6573813",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "d5d288cc-961b-4b53-863a-9cce6993a8df",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "15644acb-2a7c-43f8-8bea-bbb647f5db12",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "1d10ea03-d6df-4620-897e-c0fdbf672f38",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "b5d79627-1ba4-4b0c-a0d6-a21089524012",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "3a24b528-0405-4e39-bdb8-d45c89fc725b",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "33766c66-af3e-4ada-a9f7-0a4cc041c33b",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "29e4e9a5-8a51-4387-b54b-c8a3efa4789f",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "cde3aa56-f7a0-459e-8847-2bd7b5349ad6",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "65594087-6bd6-40f0-aac4-5f1b34b5a907",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "c99d2860-03dd-456e-b9eb-595e5ca73889",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "8f2c2de7-6686-44c7-8f67-8c73b51f3792",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "613b3f46-d77d-4981-95d1-95170dce0b2d",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "ecf359b0-4674-4a0c-b71c-398f532ff827",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "c87f5d6a-c7cc-41c2-a2d3-2b53d716ceb0",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "78906641-b354-486f-9fce-8a28300d36cc",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "9971d38d-bc2e-4446-bb12-1a5f5da6f3e8",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "532293a0-ce9e-4c14-87cf-7100249e8fc1",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "250f946f-787c-4607-9e3a-7e65ba7dcc07",
+        "scenario": "cold",
+        "window": 5,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "3f5d32b3-c2a5-4de2-9071-148e502683a2",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "5c6b1853-a534-4f95-8e8d-f55aadf2ad74",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "64cbc255-30ab-44b3-9b34-b0bf9d284962",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "4dace902-aae9-4f33-9b15-c9539bc2e93b",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "a4da065a-d2d2-40cb-91ea-fc9dedd0beb9",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "67dc7bed-d74d-4996-9c98-904563b02a1d",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "665ba26f-d4a3-46e9-b92f-2aa04bde0720",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "9642a947-aae0-4180-a1d3-231e8aabe993",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "e01778b5-f641-4712-9fd3-258cb8d31231",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "1e6d556b-9a26-4cc2-8931-123dfef979ac",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "08e73c1c-92a9-44a6-8177-4934000228a9",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "1e09b91c-aee3-474d-a092-0ac7629e024a",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "d1aabdcb-757f-4aaf-a9f9-c371d20202ed",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "4646ce75-e9f0-4a1d-a422-8d0c359aff23",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "24bb0799-f023-4af9-b02c-a45be8fa2e05",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "cd64ece5-55b4-420c-89d8-18776842299c",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "fb69d2de-de33-4876-9118-3b93ec04bfe5",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "ea68f27b-2dbe-4681-a9ae-8764448e9e56",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "8e7e9b87-816d-4656-8e7e-3e5f1a1b4a25",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "0bb460f4-8808-4b8e-9f95-1af19ee53f24",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "77b3a3ea-418e-49c6-94a1-2b21904212c1",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "d8f9c847-45ff-4c1c-b4b0-1c656063e833",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "6c9cde11-b0eb-4017-9789-a3097550f112",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "b4f50ce5-b70d-48b0-a7ee-26d5c095a017",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "a3c7125e-3668-4395-9538-cfde2b261f34",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "cd9e9156-3f18-4e14-ae44-e6ea4b21f577",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "6d664a30-8e45-46b6-b9fa-c66d01db0adf",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "589802fa-3d54-49a7-8848-a633c7db17ad",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "51724fd9-33df-4661-8f4e-e68d6f3adab8",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "ca1fad3d-21bf-48b9-ac49-5b8dc6b015d3",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "3e507be3-9642-4477-aead-c698e604b0e9",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "3169572f-4912-4889-bfc0-a65179c8398b",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "6cff48c4-05b3-4d45-be02-9533956ad969",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "1748e718-1703-41f0-83b1-bc1accda428f",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "4a273ce6-7878-4f62-8c33-2ee919e7c6e6",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "38ba6ac8-8585-4f0a-9aea-72ab29b95560",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "48395bc8-47c1-4e63-953a-9f6bfeded4d4",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "a59488d7-7a38-4052-a260-d726c1a970cf",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "54a4ef18-e9b6-4d32-89b5-d659557d690d",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "38d6c1cf-917a-4083-84cc-bc0793f2ce10",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "cef1e0e2-1fa6-4be5-ac91-964d05115097",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "d264a099-5aac-4cc2-9571-cb459f3c2d5a",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "4707ccf9-7308-4751-83da-9a7f6011b70a",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "7a2dbeef-3775-4a6b-af08-725e874c1959",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "dcf0876f-8402-4288-b3d0-cc5f7ab07dfe",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "1f935fbe-a0ca-4c87-9d13-b531b3d1553e",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "ec23fe97-6900-4da8-a752-ea1e2293fd88",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "a50e9387-a175-4ee5-828e-79e862a1f08c",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "dd027a2c-5fc1-42c5-9b38-3e3f7a54f080",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "0163e75f-e59d-47b2-be66-c68a3ceb60b4",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "a62af13c-60c4-4c2a-8391-71d919197937",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "950fd0d1-165c-4270-9c0e-52da565da5fd",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "74017eec-ad49-4c5d-a7ff-b6c57648c311",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "db1449eb-8606-4372-8963-d8d9d0f2e2d3",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "01321faf-901e-4506-91b7-8087c3b1375f",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "a8bc1765-fc08-4f20-82b1-f8baf9019a6a",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "49010882-db55-4d23-8adb-58ba6a785d91",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "64ccec1a-c53e-4ec8-82a7-4225685ec049",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "01575c31-170b-4272-b719-864318be50d0",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "ef2b2483-c1e8-4dc3-8155-8640ab8e5e93",
+        "scenario": "cold",
+        "window": 10,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "ec1f35d9-fa2e-44d3-b707-8cc693266e9e",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "b406458b-a179-495a-a1d8-15d79dc024d4",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "65800fb4-e9cc-493d-9067-6bdb6800d0cf",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "21e653dc-a0ca-441d-989f-1d3d9b8fcf34",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "0e48e975-dd08-4240-8385-15ad769921ea",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "09d7a209-3ae9-402e-94c2-b2c06385e66e",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "7cc947ea-9305-4a84-ac78-8359bd0e6e58",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "f96306c3-77d7-4f5b-8e13-e5f2618f7961",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "09073bd8-246c-4f33-b643-372c9331812c",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "f768a05d-d538-450d-ba68-f19004b98d1c",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "57aa9821-5e06-44de-a64f-2a1d6c517b4b",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "786ca0bf-0146-4186-9c0f-76bc2993bacd",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "4013594b-6c1c-4022-a4a4-eae03eec4c49",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "f780cbfb-5526-4b9c-8f57-51b8e6fced5e",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "a25a7234-569d-432c-97a5-c72cdc338916",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "f8e354c0-c2fe-410b-b772-8b6428656121",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "5d69fc99-85ed-43c7-8348-b3fbaf7c8ee5",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "0b26cec8-a07d-4a35-9ffb-4396850f5f43",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "3d98678d-b40d-45b2-9298-eaa1cf72f45d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "8066f75e-da6c-4ee4-9370-ae3272610df7",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "7ec7e3ab-5b76-4d1f-aa66-f80a2b3b84da",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "bbf5f6ab-d086-49d6-8ebb-847cff26da74",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "250b7796-2a9d-4341-9ce2-b62cf9bb807e",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "f1733bfb-53b7-4c85-bdcd-c388379ed957",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "70700e72-94fa-41e1-990a-af74649772a6",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "b19726d1-aa6b-4a6b-a177-aff5b62ca965",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "9a27b70e-233b-4fca-9213-8731f4c8db73",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "dc557ac2-f0e0-45a3-ba5a-df4e8cbf950d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "7f677b24-3200-4ec1-9e2f-6cc0055d3fe4",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "adabcd96-e722-4453-bb51-a97218044a89",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "fb7a7e0c-e667-4d7a-b925-423d4266ae34",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "6da1e4a8-c40e-4de2-9da5-ff3ff4b194f3",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "1b93c500-9c12-4a8c-8fc9-6986eef543c8",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "06de3f91-385b-4cce-b6ba-3b5f95a78d84",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "3ce88ac4-4d0f-482f-aa2c-afd6a6426882",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "c5616acc-3705-4be0-b11e-b4dc1ff016a6",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "a7885c09-7213-471a-96d8-e580982db475",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "ecf08a32-8835-44ef-8952-bbfa438efc43",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "13a13a17-8b10-41f5-82cd-0fe33c73bc6d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "048604da-03d0-4c12-9f93-5b7df11bb3ed",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "a6e1509d-55b7-4ca2-949c-9b4219cd3d83",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "9f1adf49-deb4-4105-b9cd-5d305dcfc886",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "fa031afe-2a1f-458c-b59c-8f632804ace9",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "584a465b-d6b1-4bf5-803d-9eee9ac2415f",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "dddc9f62-a4f8-4529-b8b4-7a74bc5ac1ef",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "bd9d8d12-65e4-4543-8515-6170ba91f701",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "fcbc71aa-1351-437b-8fc1-333cf025852a",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "3f8ee0e9-4760-4ed5-906f-4396626e5f88",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "26871e97-dbd6-4e30-b2db-c55278fe9cde",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "91e8f50d-6520-4cfc-aed9-6ff2012d755c",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "65318944-a7cd-4006-a46c-437ef7cd7418",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "1e9122ac-194f-465d-844e-5df7c1d708d3",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "c0e81bfe-414d-455c-8f9f-a32bab07ae65",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "fb4e70bc-822d-4fec-a987-ca30f02dca2d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "4d428644-33fe-44d4-abe7-f5f58e51131f",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "dfc58875-3d5c-4285-8c4c-f5a7b3f9626d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "fc75d78c-bc26-4c11-b29f-099ec4e7439a",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "ded4e016-e698-4425-8000-f385ff8b213a",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "312230f4-eda5-4573-829e-1d08b5a6ec04",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "2b6c9735-ea4f-4657-8277-f92d7752c20d",
+        "scenario": "warm",
+        "window": 1,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "e8aa6886-7594-441f-8230-8cb75a78dd9f",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "2eaea906-1ce3-4e92-840e-faf708064888",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "bace15a7-045d-4fa6-b3c5-a0eb0483727a",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "f1e3da86-d291-4f86-a00c-3fbf029b6fe5",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "36ed5d27-7d10-45a1-a816-641e0dabd6c7",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "9a831113-555a-4ea1-8f6a-39562d5e2c71",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "6d07606d-4d6b-4f31-8e4d-8bb2a31be766",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "f25b1d72-b33a-4886-8dcc-72ad2d84e4a7",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "858975f6-f0ae-4135-811c-2e51e1f35a4d",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "29e0a12a-6600-4a5d-b996-3bb7fab341b2",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "65d347ad-4709-46bd-9eeb-5de32acea521",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "f19698d7-4bcd-47bb-b8c6-1e67c80fa072",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "b55579d2-1da6-46f1-bac1-35d5cb8e1c28",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "c19c186a-bc96-4713-8148-692f874a30df",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "0f94b228-95d9-4f9d-bf81-9581065db834",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "0253eecf-2304-4187-a72f-2e2750758d38",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "0b626e4e-c6e4-4040-8753-ed0cf5f60a94",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "8de9d3b4-b555-4156-9c05-d28b4ff34a63",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "ed06424e-28dd-40c4-b28b-aea7df30be34",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "3d3157af-fe6c-4be9-98d2-4a799e838655",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "e6e35e1f-f12b-4247-ab08-0f92ef8c96eb",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "571116c7-4b9a-4200-b502-e5c28c694071",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "f2a1dafb-7261-4b76-bc45-5d574a619450",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "dfc8fce5-7356-43c0-922a-5fab2049d2f9",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "8b7da3ed-d066-4527-894b-67bab2f44c31",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "f62fb2c6-8b1d-4237-8398-ad0c11337bb3",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "3560e54c-a637-4214-9fc9-820f1d2eca06",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "c68cb036-1c7c-4156-86ad-26e8fb40b5c7",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "32d9ac0f-3fea-4a44-a909-fa6bf1de4386",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "d1b4ef2c-c727-4618-b53d-6d5c457232e1",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "b35c688d-bf81-4269-8702-583d2e57902b",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "07ef3a77-532a-469b-b5ff-0283e8af7f33",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "079644b6-119c-4c5a-92a8-659a7b19077d",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "9dbd7e4b-f459-4836-8346-6033b582179d",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "1434fc06-6750-42c1-93b7-623d24542c7f",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "5c55e326-7e63-4e16-8b6c-cd2c80c8ff29",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "d1f7525a-00bc-4077-930b-bec3a4b51332",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "6e8891f9-8310-458f-95f4-8583408e48e0",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "44803fc3-169a-4ca1-9af6-d7168b4f0bc3",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "f4991bcb-e7f3-4a09-8e47-0da026b75cf1",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "4a45640c-6e30-4510-afd0-05cb56b17074",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "2b2b2c1b-328e-42f0-ab15-7dfab48eaefa",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "5631ccc8-2cdb-4d89-957f-5f3dc3f317ec",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "7004aec6-1f1a-4072-a406-0726c84c5b13",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "9859666c-b18e-4b46-8cbd-89d0dd808c38",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "d49ab674-4216-4240-86f0-43462ba52214",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "4d80ed3d-dfe9-4cb7-a5d5-a0817d1cbb9a",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "a32b512b-2d06-4dec-957d-6c528f2cd6a3",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "2f68a8c9-934e-4ce1-a56e-10ee2cf9fb93",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "0d139462-f7a2-43f8-a5f7-0ca58b8dd530",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "4650b556-ddc6-4d0d-9601-15955bc561d1",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "f6df1441-05d8-4471-9425-fa9e024dede2",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "57ae4645-4c39-46f7-8275-a5e4a4b42a43",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "be24d661-10c4-4967-a6b7-416bb488702e",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "091b112d-72f2-4786-af7d-ca2df3b84cd0",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "7fe37b69-56ae-48ab-95a7-d1cfa39ea62a",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "f8e906cf-9948-4a2a-b554-efc6f4ac5342",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "c77a4424-0668-42cd-9a1a-77072f313735",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "725a0f46-0a07-4c93-88dc-eab1bf67af56",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "52cefeda-877c-433d-9bfe-40f85cec6aa5",
+        "scenario": "warm",
+        "window": 2,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "b1f419cb-1a8a-4d11-aa38-3bbe92894f8a",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "9d6c00be-8f66-45b8-bb08-2f99a58c56b8",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "cd7abe85-4c73-4cf0-8516-8ae0fc6849f3",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "64cfc4b6-e3fc-4048-af25-a63153b8a882",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "38bd71ee-657f-4e7e-918f-10188f306319",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "7870d6d5-4eb0-4086-b80d-bb24f9f5b818",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "748783b9-bfb5-425a-80a3-8d2f5edfaf15",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "631ef562-ecdb-47f6-a34a-0d29c1c65a77",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "28d05a5b-d7a0-4d74-b524-ecfa75651202",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "e9e5a38e-0798-45ff-961f-cbf9324138c3",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "ef1d00e7-ee87-4b32-bd7c-b1ce3d6a736f",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "8f658477-5d48-4f94-ae5d-49239abb09be",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "5511c6b8-0a4c-4d3c-8b57-dc31a1ecb8d1",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "08865369-aa35-44dc-b075-b92115507a04",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "f9ba8135-3eca-4bbf-9cfc-b67d4b8e43ab",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "58963dcf-01b4-44bd-baaf-12c4341e958a",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "703607b8-2e3b-4d36-8479-b354d5870bbc",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "3f26d902-5093-478d-9400-e200b4bd70f2",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "557e5d05-cec9-48f4-9b48-4d9225753515",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "3e1a7ccb-f60a-4246-913c-f4b254eafc68",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "1872e383-cd18-4f12-8c50-b7dd7dd0bbb9",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "f6ad1f50-071b-4279-8b68-064896e9df9e",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "6a6213dd-5ace-4738-834f-22fbc49e6c1a",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "bf8e3f28-c889-4fc6-bbc9-175d3daaf7f9",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "7ebc7966-0a4d-47a7-acfa-17da7c3498f5",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "0d775a78-ed4c-45a3-adfa-63b8d7d9d16f",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "336821fa-66ad-4280-b2e1-0fa0e73f4d7f",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "b76070ef-7fb0-451b-a4bb-7ab75f7c433b",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "701faacc-57e4-4856-be3a-734a62f5a154",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "9890f614-99ac-431e-9a88-b35296d6815b",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "37c13521-ace5-4046-9719-700e46c60159",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "50eede07-6d9c-4c3b-a338-10c5fedd6d0f",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "c81a5662-c25b-4fd0-b969-4ce177835e39",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "3a9f7e11-1694-42d1-b5aa-178618571be5",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "c6426cff-6567-449c-8b6a-f9075621107a",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "1e55ecbc-8a72-479d-bd32-73746d61b37c",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "183038cc-cd39-4c4a-987e-042fa9728860",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "0855f3ae-65b1-4d4c-a06f-311a96231750",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "82550184-be66-46b9-bb1e-976bfaf184bf",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "c9edb29e-27bf-4e0b-9315-0e52239aaea0",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "cbd0d421-087c-4821-9f86-90fc02a8a1bc",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "8e5e6e68-c81f-4b24-a100-04833c74da14",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "89675151-2174-4b38-bd86-65ac92c237f3",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "14d25c02-7a22-4e82-9adb-251845c7e23f",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "cc6f6a59-c550-41ea-9c97-9525e5755a95",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "6ac4a17d-7709-44be-a692-ea8edcb89893",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "f420ac72-b383-44a1-a243-e99486b5d100",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "7b1859b7-6500-4352-b1fd-f5fc30b6c7ca",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "eec190e0-ca37-4d2d-87e9-5d5d299e1b78",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "619acee2-485c-4a25-a945-6b0e7555ed58",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "725eb0c4-f2a7-4551-891f-6f535a0afae5",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "bda0ffe8-2005-488b-ac43-f51e30f912b4",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "5dc4ccb5-dfe7-43ae-8a81-1b244c343881",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "b7f65afa-a554-4cb3-a1ff-d6116b2ec94e",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "dce4d426-9116-4c87-8611-46f139fb8d76",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "4a3f4770-8faa-47ad-9ab5-00d7ab743188",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "c4a749e4-43f8-41d7-8724-89492c35036c",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "fb9aed5c-5704-4c7a-9d75-97ab2d063495",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "d4b4aeac-c5fe-4636-ab69-b6e7df63b026",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "466b6783-6afb-4f85-b488-66b4a0638def",
+        "scenario": "warm",
+        "window": 5,
+        "trial": 29,
+        "control_only": true
+      },
+      {
+        "run_id": "fd2c2cb9-5287-42a9-8dd0-f3d5b9c9efe3",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 0,
+        "control_only": false
+      },
+      {
+        "run_id": "0d091fd2-87e8-4777-ba22-ab4a254a4120",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 0,
+        "control_only": true
+      },
+      {
+        "run_id": "49b51c06-0371-45f6-85d5-42a3b40b8ed2",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 1,
+        "control_only": false
+      },
+      {
+        "run_id": "482f4aa3-0b2a-48f9-b54c-3d567d9e0e8e",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 1,
+        "control_only": true
+      },
+      {
+        "run_id": "4a93d5dc-0265-450d-ab94-8cc81cd23556",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 2,
+        "control_only": false
+      },
+      {
+        "run_id": "3b02c796-4cc7-4585-b1fa-f2af7754ca77",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 2,
+        "control_only": true
+      },
+      {
+        "run_id": "7d1b3ab0-9150-4974-bc21-4703c457df52",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 3,
+        "control_only": false
+      },
+      {
+        "run_id": "84bc5252-9f94-4494-bc02-48d32a2a5cf3",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 3,
+        "control_only": true
+      },
+      {
+        "run_id": "134a7f6a-5cbb-487f-8c27-0a66685349f1",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 4,
+        "control_only": false
+      },
+      {
+        "run_id": "403af0b0-be67-421b-b06e-5a8c132d6807",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 4,
+        "control_only": true
+      },
+      {
+        "run_id": "82774599-a9fa-4fe0-b8bb-894e877cc239",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 5,
+        "control_only": false
+      },
+      {
+        "run_id": "f14c850a-7055-430c-bd57-754c97e148d6",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 5,
+        "control_only": true
+      },
+      {
+        "run_id": "40582620-c4b4-467a-a0cd-ae044aa36ebf",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 6,
+        "control_only": false
+      },
+      {
+        "run_id": "9a904eb2-f2d0-4661-8a1f-dd108f06f84b",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 6,
+        "control_only": true
+      },
+      {
+        "run_id": "4ccf2eda-1657-44d4-b207-62a3c7d24032",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 7,
+        "control_only": false
+      },
+      {
+        "run_id": "15b90d28-ae3a-4051-b478-65d8eb49f917",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 7,
+        "control_only": true
+      },
+      {
+        "run_id": "1e0f172d-cf47-4a28-98f6-38350b7e29af",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 8,
+        "control_only": false
+      },
+      {
+        "run_id": "b9fddc57-5771-45e2-ad43-41dcce2a175f",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 8,
+        "control_only": true
+      },
+      {
+        "run_id": "931777b3-9213-4e29-b53a-11fcbfba077a",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 9,
+        "control_only": false
+      },
+      {
+        "run_id": "100d5488-f4d3-468d-8a87-843d1dd82e3c",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 9,
+        "control_only": true
+      },
+      {
+        "run_id": "b3d8bccb-c242-4e3b-93d3-4079033fe396",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 10,
+        "control_only": false
+      },
+      {
+        "run_id": "58634161-536a-4b2e-8fb8-191f6996ea5b",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 10,
+        "control_only": true
+      },
+      {
+        "run_id": "e1545d7c-c934-440c-aeb3-b8b893c7cc19",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 11,
+        "control_only": false
+      },
+      {
+        "run_id": "24c2484b-e58d-425a-94f6-dae3216fb574",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 11,
+        "control_only": true
+      },
+      {
+        "run_id": "03896056-2beb-4bfe-b787-40f5e6ea4671",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 12,
+        "control_only": false
+      },
+      {
+        "run_id": "7af4c950-7195-4f10-afe0-9c33660bfe30",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 12,
+        "control_only": true
+      },
+      {
+        "run_id": "6d7e9491-d0f9-4f57-be98-d09891601c2a",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 13,
+        "control_only": false
+      },
+      {
+        "run_id": "086e5bd7-44bc-49e3-afc5-1fe0ccd2e852",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 13,
+        "control_only": true
+      },
+      {
+        "run_id": "1e549c77-5245-49fd-a163-1cbc266f65ba",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 14,
+        "control_only": false
+      },
+      {
+        "run_id": "5a39ee1b-3003-404a-88f6-6f177ed3fb97",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 14,
+        "control_only": true
+      },
+      {
+        "run_id": "b78b82ad-4502-4607-9179-03260c965d0e",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 15,
+        "control_only": false
+      },
+      {
+        "run_id": "1bf17f48-e19c-4c32-b3f3-1da96cfd5896",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 15,
+        "control_only": true
+      },
+      {
+        "run_id": "d18b0854-e7db-4480-a6e7-0f804e6990e6",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 16,
+        "control_only": false
+      },
+      {
+        "run_id": "14ad7f3c-206b-4672-a302-f8bfed67653b",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 16,
+        "control_only": true
+      },
+      {
+        "run_id": "468eef8b-b0a8-434e-833d-7e30cdf158f0",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 17,
+        "control_only": false
+      },
+      {
+        "run_id": "84027a5d-4c04-419a-b844-d54f3ffd1dab",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 17,
+        "control_only": true
+      },
+      {
+        "run_id": "95a2f9ce-07cf-4f85-ba11-ca9b42e1b07f",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 18,
+        "control_only": false
+      },
+      {
+        "run_id": "bae9a173-b34e-441b-ad6f-38b0cd83c837",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 18,
+        "control_only": true
+      },
+      {
+        "run_id": "cdaf6edb-1e3f-4fa1-a1e1-9fe2a50905e3",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 19,
+        "control_only": false
+      },
+      {
+        "run_id": "7e836dc8-642b-4b85-9421-78c968353fa1",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 19,
+        "control_only": true
+      },
+      {
+        "run_id": "e1c2933f-055a-4be1-9d40-1efe00fbead6",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 20,
+        "control_only": false
+      },
+      {
+        "run_id": "597647b0-d6d0-4973-928c-4b47185a5a48",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 20,
+        "control_only": true
+      },
+      {
+        "run_id": "2f9b1c1e-9ef4-488b-ae5a-fecac6b3ad6f",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 21,
+        "control_only": false
+      },
+      {
+        "run_id": "1a281197-239f-46fe-a299-72c0f001111e",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 21,
+        "control_only": true
+      },
+      {
+        "run_id": "0c26b53e-fc47-472a-8d20-d49ed1439e2a",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 22,
+        "control_only": false
+      },
+      {
+        "run_id": "84b35197-35dc-4660-a914-4612e8f12cd7",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 22,
+        "control_only": true
+      },
+      {
+        "run_id": "b449a420-edfd-4aa0-a111-dec605f40b6b",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 23,
+        "control_only": false
+      },
+      {
+        "run_id": "6972f0b4-7cd2-430a-9776-4e738dc09463",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 23,
+        "control_only": true
+      },
+      {
+        "run_id": "5b5edfee-d1ae-4192-84b8-5afc7ab0b924",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 24,
+        "control_only": false
+      },
+      {
+        "run_id": "30fe104a-3f45-4f28-8f46-2c2c332845af",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 24,
+        "control_only": true
+      },
+      {
+        "run_id": "070d07dd-f4f8-409b-ade4-ef5648cb31d1",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 25,
+        "control_only": false
+      },
+      {
+        "run_id": "05f560c1-b384-46a6-b7c9-94bfcf27bb16",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 25,
+        "control_only": true
+      },
+      {
+        "run_id": "afe30a94-41a2-441e-84e9-dea2a7be68e8",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 26,
+        "control_only": false
+      },
+      {
+        "run_id": "9b4a268d-fb09-488a-b28d-866e00b50733",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 26,
+        "control_only": true
+      },
+      {
+        "run_id": "9ab614a6-5d4e-4469-b936-7f451c80043a",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 27,
+        "control_only": false
+      },
+      {
+        "run_id": "2b0e1022-ee33-4767-9f56-0db35f808b39",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 27,
+        "control_only": true
+      },
+      {
+        "run_id": "29d95b69-0aeb-4bd5-8afe-f6e723d09515",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 28,
+        "control_only": false
+      },
+      {
+        "run_id": "97688bd2-44a3-4ac3-9e30-b8c5f99fb4ce",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 28,
+        "control_only": true
+      },
+      {
+        "run_id": "7efa5172-9b27-4068-b166-a964a5c92119",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 29,
+        "control_only": false
+      },
+      {
+        "run_id": "42d4213b-7c65-425a-bcf1-339ae969ee91",
+        "scenario": "warm",
+        "window": 10,
+        "trial": 29,
+        "control_only": true
+      }
+    ],
+    "jobs": 8,
+    "environment": "single-host loopback",
+    "created_at": 1791134826.9095838
+  },
+  "groups": {
+    "stable/35/events": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.05497024999931455,
+        "median": 0.05497024999931455,
+        "mean": 0.05497024999931455,
+        "p95": 0.05497024999931455,
+        "max": 0.05497024999931455
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 6487,
+        "median": 6487,
+        "mean": 6487.0,
+        "p95": 6487,
+        "max": 6487
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 169,
+        "median": 169,
+        "mean": 169.0,
+        "p95": 169,
+        "max": 169
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 6381,
+        "median": 6381,
+        "mean": 6381.0,
+        "p95": 6381,
+        "max": 6381
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "stable/35/control": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.055175083223730326,
+        "median": 0.055175083223730326,
+        "mean": 0.055175083223730326,
+        "p95": 0.055175083223730326,
+        "max": 0.055175083223730326
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 53,
+        "median": 53,
+        "mean": 53.0,
+        "p95": 53,
+        "max": 53
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 169,
+        "median": 169,
+        "mean": 169.0,
+        "p95": 169,
+        "max": 169
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "outage/12/events": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 2,
+      "sent_events": 1,
+      "delivered_events": 1,
+      "attempts": {
+        "unavailable": 2,
+        "expired_before_send": 1,
+        "sent": 1
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.055425083031877875,
+        "median": 0.055425083031877875,
+        "mean": 0.055425083031877875,
+        "p95": 0.055425083031877875,
+        "max": 0.055425083031877875
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 1,
+      "reconnection": {
+        "n": 1,
+        "min": 5.0585223329253495,
+        "median": 5.0585223329253495,
+        "mean": 5.0585223329253495,
+        "p95": 5.0585223329253495,
+        "max": 5.0585223329253495
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 464,
+        "median": 464,
+        "mean": 464.0,
+        "p95": 464,
+        "max": 464
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 171,
+        "median": 171,
+        "mean": 171.0,
+        "p95": 171,
+        "max": 171
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 457,
+        "median": 457,
+        "mean": 457.0,
+        "p95": 457,
+        "max": 457
+      },
+      "delivery_fraction": 0.5,
+      "eligible_delivery_fraction": 1.0
+    },
+    "outage/12/control": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.05347920814529061,
+        "median": 0.05347920814529061,
+        "mean": 0.05347920814529061,
+        "p95": 0.05347920814529061,
+        "max": 0.05347920814529061
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 1,
+        "min": 5.005508915986866,
+        "median": 5.005508915986866,
+        "mean": 5.005508915986866,
+        "p95": 5.005508915986866,
+        "max": 5.005508915986866
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 53,
+        "median": 53,
+        "mean": 53.0,
+        "p95": 53,
+        "max": 53
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 171,
+        "median": 171,
+        "mean": 171.0,
+        "p95": 171,
+        "max": 171
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "absent/2/events": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 1,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {
+        "unavailable": 1
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 0
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 1,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 2019,
+        "median": 2019,
+        "mean": 2019.0,
+        "p95": 2019,
+        "max": 2019
+      },
+      "rx": {
+        "n": 1,
+        "min": 0,
+        "median": 0,
+        "mean": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 0,
+        "median": 0,
+        "mean": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 1938,
+        "median": 1938,
+        "mean": 1938.0,
+        "p95": 1938,
+        "max": 1938
+      },
+      "delivery_fraction": 0.0,
+      "eligible_delivery_fraction": 0.0
+    },
+    "absent/2/control": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 0
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 1,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 1964,
+        "median": 1964,
+        "mean": 1964.0,
+        "p95": 1964,
+        "max": 1964
+      },
+      "rx": {
+        "n": 1,
+        "min": 0,
+        "median": 0,
+        "mean": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 0,
+        "median": 0,
+        "mean": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 1887,
+        "median": 1887,
+        "mean": 1887.0,
+        "p95": 1887,
+        "max": 1887
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "adversarial/3/events": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 1,
+      "sent_events": 1,
+      "delivered_events": 1,
+      "attempts": {
+        "sent": 1
+      },
+      "rejections": {
+        "signature": 2,
+        "malformed": 1,
+        "expired": 1,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.05353387491777539,
+        "median": 0.05353387491777539,
+        "mean": 0.05353387491777539,
+        "p95": 0.05353387491777539,
+        "max": 0.05353387491777539
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 1089,
+        "median": 1089,
+        "mean": 1089.0,
+        "p95": 1089,
+        "max": 1089
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 171,
+        "median": 171,
+        "mean": 171.0,
+        "p95": 171,
+        "max": 171
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 1074,
+        "median": 1074,
+        "mean": 1074.0,
+        "p95": 1074,
+        "max": 1074
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "adversarial/3/control": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.05518000014126301,
+        "median": 0.05518000014126301,
+        "mean": 0.05518000014126301,
+        "p95": 0.05518000014126301,
+        "max": 0.05518000014126301
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 53,
+        "median": 53,
+        "mean": 53.0,
+        "p95": 53,
+        "max": 53
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 170,
+        "median": 170,
+        "mean": 170.0,
+        "p95": 170,
+        "max": 170
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "overload/3/events": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 33,
+      "sent_events": 33,
+      "delivered_events": 9,
+      "attempts": {
+        "sent": 33
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 24
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.05515075009316206,
+        "median": 0.05515075009316206,
+        "mean": 0.05515075009316206,
+        "p95": 0.05515075009316206,
+        "max": 0.05515075009316206
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 7309,
+        "median": 7309,
+        "mean": 7309.0,
+        "p95": 7309,
+        "max": 7309
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 171,
+        "median": 171,
+        "mean": 171.0,
+        "p95": 171,
+        "max": 171
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 7193,
+        "median": 7193,
+        "mean": 7193.0,
+        "p95": 7193,
+        "max": 7193
+      },
+      "delivery_fraction": 0.2727272727272727,
+      "eligible_delivery_fraction": 0.2727272727272727
+    },
+    "overload/3/control": {
+      "planned_trials": 1,
+      "complete_trials": 1,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 1,
+        "min": 0.0504852079320699,
+        "median": 0.0504852079320699,
+        "mean": 0.0504852079320699,
+        "p95": 0.0504852079320699,
+        "max": 0.0504852079320699
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 1,
+        "min": 53,
+        "median": 53,
+        "mean": 53.0,
+        "p95": 53,
+        "max": 53
+      },
+      "rx": {
+        "n": 1,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 1,
+        "min": 170,
+        "median": 170,
+        "mean": 170.0,
+        "p95": 170,
+        "max": 170
+      },
+      "receive_rx": {
+        "n": 1,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "cold/1/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.050279500195756555,
+        "median": 0.05361058306880295,
+        "mean": 0.053610104229301216,
+        "p95": 0.05523987510241568,
+        "max": 0.0553787078242749
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 267.73333333333335,
+        "p95": 270,
+        "max": 270
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.43333333333334,
+        "p95": 172,
+        "max": 175
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "cold/1/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.050328874960541725,
+        "median": 0.053838374791666865,
+        "mean": 0.05337266394247611,
+        "p95": 0.05521500017493963,
+        "max": 0.055233791936188936
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.233333333333334,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.1,
+        "p95": 173,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "cold/2/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.050375542137771845,
+        "median": 0.05443229200318456,
+        "mean": 0.05387320564283679,
+        "p95": 0.05529195815324783,
+        "max": 0.05531091685406864
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 267.8,
+        "p95": 270,
+        "max": 271
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 169.9,
+        "p95": 172,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "cold/2/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.05022145784460008,
+        "median": 0.054470333037897944,
+        "mean": 0.053695040234985454,
+        "p95": 0.05523879220709205,
+        "max": 0.05527000012807548
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.3,
+        "p95": 55,
+        "max": 56
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.43333333333334,
+        "p95": 172,
+        "max": 174
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "cold/5/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.050530292093753815,
+        "median": 0.054591875057667494,
+        "mean": 0.05372235691174865,
+        "p95": 0.055270749842748046,
+        "max": 0.055436375085264444
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 267,
+        "mean": 267.56666666666666,
+        "p95": 270,
+        "max": 270
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 169.86666666666667,
+        "p95": 171,
+        "max": 171
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "cold/5/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.05024400004185736,
+        "median": 0.0531270841602236,
+        "mean": 0.0530987098114565,
+        "p95": 0.05520508298650384,
+        "max": 0.05521275009959936
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.4,
+        "p95": 55,
+        "max": 55
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.13333333333333,
+        "p95": 172,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "cold/10/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.05122170899994671,
+        "median": 0.05430774996057153,
+        "mean": 0.05376328051400681,
+        "p95": 0.05523900012485683,
+        "max": 0.055252250051125884
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 268.06666666666666,
+        "p95": 272,
+        "max": 272
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.5,
+        "p95": 172,
+        "max": 172
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "cold/10/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 0.050465499982237816,
+        "median": 0.05408845795318484,
+        "mean": 0.05349494581265996,
+        "p95": 0.05522433412261307,
+        "max": 0.055224499898031354
+      },
+      "warmup_discovery": {
+        "n": 0
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.13333333333333,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 169.76666666666668,
+        "p95": 172,
+        "max": 172
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "warm/1/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 1.9581057131290436e-06,
+        "median": 6.292015314102173e-06,
+        "mean": 8.775053235391776e-06,
+        "p95": 1.7958926036953926e-05,
+        "max": 4.866695962846279e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.05018633394502103,
+        "median": 0.05433712503872812,
+        "mean": 0.05358920847065747,
+        "p95": 0.05522045912221074,
+        "max": 0.05525949993170798
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 268.53333333333336,
+        "p95": 271,
+        "max": 271
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.26666666666668,
+        "p95": 172,
+        "max": 174
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "warm/1/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 1.9168946892023087e-06,
+        "median": 7.958151400089264e-06,
+        "mean": 1.1280504986643792e-05,
+        "p95": 3.287498839199543e-05,
+        "max": 4.1499966755509377e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.050201583886519074,
+        "median": 0.0524895831476897,
+        "mean": 0.05287525702733546,
+        "p95": 0.0552114169113338,
+        "max": 0.055215292144566774
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.06666666666667,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.03333333333333,
+        "p95": 171,
+        "max": 175
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "warm/2/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 2.1669548004865646e-06,
+        "median": 8.541159331798553e-06,
+        "mean": 9.636169609924157e-06,
+        "p95": 2.4124979972839355e-05,
+        "max": 2.4209031835198402e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.050312374951317906,
+        "median": 0.05514804203994572,
+        "mean": 0.053608687485878666,
+        "p95": 0.05530837504193187,
+        "max": 0.05533720809035003
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 267,
+        "mean": 267.56666666666666,
+        "p95": 270,
+        "max": 272
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 169.93333333333334,
+        "p95": 172,
+        "max": 172
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "warm/2/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 2.2498425096273422e-06,
+        "median": 6.792135536670685e-06,
+        "mean": 1.2855487875640393e-05,
+        "p95": 5.270913243293762e-05,
+        "max": 6.333296187222004e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.050352416932582855,
+        "median": 0.054010167019441724,
+        "mean": 0.05343230279007306,
+        "p95": 0.05525674996897578,
+        "max": 0.055271791061386466
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.266666666666666,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.26666666666668,
+        "p95": 172,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "warm/5/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 2.0831357687711716e-06,
+        "median": 6.875023245811462e-06,
+        "mean": 9.362461666266124e-06,
+        "p95": 3.2207928597927094e-05,
+        "max": 4.233303479850292e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.05025612493045628,
+        "median": 0.05371054098941386,
+        "mean": 0.053406723658554256,
+        "p95": 0.05520745809189975,
+        "max": 0.05522949993610382
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 267.8,
+        "p95": 270,
+        "max": 270
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.46666666666667,
+        "p95": 173,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "warm/5/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 2.1671876311302185e-06,
+        "median": 7.417052984237671e-06,
+        "mean": 1.9487598910927774e-05,
+        "p95": 7.087504491209984e-05,
+        "max": 0.0002878329250961542
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.050530292093753815,
+        "median": 0.05400024983100593,
+        "mean": 0.05344735127097617,
+        "p95": 0.05525704100728035,
+        "max": 0.055321000050753355
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.06666666666667,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.2,
+        "p95": 172,
+        "max": 173
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    },
+    "warm/10/events": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 30,
+      "sent_events": 30,
+      "delivered_events": 30,
+      "attempts": {
+        "sent": 30
+      },
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 3.2079406082630157e-06,
+        "median": 7.207971066236496e-06,
+        "mean": 8.024927228689194e-06,
+        "p95": 1.2458069249987602e-05,
+        "max": 1.7290934920310974e-05
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.050439874874427915,
+        "median": 0.05455300002358854,
+        "mean": 0.053748300035173696,
+        "p95": 0.05530274985358119,
+        "max": 0.05533591704443097
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 266,
+        "median": 268,
+        "mean": 268.1,
+        "p95": 270,
+        "max": 272
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 169.8,
+        "p95": 172,
+        "max": 172
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 262,
+        "median": 262,
+        "mean": 262.0,
+        "p95": 262,
+        "max": 262
+      },
+      "delivery_fraction": 1.0,
+      "eligible_delivery_fraction": 1.0
+    },
+    "warm/10/control": {
+      "planned_trials": 30,
+      "complete_trials": 30,
+      "failed_or_missing_trials": 0,
+      "intended_events": 0,
+      "sent_events": 0,
+      "delivered_events": 0,
+      "attempts": {},
+      "rejections": {
+        "signature": 0,
+        "malformed": 0,
+        "expired": 0,
+        "capacity": 0
+      },
+      "discovery": {
+        "n": 30,
+        "min": 3.375113010406494e-06,
+        "median": 9.916024282574654e-06,
+        "mean": 1.6870830828944843e-05,
+        "p95": 7.229088805615902e-05,
+        "max": 0.00013033300638198853
+      },
+      "warmup_discovery": {
+        "n": 30,
+        "min": 0.05068595916964114,
+        "median": 0.05410841712728143,
+        "mean": 0.053608534725693366,
+        "p95": 0.05532666714861989,
+        "max": 0.05543841701000929
+      },
+      "discovery_timeouts": 0,
+      "withheld_expired_events": 0,
+      "reconnection": {
+        "n": 0
+      },
+      "latency": {
+        "n": 0
+      },
+      "tx": {
+        "n": 30,
+        "min": 53,
+        "median": 53,
+        "mean": 53.3,
+        "p95": 54,
+        "max": 54
+      },
+      "rx": {
+        "n": 30,
+        "min": 167,
+        "median": 167,
+        "mean": 167.0,
+        "p95": 167,
+        "max": 167
+      },
+      "receive_tx": {
+        "n": 30,
+        "min": 169,
+        "median": 170,
+        "mean": 170.23333333333332,
+        "p95": 173,
+        "max": 174
+      },
+      "receive_rx": {
+        "n": 30,
+        "min": 51,
+        "median": 51,
+        "mean": 51.0,
+        "p95": 51,
+        "max": 51
+      },
+      "delivery_fraction": null,
+      "eligible_delivery_fraction": null
+    }
+  },
+  "clock_evidence": null,
+  "limitations": [
+    "Controlled IP interface contact, not moving radio",
+    "RNS interface counters exclude TCP/IP totals and radio airtime",
+    "One-way latency omitted without clock evidence; ambiguous multiple sends excluded",
+    "Exploratory characterisation, no product pass thresholds"
+  ]
+}

@@ -79,3 +79,11 @@ copy publicly visible code without reviewing its licence. Keep a dependency/
 notice inventory, exact versions and required corresponding source with product
 release artefacts. Seek qualified review of RNS restrictions, RNode distribution
 and hardware reciprocity before a manufacturing release.
+
+## Feasibility review inventory
+
+The [installed optional-experiment inventory](docs/research/results/dependency-inventory.json)
+records exact versions and notice hashes for the follow-up experiment. The
+[distribution review brief](docs/research/feasibility-gates.md) distinguishes source,
+optional installation and bundled images. LXMF is not selected or installed;
+qualified review and product distribution approval remain unresolved.

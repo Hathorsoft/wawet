@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-04",
+  "scope": "A01 local review and revalidation; no physical-host or radio evidence",
+  "starting_head": "29bccc6",
+  "python": "3.11.4",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "tool_versions": {
+    "rns": "1.5.5",
+    "ruff": "0.16.9",
+    "mypy": "2.3.1"
+  },
+  "archive_sha256": "d933e2fdd87349864a75ff98952bb58ab3eeed8c3b78a6c8704937c6dc4d7aeb",
+  "command": "PYTHONPATH=packages .venv/bin/python tools/rns_contact_campaign.py campaign --output /tmp/wawet-a01-review/contact-smoke --repetitions 1 --jobs 1",
+  "harness_sha256": "f82559424e5dad16d16140c15e5754d359cd42ca28df1dbb33c926af2191d36f",
+  "signed_spike_sha256": "cef7d1f02ac4c34950e85508e851b14a41468460237fcf3b20511711b36dfd4e",
+  "historical_archive_verification": {
+    "full_trials": 490,
+    "final_source_smoke_trials": 26,
+    "archive_and_executed_source_hashes": "matched",
+    "worker_exits": "all zero",
+    "offline_summaries": "exactly reproduced; full final-analysis summary matches published JSON",
+    "current_source": "matches historical final-source smoke"
+  },
+  "new_validation": {
+    "demo": "passed",
+    "contributor_check": "45 tests, links, Ruff lint/format, strict mypy passed with declared tool versions",
+    "pip_check": "passed",
+    "signed_delivery": "payload match; 2 signature rejects, 1 expired reject",
+    "signed_churn": "payload match; 1 expired queued event withheld",
+    "absent_discovery": "expected bounded timeout passed",
+    "sequential_smoke_trials": 26,
+    "worker_failures": 0,
+    "smoke_assertions": "stable and cold/warm delivery, unchanged fresh resend, stale withholding, timeout, adversarial counts, 24 capacity drops and recovery passed",
+    "smoke_offline_reanalysis": "exact match",
+    "archive_inspection": "no private keys/configs or participant data; coordinates are fixed synthetic inputs"
+  },
+  "review": "No executable corrections required. Updated ignored virtualenv dev tools to committed requirements; historical inventory and validation retained.",
+  "limits": [
+    "Gates 01-05 open; prototype HOLD",
+    "Two physical hosts, clock-certified cross-host latency and radio untested",
+    "Hosted Python 3.12/3.13 not verified",
+    "External links/anchors and current qualified regulatory/licensing review not validated",
+    "No push, PR, purchase or outreach"
+  ]
+}

@@ -57,3 +57,17 @@ experiment establishes that the installed RNS API can carry and deliver the
 application bytes across two processes. Next, test authenticated identity-based
 delivery with controlled loss and contact deadlines before implementing an
 adapter. Run that independently of the lightweight default CI.
+
+## Signed SINGLE follow-up
+
+A separate [authenticated spike](../../tools/rns_authenticated_spike.py) preserves
+this PLAIN baseline. See the [gate pack](feasibility-gates.md) and
+[raw observations](results/authenticated-loopback.json). Local sender authentication
+does not complete contact churn or two-physical-host acceptance.
+
+## Repeatable contact campaign
+
+The [contact campaign](contact-campaign.md) extends the isolated signed experiment
+with repeated events, matched controls, per-event JSONL and offline analysis. It
+preserves this historical spike; no production transport or physical-host result
+is implied.

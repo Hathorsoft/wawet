@@ -121,3 +121,26 @@ Finish each task with executable/reproducible evidence, updated documentation,
 remaining limitations and a clear statement of what was committed/published.
 Do not manufacture field results, quote estimates as prices or label a stub
 implementation as integration.
+
+## Feasibility follow-up — 4 October 2026
+
+The [gate review pack](research/feasibility-gates.md) adds distribution/host/radio/lab
+briefs and a separate signed SINGLE loopback experiment. All five gates remain
+unresolved; prototype investment is on hold. Physical-host contact runs,
+qualified reviews, delivered quotes and host measurements remain open. No
+production adapter, radio transmission, purchasing or remote publishing occurred.
+
+## Contact characterisation continuation — 4 October 2026
+
+The [campaign harness and runbook](research/contact-campaign.md) add repeated
+signed SINGLE events, timed TCP-interface windows, socket reconnection, bounded
+overload/recovery, JSONL evidence and offline analysis. Production interfaces and
+v1 vectors are unchanged. The earlier local work is preserved. Physical-host
+execution remains pending; gate 03 and prototype HOLD remain open. No equipment
+purchase, radio transmission, external outreach or remote publication occurred.
+
+[Local results](research/contact-campaign-results.md): 490/490 full campaign trials
+and 26/26 final-source smoke trials completed without worker failures; the final
+contributor check passes 45 tests plus links/lint/format/types. Exact source and
+raw records are archived. All measurements remain single-host controlled IP
+observations; no clock-certified cross-host latency or radio result is claimed.

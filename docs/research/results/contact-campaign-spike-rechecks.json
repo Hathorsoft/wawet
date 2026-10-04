@@ -1,0 +1,85 @@
+{
+  "auth": {
+    "run_id": "902ba76d-3931-4e1c-a140-fd98ae7e62ba",
+    "recorded_at": 1791135305.978805,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.4",
+    "sender": {
+      "sent_at": 1791135305.436318,
+      "discovery_seconds": 0.25508125009946525,
+      "rns_packet_bytes": 211,
+      "reconnect_seconds": null,
+      "expired_before_send": 0,
+      "injected_interface_loss_bytes": [],
+      "interface_tx_bytes": 1111,
+      "interface_rx_bytes": 167
+    },
+    "receiver": {
+      "hex": "a7e1010102030405060708090a0b0c0d0e0f1001004fa6a000015f9000006ac28e4803841388",
+      "event_id": "0102030405060708090a0b0c0d0e0f10",
+      "received_at": 1791135305.438596,
+      "rejected": {
+        "signature": 2,
+        "expired": 1
+      },
+      "category": 1
+    },
+    "rns_version": "1.5.5",
+    "medium": "TCP loopback",
+    "processes": 2,
+    "payload_bytes": 38,
+    "payload_match": true,
+    "authenticated": true,
+    "authentication": "domain-separated Ed25519 signature; pinned sender",
+    "signed_application_bytes": 102,
+    "routed": false,
+    "event_id": "0102030405060708090a0b0c0d0e0f10"
+  },
+  "auth-churn": {
+    "run_id": "30d53441-04b6-4e78-b106-11caef632339",
+    "recorded_at": 1791135312.3653362,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.4",
+    "sender": {
+      "sent_at": 1791135311.831017,
+      "discovery_seconds": 0.25374166714027524,
+      "rns_packet_bytes": 211,
+      "reconnect_seconds": 5.052775291027501,
+      "expired_before_send": 1,
+      "injected_interface_loss_bytes": [
+        211
+      ],
+      "interface_tx_bytes": 1308,
+      "interface_rx_bytes": 167
+    },
+    "receiver": {
+      "hex": "a7e1010102030405060708090a0b0c0d0e0f1001004fa6a000015f9000006ac28e4a03841388",
+      "event_id": "0102030405060708090a0b0c0d0e0f10",
+      "received_at": 1791135311.834518,
+      "rejected": {
+        "signature": 2,
+        "expired": 1
+      },
+      "category": 1
+    },
+    "rns_version": "1.5.5",
+    "medium": "TCP loopback",
+    "processes": 2,
+    "payload_bytes": 38,
+    "payload_match": true,
+    "authenticated": true,
+    "authentication": "domain-separated Ed25519 signature; pinned sender",
+    "signed_application_bytes": 102,
+    "routed": false,
+    "event_id": "0102030405060708090a0b0c0d0e0f10"
+  },
+  "auth-absent": {
+    "run_id": "5b42a792-20a6-4b87-9853-eee1b4453e12",
+    "rns_version": "1.5.5",
+    "recorded_at": 1791135320.8960068,
+    "scenario": "absent discovery",
+    "expected_timeout": true,
+    "sender_stdout": "{\"error\": \"Discovery deadline exceeded\", \"type\": \"TimeoutError\"}\n",
+    "sender_stderr": ""
+  }
+}

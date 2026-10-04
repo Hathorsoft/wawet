@@ -26,3 +26,12 @@ Suggested issues only; none created on GitHub. Gate tasks precede product commit
 | 20 | Evaluate Relay versus Gateway minimum roles (`area:infrastructure`, `priority:next`) | Proven forwarding capability, power/airtime budget and total cost; distinguish modem, transport and propagation. | No |
 
 Recommended next five: **01–05**. Legal/host/radio feasibility gates should precede custom PCB, mobile app and public vehicle trials.
+
+## Gates 01–05 progress
+
+See the [desk-first review pack](../research/feasibility-gates.md) for evidence,
+review briefs and unresolved acceptance criteria. No gate is complete.
+
+Task **03** now has a [repeatable contact campaign/runbook](../research/contact-campaign.md).
+Local controlled IP measurements are preparation; two physical hosts and later
+agreed performance thresholds remain outstanding.

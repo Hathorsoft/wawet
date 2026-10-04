@@ -24,3 +24,10 @@ Each experiment should record hypothesis, source revisions, physical setup,
 configuration, measurement method, raw observations, limitations and next gate.
 Publish negative results. A proposed ADR is not a fact; a simulator result is
 not a field result.
+
+The [feasibility gate review pack](feasibility-gates.md) records follow-up evidence
+and the current HOLD decision for gates 01–05.
+
+The [authenticated contact campaign](contact-campaign.md) adds repeated controlled
+IP contact measurements and a two-host private-LAN runbook. Physical-host
+acceptance remains pending.

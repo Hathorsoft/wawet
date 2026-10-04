@@ -158,3 +158,101 @@ wawet/
 ├── SUPPORT.md
 └── pyproject.toml
 ```
+
+## Feasibility follow-up — 4 October 2026
+
+Baseline demo and 31 tests passed before changes. Final command
+`PYTHON=.venv/bin/python ./scripts/check` passed 32 tests, local Markdown links,
+Ruff lint/format and strict mypy; `git diff --check` passed. Python 3.12/3.13
+hosted CI remains unverified.
+
+Optional RNS 1.5.5 runs of `tools/rns_authenticated_spike.py` (default, `--churn`
+and `--absent-discovery`) passed their scenario assertions on loopback. See the
+[review pack and raw observations](research/feasibility-gates.md). Worker-bundle
+preparation was exercised with a private example address without starting sockets.
+No physical-host, radio, current-consumption or qualified-review result is claimed.
+Changes remain local and uncommitted; no push occurred.
+
+## Authenticated contact campaign — 4 October 2026
+
+This continuation preserves the earlier foundation and feasibility validation.
+The [campaign report](research/contact-campaign-results.md) links raw evidence,
+exact executed source/hashes, analyser output and remaining limits.
+
+- Baseline before edits: `./scripts/demo`, `./scripts/test` and
+  `PYTHON=.venv/bin/python ./scripts/check` passed with 32 tests.
+- After changes: `./scripts/demo` passed; `./scripts/test` and
+  `PYTHON=.venv/bin/python ./scripts/check` passed with 45 tests, local Markdown
+  links, Ruff lint/format and strict mypy. The additional deadline test ran in
+  the final complete check. Default tests import no optional RNS dependency.
+- `PYTHONPATH=packages .venv/bin/python tools/rns_contact_campaign.py campaign
+  --output /tmp/wawet-contact-full --repetitions 30 --jobs 8` completed 490/490
+  trials with zero worker failures. Full source was archived before defensive
+  analysis/failure/deadline follow-ups.
+- Final-source smoke: the same campaign command with
+  `--output /tmp/wawet-contact-release-smoke --repetitions 1 --jobs 8` completed
+  26/26 trials with zero failures. Offline assertions passed stable delivery,
+  fresh resend, expiry withholding, adversarial counts, bounded overflow and recovery.
+- `tools/rns_authenticated_spike.py`, `--churn` and `--absent-discovery` were
+  rerun in the optional environment; delivery/churn and expected timeout passed.
+- The offline analyser reproduced the full-run summary. Cross-host latency was
+  omitted because measured clock-offset evidence was unavailable.
+
+Initial sandbox socket denial was resolved through approved loopback execution;
+no public network or radio was used. Runtime: macOS 26.2 arm64, Python 3.11.4,
+RNS 1.5.5. No two-physical-host or hosted Python 3.12/3.13 CI runs occurred. Existing
+local work was preserved; changes remain uncommitted and nothing was pushed.
+
+## A01 review and revalidation — 4 October 2026
+
+This new review started at `29bccc6`; the foundation and follow-up sections above
+remain historical records. All eight modified tracked files and all untracked
+research, tools, tests, result files and project-plan documentation were reviewed.
+No application/protocol changes or executable corrections were required.
+
+[Review evidence](research/results/a01-review.json) records versions, source hashes,
+checks and limitations. The [new raw archive](research/results/a01-recheck-2026-10-04.tar.gz)
+contains the sequential campaign manifest, worker JSONL/stderr/exits, summary,
+executed harness/hash, signed-spike outputs and offline smoke assertion script.
+After extracting it, run `python3 a01-recheck/verify-smoke.py a01-recheck/contact-smoke`.
+
+Commands and new results:
+
+```sh
+./scripts/demo
+PYTHON=.venv/bin/python ./scripts/check
+.venv/bin/python -m pip check
+git diff --check
+PYTHONPATH=packages .venv/bin/python tools/rns_authenticated_spike.py
+PYTHONPATH=packages .venv/bin/python tools/rns_authenticated_spike.py --churn
+PYTHONPATH=packages .venv/bin/python tools/rns_authenticated_spike.py --absent-discovery
+PYTHONPATH=packages .venv/bin/python tools/rns_contact_campaign.py campaign --output /tmp/wawet-a01-review/contact-smoke --repetitions 1 --jobs 1
+PYTHONPATH=packages .venv/bin/python tools/rns_contact_campaign.py analyse /tmp/wawet-a01-review/contact-smoke
+```
+
+- Demo, 45 tests, local Markdown file links, lint/format, strict types and dependency
+  consistency passed. The initial check used the old virtualenv tools; after
+  installing declared Ruff 0.16.9 and mypy 2.3.1, the complete check and `pip check`
+  passed again. No declared dependency changed.
+- Signed delivery/churn passed exact 38-byte equality, two signature rejects and
+  one expired receive reject; churn withheld one expired pending frame. Absent
+  discovery passed its expected bounded timeout.
+- **26/26 sequential smoke trials** completed with zero worker failures. Offline
+  assertions passed stable and cold/warm delivery, unchanged fresh resend, stale
+  withholding, absent timeout, adversarial counts, 24 capacity drops and recovery.
+  Offline reanalysis exactly matched the new summary; latency remains omitted.
+- Both historical archive SHA-256 values and executed-source hashes matched their
+  records. All 490 full-run and 26 historical smoke worker exits were zero; offline
+  summaries exactly reproduced, including the published full final-analysis JSON.
+  Current source matches the historical final-source smoke, so a new full campaign
+  was unnecessary. Historical full-run source remains separately archived.
+- Archive member/content review found no private keys/configurations or participant
+  data. Event locations derive from fixed synthetic inputs. Optional dependency
+  versions and notice hashes matched the installed inventory.
+
+Sandbox loopback bind and PyPI access initially failed; approved loopback execution
+and installation of already-declared dev versions completed successfully. Git writes
+also required sandbox escalation. These are environment permissions, not experiment
+failures. Results remain single-host controlled IP, not physical-host or radio
+measurements. External URLs/anchors, hosted Python 3.12/3.13, current qualified
+licensing/regulatory review and gates 01–05 remain unverified/open; HOLD persists.

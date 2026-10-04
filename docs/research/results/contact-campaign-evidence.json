@@ -1,0 +1,35 @@
+{
+  "initial_socket_attempt": "Sandbox denied loopback bind before workers started; rerun with approved socket execution.",
+  "smoke_campaigns": [
+    {
+      "directory": "/tmp/wawet-contact-smoke-2",
+      "runs": 26,
+      "worker_failures": 0
+    },
+    {
+      "directory": "/tmp/wawet-contact-smoke-3",
+      "runs": 26,
+      "worker_failures": 0
+    }
+  ],
+  "full_campaign": {
+    "runs": 490,
+    "worker_failures": 0,
+    "jobs": 8
+  },
+  "post_campaign_changes": "Added clock-evidence validation, incomplete-log handling, durable prelaunch failure records and bounded scheduled waits; full-run source is preserved in archive. Final smoke rechecks normal schedules.",
+  "physical_host_runs": "Not performed; hosts/access unavailable.",
+  "archive_sha256": "f67771585c7cc4f95a79e883a945a8779f5ecd6f491f8085b04e5b49537f3ec8",
+  "final_smoke": {
+    "runs": 26,
+    "worker_failures": 0,
+    "scenario_assertions": "Passed: stable delivery, expiry withholding, fresh resend, adversarial counts, capacity drops and recovery",
+    "harness_sha256": "f82559424e5dad16d16140c15e5754d359cd42ca28df1dbb33c926af2191d36f",
+    "archive_sha256": "e752ef965581417db32a3cfc9ddfefc23dac11d8d6f81b880e6cdec3733bbbc8"
+  },
+  "optional_spike_rechecks": {
+    "signed_delivery": "passed",
+    "churn": "passed",
+    "absent_discovery": "expected timeout passed"
+  }
+}
