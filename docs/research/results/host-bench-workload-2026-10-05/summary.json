@@ -1,0 +1,137 @@
+{
+  "baseline": "a2f40d8",
+  "physical_acceptance": "HOLD",
+  "runs": {
+    "check1": {
+      "completed_cycles": 1,
+      "exit_code": 0,
+      "failure_records": 0,
+      "final": {
+        "cycle": 1,
+        "metrics": {
+          "capacity_dropped": 121,
+          "duplicate": 1,
+          "expired": 1,
+          "id_conflict": 1,
+          "invalid": 1,
+          "rate_limited": 1,
+          "received": 1025,
+          "sent": 100,
+          "unauthenticated": 1025
+        },
+        "monotonic_seconds": 1713465.683873208,
+        "occupancy": 0,
+        "operations": {
+          "alerts": 102,
+          "decode": 100,
+          "encode": 100,
+          "receive": 1151,
+          "report": 100
+        },
+        "phase": "closed",
+        "sent": 100,
+        "synthetic_time": 1800007862,
+        "utc": "2026-10-05T20:33:39.030999+00:00"
+      },
+      "raw_bytes": 5180,
+      "raw_sha256": "e8a35102d7021efe591d43d13ee53530f8a83c766c8d6a4594e0f94eaa1ad108",
+      "records": 11
+    },
+    "check2": {
+      "completed_cycles": 1,
+      "exit_code": 0,
+      "failure_records": 0,
+      "final": {
+        "cycle": 1,
+        "metrics": {
+          "capacity_dropped": 121,
+          "duplicate": 1,
+          "expired": 1,
+          "id_conflict": 1,
+          "invalid": 1,
+          "rate_limited": 1,
+          "received": 1025,
+          "sent": 100,
+          "unauthenticated": 1025
+        },
+        "monotonic_seconds": 1713466.095932291,
+        "occupancy": 0,
+        "operations": {
+          "alerts": 102,
+          "decode": 100,
+          "encode": 100,
+          "receive": 1151,
+          "report": 100
+        },
+        "phase": "closed",
+        "sent": 100,
+        "synthetic_time": 1800007862,
+        "utc": "2026-10-05T20:33:39.443058+00:00"
+      },
+      "raw_bytes": 5179,
+      "raw_sha256": "6164b1e931adbe05a8a19ecc09d6497f028cc8325fdeb9c97c896f04650e9d24",
+      "records": 11
+    },
+    "measure": {
+      "active_end": 600.1779997078702,
+      "completed_cycles": 2424,
+      "exit_code": 0,
+      "failure_records": 0,
+      "final": {
+        "cycle": 2424,
+        "metrics": {
+          "capacity_dropped": 293304,
+          "duplicate": 2424,
+          "expired": 2424,
+          "id_conflict": 2424,
+          "invalid": 2424,
+          "rate_limited": 2424,
+          "received": 2484600,
+          "sent": 242400,
+          "unauthenticated": 2484600
+        },
+        "monotonic_seconds": 1714653.0651535,
+        "occupancy": 0,
+        "operations": {
+          "alerts": 247248,
+          "decode": 242400,
+          "encode": 242400,
+          "receive": 2790024,
+          "report": 242400
+        },
+        "phase": "closed",
+        "sent": 242400,
+        "synthetic_time": 1819057488,
+        "utc": "2026-10-05T20:53:26.410212+00:00"
+      },
+      "idle_end": 600.0027970829979,
+      "raw_bytes": 9507928,
+      "raw_sha256": "4c227436151a8faff4624c782ba9025b667fd8d435d362298a00751e2156c395",
+      "records": 19399
+    },
+    "superseded-interrupted": {
+      "exit_code": 1,
+      "failure_records": 1,
+      "final": {
+        "cycle": 0,
+        "metrics": {},
+        "monotonic_seconds": 1713452.6902485,
+        "occupancy": 0,
+        "operations": {
+          "alerts": 0,
+          "decode": 0,
+          "encode": 0,
+          "receive": 0,
+          "report": 0
+        },
+        "phase": "closed",
+        "sent": 0,
+        "synthetic_time": 1800000000,
+        "utc": "2026-10-05T20:33:26.037390+00:00"
+      },
+      "raw_bytes": 1754,
+      "raw_sha256": "ea3afe6835e8ca6d64cc86a377d7b310233da823df2a5d620eb23b51b3ac80af",
+      "records": 4
+    }
+  }
+}

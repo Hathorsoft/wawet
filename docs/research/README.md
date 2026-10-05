@@ -58,3 +58,8 @@ historical. Task 01 remains open pending the maintainer decision; G01 stays HOLD
 [Task 04 host comparison and bench readiness](standalone-host-bench.md): Zero 2 W
 first-screen recommendation, equipment checklist and measurement/evidence runbook.
 Preparation complete; no equipment or measurements, task 04 open and G01 HOLD.
+
+Task 04 follow-up — 5 October 2026: the [bench workload driver](../../tools/host_bench_workload.py)
+implements the documented synthetic recipe. Software preparation is complete;
+physical acceptance and G01 HOLD remain unchanged. See the bench runbook for
+measurement commands, phase alignment and remaining equipment requirements.

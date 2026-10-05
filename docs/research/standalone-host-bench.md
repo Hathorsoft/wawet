@@ -114,10 +114,46 @@ acceptance is replaced by running two processes on this candidate.
 ### Workload specification for the measurement session
 
 The existing demo/tests/encoding CLI do **not** hold a full Vehicle workload while
-networking. Before measurements, prepare an original temporary bench driver from
-this recipe, archive its source/hash with results, and validate its counters. It
-must use current APIs without becoming firmware or a production transport adapter.
-This documentation package does not implement that driver or claim it was run.
+networking. The original [host workload driver](../../tools/host_bench_workload.py)
+now implements the recipe below using current APIs and a bounded recording
+transport. It is research tooling, not firmware or a production transport adapter.
+Archive its source/hash with results and verify its correctness before measurements.
+
+```sh
+PYTHONPATH=packages python3 tools/host_bench_workload.py --mode check --output /tmp/wawet-host-check.jsonl
+PYTHONPATH=packages python3 tools/host_bench_workload.py --mode measure --output /tmp/wawet-host-measure.jsonl
+```
+
+Each output path must be new; existing evidence is never overwritten. Check mode
+runs one cycle. Measure mode holds an empty, initialised application idle for ten
+minutes, then repeats complete fill/hold/probe/burst/prune/recovery cycles for at
+least ten active minutes. The last cycle finishes even if it crosses the deadline;
+actual durations and completed cycles are recorded. Hold exercises 100 iterations
+per cycle. Synthetic application time advances independently of real elapsed time.
+Do warmup before the instrumented run; repeat physical runs three times as below.
+
+JSONL records flush at every phase boundary and include UTC and process-local
+monotonic markers, occupancy, counters, cumulative operation counts, cycle duration,
+source revision/status/diff hash, driver hash, configuration and runtime. Reporting
+adds the application's `sent` counter. Compare phase markers to derive phase elapsed
+times. There is no throughput pass threshold. Failure or interruption records a
+failure, closes the transport and exits nonzero; never discard failed-run evidence.
+The transport retains only the latest outgoing frame, and shutdown clears it.
+
+Capture external memory and electrical observations continuously through idle and
+active phases, including transitions. Align the flushed phase markers to the
+observer's acquisition timebase using a documented common trigger or measured
+clock mapping and uncertainty. UTC alone is not certified synchronisation; these
+software markers cannot establish electrical power-on or full T04 readiness.
+Keep acquisition, warmup, ambient conditions and process-lifetime logs alongside
+JSONL. The driver does not collect RSS, system memory, voltage or current itself.
+
+For the additional contention screen, start the existing isolated RNS smoke in a
+separate terminal during `active_start` through `active_end`, using the pinned
+optional environment and commands above. Record both process lifetimes, command
+outputs and failures. Repeat the workload run if overlap is insufficient. This is
+simultaneous execution only: no integrated application/RNS receive path or physical
+contact acceptance is implied. Default driver execution requires no RNS.
 
 1. Use `Vehicle(capacity=1024, receive_limit=120)`, fixed synthetic `Position`, an
    injected integer clock and a recording `EventTransport` test double. Unique
@@ -183,7 +219,7 @@ hub and peripherals if powered separately. Do not infer current from software RS
 
 | Criterion | Evidence / evaluation | What remains blocked |
 | --- | --- | --- |
-| Runtime / correctness | Exact ARM runtime/pins and successful baseline/workload logs; zero invalid acceptance, bounded state and successful recovery | Physical host and temporary measurement driver unavailable |
+| Runtime / correctness | Exact ARM runtime/pins and successful baseline/workload logs; zero invalid acceptance, bounded state and successful recovery | Driver implemented; physical host unavailable |
 | T01/T02/T03 networking | Physical private-LAN campaign: p95 availability-to-accept plus ≤100 ms clock uncertainty ≤2 s; ≥29/30 within-contact deliveries in each cold/warm 5/10 s cell and stable cell; 1/2 s characterisation; raw discovery/loss/overhead and rejection logs | Two hosts/clock evidence absent; existing logs' event-availability start must be verified; task 03 stays open |
 | T04 startup | Every one of ten cold boots ≤10 s; ten abrupt recovery cycles with no corruption/recovery failure | Host-only timings partial; explicit application/input/network readiness wiring absent |
 | T05 location/time | Ten favourable-sky starts ≤60 s; fix age ≤5 s, uncertainty ≤50 m, time uncertainty ≤1 s; zero invalid/stale located reports | GNSS, independent reference and validity gate absent; task 06 owns policy/poor-sky validation |
@@ -206,3 +242,12 @@ software packages. Task 04 completion still requires physical evidence; task 05
 requires 04, task 02 requires 04/05, task 14 requires physical-host 03 plus completed
 09, and task 15 requires 14. G01 remains HOLD. No purchase, outreach, RF transmission,
 commit, push or release is authorised by this runbook.
+
+## Software preparation validation — 5 October 2026
+
+The [desktop evidence archive](results/host-bench-workload-2026-10-05/README.md)
+records two equivalent short runs and a full 600.003-second idle / 600.178-second
+active rehearsal with 2,424 complete cycles and zero failures. Six new regression
+tests and the 68-test contributor check passed, plus explicit strict driver typing.
+These are synthetic desktop observations only; no physical criteria are passed.
+See [validation](../validation.md) for exact commands, corrections and limitations.

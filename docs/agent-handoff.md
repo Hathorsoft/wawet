@@ -318,3 +318,20 @@ HOLD. New validation is recorded separately; earlier status entries are historic
 Documentation only, local/uncommitted; no dependency/runtime/protocol changes,
 package installation, upstream restricted-source review, RF/road test, commit,
 push, PR or release occurred.
+
+## Task 04 workload preparation — 5 October 2026
+
+Starting checkout was clean at `a2f40d8`, which commits the earlier bench preparation;
+its local/uncommitted status notes are historical. The standard-library host driver
+now provides short correctness and twenty-minute measurement modes, bounded send
+recording, full 1,024-event cycles and flushed JSONL phase/counter evidence. New
+regression tests cover repeat cycles, timing orchestration, failures, interruption,
+cleanup and refusal to overwrite evidence. See the [bench runbook](research/standalone-host-bench.md).
+
+This completes the software workload preparation only. Task 04 remains open for
+physical runtime/memory/current/startup/recovery and quotes; the driver does not
+collect physical measurements or implement autonomous readiness/location validity.
+Task 03 still needs two physical hosts and clock evidence; 05 requires 04, 02
+requires 04/05, 14 requires 03/09 and 15 requires 14. G01 remains HOLD. New validation
+is recorded separately. Work is local/uncommitted; no purchase, outreach, RF/road
+trial, dependency or production API/protocol change, push, PR or release occurred.

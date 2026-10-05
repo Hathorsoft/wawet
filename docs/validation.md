@@ -604,3 +604,54 @@ escalation; HEAD and origin/main matched before this commit. Local Markdown link
 and `git diff --check` passed again. No runtime tests were needed for documentation
 changes. Commit/push outcome is reported after execution; task 04 stays open and
 G01 stays HOLD.
+
+## Task 04 host workload driver — 5 October 2026
+
+Starting tree clean at `a2f40d8`. Added the standard-library research driver,
+six regression tests and updated the bench runbook/plan/backlog/handoff. Production
+application files, transport contracts and frozen protocol vectors are unchanged.
+[Raw logs, exact original source archive and hashes](research/results/host-bench-workload-2026-10-05/README.md)
+and the [result summary](research/results/host-bench-workload-2026-10-05/summary.json)
+preserve new evidence separately from earlier validation.
+
+Actual commands/results:
+
+- Before executable edits, `./scripts/test` passed 62 tests and local links;
+  `./scripts/demo` passed. The demo also passed after implementation.
+- `PYTHON=.venv/bin/python ./scripts/check` passed 68 tests, local Markdown links,
+  Ruff lint/format and configured strict mypy. No packages were installed.
+- `MYPYPATH=packages .venv/bin/python -m mypy --strict tools/host_bench_workload.py`
+  passed. The initial `PYTHONPATH` invocation could not resolve local typed source;
+  `MYPYPATH` fixes source discovery without ignoring import errors. An initial test
+  assertion omitted Vehicle's `sent` metric; it was corrected before final checks.
+- Two final-source short runs used
+  `PYTHONPATH=packages .venv/bin/python tools/host_bench_workload.py --output /tmp/wawet-host-final-check1.jsonl`
+  and the same command with `check2`. Both exited zero. All 11 non-metadata phase
+  records matched after excluding UTC, monotonic timestamps and duration fields.
+- Full rehearsal:
+  `PYTHONPATH=packages .venv/bin/python tools/host_bench_workload.py --mode measure --output /tmp/wawet-host-measure-final.jsonl`.
+  Exit zero; idle **600.002797 s**, active **600.178000 s**, **2,424 complete cycles**,
+  zero failure records. Every cycle's phase sequence and aggregate final counters
+  were verified, maximum recorded occupancy was 1,024, and shutdown occupancy zero.
+- An earlier rehearsal was deliberately stopped with SIGINT after adding cleanup
+  for metadata failures. It recorded `KeyboardInterrupt`, closed and exited one.
+  Its raw log is retained as superseded/interrupted, not a successful measurement.
+- Archive hashes were verified against the driver, regression tests and application
+  sources. Raw JSONL SHA-256 hashes are recorded before lossless gzip compression.
+- `git diff --check` passed. External URLs/anchors and hosted Python 3.12/3.13
+  were not verified by local checks.
+
+The full rehearsal ran on the desktop runtime recorded in the logs, without RNS
+contention. No physical RAM/power/current, startup, location, contact or cost result
+is claimed. This completes software workload preparation only: task 04 remains
+open, its dependent tasks remain blocked and G01 remains HOLD. No hardware purchase,
+outreach, RF/road trial, production adapter, dependency change, commit, push, PR or
+release occurred. Work remains local/uncommitted.
+
+## Task 04 workload publication authorisation — 5 October 2026
+
+The maintainer subsequently requested a Conventional Commit and push. Earlier
+local/uncommitted and no-publication entries describe the preceding implementation
+state. `git fetch origin` succeeded; main and origin/main matched before committing.
+Local Markdown links and `git diff --check` passed again. This publication does not
+close task 04 or change G01 HOLD; no physical results or hosted CI success are implied.
