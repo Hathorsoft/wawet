@@ -655,3 +655,47 @@ local/uncommitted and no-publication entries describe the preceding implementati
 state. `git fetch origin` succeeded; main and origin/main matched before committing.
 Local Markdown links and `git diff --check` passed again. This publication does not
 close task 04 or change G01 HOLD; no physical results or hosted CI success are implied.
+
+
+## Task 03 timing evidence preparation — 5 October 2026
+
+Baseline: clean `a5bba59`. **EXPERIMENTAL RESULT:** `./scripts/test` passed
+68 tests and local Markdown file links before executable changes. New work remains
+local/uncommitted; this entry does not rewrite earlier validation or establish CI.
+
+Commands and final results:
+
+```sh
+PYTHONPATH=packages .venv/bin/python -m unittest discover -s tests -p test_contact_campaign.py
+PYTHON=.venv/bin/python ./scripts/check
+git diff --check
+```
+
+- Targeted campaign suite: 21 tests passed (eight new timing/orchestration tests).
+- Full contributor suite: 76 tests passed; local Markdown file links, Ruff lint,
+  Ruff formatting (21 files), and strict mypy (eight configured source files) passed.
+- Whitespace diff check passed.
+
+Deterministic fake RNS surfaces and clocks exercise sender cold/warm/stable/absent
+orchestration, preservation of scheduled availability through discovery, unchanged
+frame hashes, and receiver acceptance after worker validation/queue delay. Offline
+fixtures cover duplicate receptions, ambiguous resends, failed/missing workers,
+wrong hashes, invalid numbers, expired/unavailable events, exclusive contact closure,
+boundary uncertainty, signed clock offsets, 29/30 versus 28/30, p95 upper bounds,
+and historical-metric compatibility with new timing HOLD. A synthetic delayed
+example produces 0.1-second historical send-to-callback, 0.5-second
+send-to-acceptance and 1.5-second availability-to-acceptance latency.
+
+Development corrections: an initial fake-clock warm-up used `wait_until`'s bound
+real-clock defaults; its test now injects both clocks explicitly. Initial lint
+failures from loop-variable captures and a long line were corrected. The additional
+receiver fake initially recursed through `Queue.get_nowait`; it now calls the base
+nonblocking implementation. All listed final checks pass after these corrections.
+
+No actual pinned-RNS smoke, physical-host campaign, certified clock experiment,
+radio transmission, equipment purchase, upstream-source review or package change
+was performed. Tests cannot establish RNS integration or physical timing validity.
+The analyser evaluates caller-supplied clock provenance/bounds without independently
+certifying them. Hosted Python 3.12/3.13 results remain unestablished. Protocol v1,
+production interfaces, pins and historical archives remain unchanged. Task 03 stays
+open and G01 remains HOLD; task 04 and downstream dependencies remain as registered.

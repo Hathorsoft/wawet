@@ -335,3 +335,20 @@ Task 03 still needs two physical hosts and clock evidence; 05 requires 04, 02
 requires 04/05, 14 requires 03/09 and 15 requires 14. G01 remains HOLD. New validation
 is recorded separately. Work is local/uncommitted; no purchase, outreach, RF/road
 trial, dependency or production API/protocol change, push, PR or release occurred.
+
+
+## Task 03 timing preparation — 5 October 2026
+
+Starting tree was clean at `a5bba59`; earlier task 04 workload preparation is
+committed, and its uncommitted-status note is historical. The contact campaign now
+records intended availability before discovery and worker-thread acceptance after
+validation, with measured contact boundaries. Additive offline T01–T03 screening
+preserves historical metrics and leaves incomplete timing HOLD. See the
+[timing runbook](research/contact-campaign.md).
+
+This completes software timing preparation only. Task 03 remains open for two
+physical hosts, justified clock evidence and the full acceptance campaign. Task 04
+still needs hardware/instruments/measurements/quotes; 05 requires 04, 02 requires
+04/05, 14 requires 03/09, and 15 requires 14. G01 remains HOLD. Work is local and
+uncommitted; no purchasing, outreach, RF/road trial, upstream-source inspection,
+dependency/production-interface/protocol change, commit, push, PR or release.

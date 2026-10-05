@@ -167,14 +167,19 @@ def worker(args):
         ]
         return {"tx": sum(i.txb for i in roots), "rx": sum(i.rxb for i in roots)}
 
-    def contact(enabled):
+    def contact(enabled, phase="scenario"):
         gate[0] = enabled
+        transition_wall, transition_elapsed = time.time(), time.monotonic() - start
         emit(
             "contact",
             enabled=enabled,
+            phase=phase,
+            transition_wall=transition_wall,
+            transition_elapsed=transition_elapsed,
             socket_online=any(i.online for i in RNS.Transport.interfaces),
             counters=counters(),
         )
+        return transition_wall, transition_elapsed
 
     try:
         stack = RNS.Reticulum(configdir=str(args.config))
@@ -242,6 +247,8 @@ def worker(args):
                     emit(
                         "received",
                         event_id=event.event_id.hex(),
+                        accepted_wall=time.time(),
+                        accepted_elapsed=time.monotonic() - start,
                         received_wall=wall,
                         callback_elapsed=monotonic - start,
                         frame_sha256=hashlib.sha256(data[64:]).hexdigest(),
@@ -303,22 +310,37 @@ def worker(args):
                 )
 
             if args.scenario == "warm":
-                contact(True)
+                contact(True, "warmup")
                 if not discover(time.monotonic() + 8, "warmup"):
                     raise TimeoutError("Warm-up discovery failed")
-                contact(False)
+                contact(False, "warmup")
                 pause(1)
-            contact(True)
-            window_start = time.monotonic()
+            window_wall, window_elapsed = contact(True, "measured")
+            window_start = start + window_elapsed
             window_end = min(window_start + args.window, deadline)
+            planned = []
+            if not args.control_only and args.scenario in ("cold", "warm", "absent", "stable"):
+                count = args.count if args.scenario == "stable" else 1
+                for index in range(count):
+                    offset = index * args.interval if args.scenario == "stable" else 0
+                    frame = fresh_frame()
+                    planned.append((window_start + offset, frame))
+                    emit(
+                        "available",
+                        event_id=decode(frame).event_id.hex(),
+                        frame_sha256=hashlib.sha256(frame).hexdigest(),
+                        available_wall=window_wall + offset,
+                        available_elapsed=window_start - start + offset,
+                        deliberate_expiry=False,
+                    )
             found = discover(window_end)
             if args.scenario in ("cold", "warm", "absent"):
                 if not args.control_only:
                     # A missed discovery is still an intended event in the denominator.
-                    transmit(fresh_frame())
+                    transmit(planned[0][1])
                 while time.monotonic() < window_end:
                     time.sleep(max(0, min(0.02, window_end - time.monotonic())))
-                contact(False)
+                contact(False, "measured")
             elif args.scenario == "stable":
                 if not found:
                     raise TimeoutError("Baseline discovery failed")
@@ -328,8 +350,9 @@ def worker(args):
                     if time.monotonic() >= deadline:
                         raise TimeoutError("Baseline deadline exceeded")
                     if not args.control_only:
-                        transmit(fresh_frame())
-                contact(False)
+                        transmit(planned[index][1])
+                wait_until(window_end, deadline)
+                contact(False, "measured")
             elif args.scenario == "outage":
                 if not found:
                     raise TimeoutError("Outage setup discovery failed")
@@ -591,6 +614,133 @@ def validate_clock(clock):
         )
 
 
+def finite_number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+
+
+def contact_timing(item, logs, complete, expected, clock):
+    """Additive evidence screen; never confers physical task or gate acceptance."""
+    result = {
+        "intended": expected,
+        "within_contact": 0,
+        "missing_timing": expected,
+        "availability_latency": [],
+        "acceptance_latency": [],
+    }
+    if clock is None or not complete:
+        return result
+    offset = clock["receiver_minus_sender_seconds"]
+    uncertainty = clock["uncertainty_seconds"]
+    boundaries = [
+        r for r in logs["send"] if r["kind"] == "contact" and r.get("phase") == "measured"
+    ]
+    if (
+        len(boundaries) != 2
+        or boundaries[0].get("enabled") is not True
+        or boundaries[1].get("enabled") is not False
+    ):
+        return result
+    opened, closed = (r.get("transition_wall") for r in boundaries)
+    if not all(finite_number(t) for t in (opened, closed)) or closed <= opened:
+        return result
+    available = [r for r in logs["send"] if r["kind"] == "available"]
+    ids = [r.get("event_id") for r in available]
+    if any(not isinstance(value, str) or not value for value in ids):
+        return result
+    if len(available) != expected or len(set(ids)) != expected:
+        return result
+    result["missing_timing"] = 0
+    for event in available:
+        began = event.get("available_wall")
+        if (
+            not finite_number(began)
+            or not opened <= began < closed
+            or event.get("deliberate_expiry") is not False
+        ):
+            result["missing_timing"] += 1
+            continue
+
+        def matches(row, event=event):
+            return row.get("event_id") == event["event_id"] and row.get(
+                "frame_sha256"
+            ) == event.get("frame_sha256")
+
+        sends = [r for r in logs["send"] if r["kind"] == "event" and matches(r)]
+        receptions = [r for r in logs["receive"] if r["kind"] == "received" and matches(r)]
+        if any(
+            r["kind"] == "received" and r.get("event_id") == event["event_id"] and not matches(r)
+            for r in logs["receive"]
+        ):
+            result["missing_timing"] += 1
+            continue
+        if len(sends) != 1:
+            result["missing_timing"] += 1
+            continue
+        sent = sends[0]
+        if (
+            sent.get("outcome") in ("unavailable", "expired_before_send", "send_failed")
+            and not receptions
+        ):
+            continue  # Known miss; slow expiry never shrinks the denominator.
+        transmitted = sent.get("sent_wall")
+        if sent.get("outcome") != "sent" or not finite_number(transmitted) or transmitted < began:
+            result["missing_timing"] += 1
+            continue
+        if not receptions:
+            continue  # Known delivery miss.
+        accepted = [r.get("accepted_wall") for r in receptions]
+        if not all(finite_number(t) for t in accepted):
+            result["missing_timing"] += 1
+            continue
+        accepted = min(accepted) - offset  # Duplicate receptions count once.
+        if accepted < transmitted or accepted < began:
+            result["missing_timing"] += 1
+            continue
+        result["availability_latency"].append(accepted - began)
+        result["acceptance_latency"].append(accepted - transmitted)
+        # Require a conservative bound wholly inside the half-open contact window.
+        if accepted - uncertainty >= opened and accepted + uncertainty < closed:
+            result["within_contact"] += 1
+        elif (
+            accepted - uncertainty < closed <= accepted + uncertainty
+            or accepted - uncertainty < opened <= accepted + uncertainty
+        ):
+            result["missing_timing"] += 1
+    return result
+
+
+def timing_summary(group, clock, required):
+    timing = group["contact_timing"]
+    for metric in ("availability_latency", "acceptance_latency"):
+        timing[metric] = distribution(timing[metric])
+    timing["delivery_fraction"] = (
+        timing["within_contact"] / timing["intended"] if timing["intended"] else None
+    )
+    clock_ok = clock is not None and clock["uncertainty_seconds"] <= 0.1
+    enough = timing["intended"] >= 30 and group["failed_or_missing_trials"] == 0
+    valid = clock_ok and enough and timing["missing_timing"] == 0
+    latency = timing["availability_latency"]
+    upper = latency["p95"] + clock["uncertainty_seconds"] if clock and latency["n"] else None
+    timing["p95_upper_seconds"] = upper
+    timing["criteria"] = (
+        {
+            "T01": "HOLD" if not valid or upper is None else "PASS" if upper <= 2 else "REVISE",
+            "T02": "HOLD"
+            if not valid
+            else "PASS"
+            if timing["delivery_fraction"] >= 0.95
+            else "REVISE",
+            "T03": "HOLD" if not clock_ok else "PASS",
+        }
+        if required
+        else {
+            "T01": "CHARACTERISATION",
+            "T02": "CHARACTERISATION",
+            "T03": "PASS" if clock_ok else "HOLD",
+        }
+    )
+
+
 def analyse(directory, clock=None):
     validate_clock(clock)
     manifest = json.loads((directory / "manifest.json").read_text())
@@ -616,6 +766,13 @@ def analyse(directory, clock=None):
                 "withheld_expired_events": 0,
                 "reconnection": [],
                 "latency": [],
+                "contact_timing": {
+                    "intended": 0,
+                    "within_contact": 0,
+                    "missing_timing": 0,
+                    "availability_latency": [],
+                    "acceptance_latency": [],
+                },
                 "tx": [],
                 "rx": [],
                 "receive_tx": [],
@@ -700,6 +857,10 @@ def analyse(directory, clock=None):
             )
         )
         group["intended_events"] += max(expected, len(intended))
+        if not item["control_only"] and item["scenario"] in ("cold", "warm", "stable"):
+            timing = contact_timing(item, logs, complete, expected, clock)
+            for metric, value in timing.items():
+                group["contact_timing"][metric] += value
         sent = {r["event_id"] for r in sends if r["outcome"] == "sent"}
         received = {
             r["event_id"]
@@ -740,7 +901,11 @@ def analyse(directory, clock=None):
                     and s["outcome"] == "sent"
                     and s["frame_sha256"] == row["frame_sha256"]
                 ]
-                if len(matches) == 1:
+                if (
+                    len(matches) == 1
+                    and finite_number(matches[0].get("sent_wall"))
+                    and finite_number(row.get("received_wall"))
+                ):
                     group["latency"].append(
                         row["received_wall"]
                         - matches[0]["sent_wall"]
@@ -757,7 +922,12 @@ def analyse(directory, clock=None):
                     )
                 for reason, count in ends[-1].get("rejected", {}).items():
                     group["rejections"][reason] = group["rejections"].get(reason, 0) + count
-    for group in groups.values():
+    for key, group in groups.items():
+        name, window, mode = key.split("/")
+        required = mode == "events" and (
+            name == "stable" or name in ("cold", "warm") and float(window) in (5, 10)
+        )
+        timing_summary(group, clock, required)
         group["delivery_fraction"] = (
             group["delivered_events"] / group["intended_events"]
             if group["intended_events"]
@@ -795,11 +965,12 @@ def analyse(directory, clock=None):
         "campaign": manifest,
         "groups": groups,
         "clock_evidence": clock,
+        "acceptance_scope": "Evidence screen only; physical task 03 and G01 remain HOLD",
         "limitations": [
             "Controlled IP interface contact, not moving radio",
             "RNS interface counters exclude TCP/IP totals and radio airtime",
             "One-way latency omitted without clock evidence; ambiguous multiple sends excluded",
-            "Exploratory characterisation, no product pass thresholds",
+            "T01-T03 evidence screen does not confer physical task or investment approval",
         ],
     }
 

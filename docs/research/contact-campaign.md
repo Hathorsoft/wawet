@@ -178,3 +178,63 @@ See the [4 October 2026 result report](contact-campaign-results.md): 490/490 ful
 campaign trials and 26/26 final-source smoke trials completed without worker
 failures. These are single-host loopback observations. Physical-host execution
 remains pending.
+
+
+## Task 03 timing evidence correction — 5 October 2026
+
+**IMPLEMENTED PREPARATION:** measured cold/warm/absent events are created and logged
+before measured discovery. Stable events are created before discovery with their
+scheduled availability (one-second spacing by default); late discovery does not
+move that schedule. Warm-up remains separate. Frames retain their original bytes,
+creation time and expiry. There is no automatic retry. Stable contact now remains
+open to its configured window end rather than closing immediately after the final
+send. Fixed worker deadlines still apply; incomplete trials require review/repetition.
+
+Additive JSONL fields:
+
+| Record | New timing evidence |
+| --- | --- |
+| `available` | Event ID/hash, scheduled `available_wall` / process-local `available_elapsed`, `deliberate_expiry=false`; emitted before discovery, including future stable availability |
+| `contact` | `phase` (`warmup`, `measured`, or other scenario), `transition_wall` / process-local `transition_elapsed` captured at the gate transition |
+| `received` | `accepted_wall` / process-local `accepted_elapsed` captured after signature, decoding and expiry validation on the worker thread; original callback fields retained |
+
+Use the existing analysis command with a clock bound covering the entire campaign:
+
+```sh
+PYTHONPATH=packages .venv/bin/python tools/rns_contact_campaign.py analyse /tmp/wawet-combined-results --clock-evidence /tmp/wawet-clock.json > /tmp/wawet-timing-summary.json
+```
+
+Each group's additive `contact_timing` reports intended and within-contact counts,
+missing/ambiguous timing count, `availability_latency`, `acceptance_latency`,
+`delivery_fraction`, `p95_upper_seconds` and T01/T02/T03 `criteria`. Existing
+fractions and `latency` (send-to-callback) retain their historical meaning.
+The new timing screen covers cold/warm and stable events; other scenarios retain
+existing rejection, expiry, queue and recovery evidence. No deliberately expired
+probe is scheduled in those screened cells, so every intended event is eligible.
+Unavailable, failed-send and slow-expiry events are misses, never denominator exclusions.
+
+Cross-host timing subtracts the supplied receiver-minus-sender wall-clock offset;
+monotonic values are never subtracted between hosts. The earliest validated
+reception of a matched ID/hash counts once. Multiple send attempts, invalid numbers,
+missing boundaries/availability/acceptance or incomplete workers leave criteria
+HOLD. Missing workers retain their intended counts. A known non-delivery counts as
+a miss. Acceptance at or after closure is a miss; uncertainty overlapping a contact
+boundary leaves classification HOLD rather than granting delivery.
+
+Required cold/warm 5/10-second cells and stable baseline need at least 30 intended
+events, complete workers and complete timing evidence. T01 compares nearest-rank
+p95 availability-to-acceptance plus uncertainty to 2 seconds. T02 requires at least
+95% within-contact delivery (29/30). T03 requires a supplied finite uncertainty
+bound no greater than 100 ms; absent/excessive evidence leaves HOLD. T01 with zero
+accepted events is HOLD, while complete evidence of zero delivery is T02 REVISE.
+The 1/2-second cells remain characterisation. Invalid clock JSON fails analysis
+with an explicit error. The caller must substantiate offset, drift and provenance;
+the analyser cannot certify synchronisation from the supplied object.
+
+Older archives remain readable and retain historical metrics, but cannot establish
+new criteria without the new fields. Do not rewrite them or compare corrected
+availability latency as if it were historical send-to-callback latency. Synthetic
+fixture PASS is only an evidence-screen result. The report explicitly leaves
+physical task 03 and G01 HOLD; it does not approve equipment, RF or product investment.
+
+New validation and remaining limits are recorded in [validation](../validation.md).

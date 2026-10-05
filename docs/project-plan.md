@@ -211,7 +211,7 @@ gantt
 | **A02** Agree feasibility thresholds and host role | Committed; 2026-10-04 / `b46261b`; S002 | A01 | Record numeric latency/loss, contact-window, startup, memory, power and delivered-cost limits; clarify application host versus modem and stop/revise criteria. | [Evidence / specification](../docs/research/feasibility-gates.md). [T01–T09 and host boundary agreed](research/feasibility-thresholds.md) on 4 October 2026. Physical-host access remains outstanding. |
 | **01** Exact-version distribution review | Complete locally; 2026-10-04; S003–S013 | A02 | Document maintainer self-review of exact releases where selected, rights/restrictions/notices, unresolved risks and a dated form-specific release decision; no external legal review required for task 01. | [Evidence / specification](../LICENSING.md). [Adopted decision and residual risks](research/distribution-decision.md); bounded scope complete, upstream redistribution/bundles unapproved. External review optional. LXMF unselected. |
 | **04** Measure standalone host options | Open; S004 | A02 | Run parser/queue and networking workload on actual candidate hosts; archive runtime, memory, measured current, startup/recovery and total quoted cost; retain standalone usefulness. | [Evidence / specification](../docs/research/feasibility-gates.md). [Bench preparation](research/standalone-host-bench.md) complete: Zero 2 W first-screen recommendation and measurement/equipment checklist. Workload driver implemented and locally validated; hardware, calibrated instruments, measurements and quotes absent; task stays open. |
-| **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Only local controlled IP evidence exists; physical hosts and clock evidence pending. |
+| **03** Physical-host authenticated contact campaign | Open; S005 | A02, L02, L03, L04, L05 | Two isolated physical hosts with SINGLE destinations; raw discovery/latency/loss/overhead, clock uncertainty, contact windows, timeout and stale-queue/recovery evidence against thresholds. | [Evidence / specification](../docs/research/contact-campaign.md). Availability/validated-acceptance/contact timing and offline T01–T03 screening implemented; only local/synthetic evidence exists. Physical hosts and justified clock evidence remain pending. |
 | **05** UK profile and conformity review | Open; S006–S014 | A02, 04 | Complete exact applicable IR2030 rows, access/power/antenna limits, standard editions, classification and written qualified lab assessment of proposed test setup. | [Evidence / specification](../docs/research/uk-regulatory.md). No approved radio profile or RF test setup. External review may run while stages 7–14 proceed. |
 | **07** Deterministic contact scenarios | Committed; 2026-10-04 / `c0dd25b`; S007 | A02 | Passing, convoy, rural and dense fixtures with delivery/expiry metrics and no claims of field performance. | [Runbook and results](research/contact-scenarios.md). Four fixtures, 53-test contributor check and repeatable JSON; simulation only. |
 | **09** Compare event encodings | Committed; 2026-10-04 / `3e247c8`; S008 | A02 | Measure bytes and parser footprint with bounded optional fields/signatures; preserve frozen v1 vectors and document comparisons. | [Comparison and results](research/encoding-comparison.md). Bounded desktop comparison complete; MCU/whole-host memory acceptance remains task 04; v1 unchanged. |
@@ -479,3 +479,20 @@ Task 03 still needs two physical hosts and clock evidence; 05 requires 04, 02
 requires 04/05, 14 requires 03/09 and 15 requires 14. G01 remains HOLD. New validation
 is recorded separately. Work is local/uncommitted; no purchase, outreach, RF/road
 trial, dependency or production API/protocol change, push, PR or release occurred.
+
+
+## Task 03 timing preparation — 5 October 2026
+
+Starting tree was clean at `a5bba59`; earlier task 04 workload preparation is
+committed, and its uncommitted-status note is historical. The contact campaign now
+records intended availability before discovery and worker-thread acceptance after
+validation, with measured contact boundaries. Additive offline T01–T03 screening
+preserves historical metrics and leaves incomplete timing HOLD. See the
+[timing runbook](research/contact-campaign.md).
+
+This completes software timing preparation only. Task 03 remains open for two
+physical hosts, justified clock evidence and the full acceptance campaign. Task 04
+still needs hardware/instruments/measurements/quotes; 05 requires 04, 02 requires
+04/05, 14 requires 03/09, and 15 requires 14. G01 remains HOLD. Work is local and
+uncommitted; no purchasing, outreach, RF/road trial, upstream-source inspection,
+dependency/production-interface/protocol change, commit, push, PR or release.
