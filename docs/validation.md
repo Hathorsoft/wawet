@@ -699,3 +699,15 @@ The analyser evaluates caller-supplied clock provenance/bounds without independe
 certifying them. Hosted Python 3.12/3.13 results remain unestablished. Protocol v1,
 production interfaces, pins and historical archives remain unchanged. Task 03 stays
 open and G01 remains HOLD; task 04 and downstream dependencies remain as registered.
+
+## Next-package planning validation — 5 October 2026
+
+Clean starting checkout: `69bed67`. Planning documents only; no executable changes
+or physical experiments. Read repository guidance, task register, relevant backlog
+criteria and existing host/contact runbooks; reconciled recent committed preparation.
+
+`PYTHON=.venv/bin/python ./scripts/check` passed: 76 tests, local Markdown file
+links, Ruff lint/format (21 files) and strict mypy (eight configured source files).
+`git diff --check` passed. External links/anchors and hosted Python 3.12/3.13 runs
+are not established by these checks. Task 04 and 03 remain physically blocked;
+G01 remains HOLD. The user explicitly requested committing and pushing this plan.

@@ -352,3 +352,15 @@ still needs hardware/instruments/measurements/quotes; 05 requires 04, 02 require
 04/05, 14 requires 03/09, and 15 requires 14. G01 remains HOLD. Work is local and
 uncommitted; no purchasing, outreach, RF/road trial, upstream-source inspection,
 dependency/production-interface/protocol change, commit, push, PR or release.
+
+
+## Next-package planning review — 5 October 2026
+
+Clean starting revision `69bed67` confirms host workload and contact timing
+preparation are committed; earlier uncommitted notes are historical. The
+[planning-only package](next-work-package.md) selects task 04's physical host screen, then
+independently eligible task 03's two-host campaign. Both require physical
+arrangements; neither is completed by preparation or planning. Task 05 requires
+04, task 02 requires 04/05, task 14 requires 03/09, and task 15 requires 14.
+Remaining scheduled work is blocked by these predecessors or later gates.
+No statuses, dependencies, thresholds or G01 HOLD decision change.
